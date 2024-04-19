@@ -1,12 +1,14 @@
 body {
     font-family: monospace;
 }
+
 ul{
     list-style-type: none;
     margin:0;
     padding: 0;
     overflow: hidden;
-    background-color:cornsilk;
+    background-color:#EEEDE7;
+    border-radius: 5px;
 }
 li{
     float: left;
@@ -18,4 +20,7 @@ li a{
     text-decoration: none;
     color:dimgray;
     font-size: large;
+}
+.content{
+    padding:60px
 }

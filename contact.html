@@ -14,6 +14,16 @@
                 document.getElementById('navbar').innerHTML = html;
             })
             .catch(error => console.error('Error fetching HTML file:', error));
+            if (location.pathname.endsWith('contact.html')) {
+            history.replaceState({}, '', location.pathname.replace('contact.html','contact'));
+          }
     </script>
+       <div class="content">
+        <p>
+          For any inquiries, please feel free to contact me at yingcui02@gmail.com. 
+        </p>
+        <p>For specific inquiries regarding to Roamer app, please reach out to yingcui.roamer@gmail.com.</p>
+      </div>
+  
   </body>
 </html>

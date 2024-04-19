@@ -16,23 +16,36 @@
                 document.getElementById('navbar').innerHTML = html;
             })
             .catch(error => console.error('Error fetching HTML file:', error));
+            if (location.pathname.endsWith('roamer.html')) {
+            history.replaceState({}, '', location.pathname.replace('roamer.html','roamer'));
+          }
     </script>
-    <p>Roamer - Plan & Pack</p>
-    <p>Itinerary & Packing List</p>
-    <p>Trip Planning and Packing Management!</p>
-    <article>
-        Create detailed itineraries for your trips. Customize your schedule to suit your preferences and stay organized every step of the way. 
-        Access and manage your itineraries with ease, whether online or offline, so you're always in control of your plans.
-        Utilize our default packing list as a foundation and effortlessly adjust it to meet your needs.
-        Add or remove items with a simple tap, or create custom packing lists for each adventure, ensuring nothing gets left behind.
-        Share your itineraries and packing lists with anyone, whether it's your travel companions, friends, or family.
-    </article>
-    <p>
-        Your feedback is invaluable to me as I strive to provide the best experience possible. 
-        If you have any questions, suggestions, or feedback about anything you've encountered while using our app.
-    </p>
-    <p>Feel free to contact us at <span>yingcui.roamer@gmail.com</span></p>
-    <p>Thank you once again for choosing our app!</p>
+    <div class="content">
+        <img src="images/roamer.png" alt="roamer" style="width: 130px; height: 130px;">
+        <h2>Roamer - Plan & Pack</h2>
+        <p>Itinerary & Packing List</p>
+        <article>
+            <h3>Trip Planning and Packing Management!</h3>
+            <p>
+            Create detailed itineraries for your trips. Customize your schedule to suit your preferences and stay organized every step of the way. 
+            Access and manage your itineraries with ease, whether online or offline, so you're always in control of your plans.
+            Utilize our default packing list as a foundation and effortlessly adjust it to meet your needs.
+            Add or remove items with a simple tap, or create custom packing lists for each adventure, ensuring nothing gets left behind.
+            Share your itineraries and packing lists with anyone, whether it's your travel companions, friends, or family.
+            </p>
+        </article>
+        <article>
+            <p>
+                Your feedback is invaluable to me as I strive to provide the best experience possible. 
+                If you have any questions, suggestions, or feedback about anything you've encountered while using our app.
+            </p>
+            <p>Feel free to contact us at <span style="font-weight: 700;">yingcui.roamer@gmail.com</span></p>
+            <p>Thank you once again for choosing our app!</p>
+    
+        </article>
+
+    </div>
+
 </body>
 </html>
 
