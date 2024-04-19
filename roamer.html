@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamer</title>
+</head>
+<body>
+    <div id="navbar"></div>
+    <script>
+        // Fetch the contents of the HTML file
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                // Insert the HTML content into the #navbar element
+                document.getElementById('navbar').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching HTML file:', error));
+    </script>
+    <p>Roamer - Plan & Pack</p>
+    <p>Itinerary & Packing List</p>
+    <p>Trip Planning and Packing Management!</p>
+    <article>
+        Create detailed itineraries for your trips. Customize your schedule to suit your preferences and stay organized every step of the way. 
+        Access and manage your itineraries with ease, whether online or offline, so you're always in control of your plans.
+        Utilize our default packing list as a foundation and effortlessly adjust it to meet your needs.
+        Add or remove items with a simple tap, or create custom packing lists for each adventure, ensuring nothing gets left behind.
+        Share your itineraries and packing lists with anyone, whether it's your travel companions, friends, or family.
+    </article>
+    <p>
+        Your feedback is invaluable to me as I strive to provide the best experience possible. 
+        If you have any questions, suggestions, or feedback about anything you've encountered while using our app.
+    </p>
+    <p>Feel free to contact us at <span>yingcui.roamer@gmail.com</span></p>
+    <p>Thank you once again for choosing our app!</p>
+</body>
+</html>
+

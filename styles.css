@@ -1,0 +1,21 @@
+body {
+    font-family: monospace;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color:cornsilk;
+}
+li{
+    float: left;
+}   
+li a{
+    display: block;
+    text-align: center;
+    padding: 13px;
+    text-decoration: none;
+    color:dimgray;
+    font-size: large;
+}
