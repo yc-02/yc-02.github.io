@@ -1,5 +1,6 @@
 body {
     font-family: monospace;
+    flex: 1;
 }
 
 ul{
@@ -18,8 +19,9 @@ li a{
     text-align: center;
     padding: 13px;
     text-decoration: none;
-    color:dimgray;
+    color:#444444;
     font-size: large;
+    font-weight: 500;
 }
 .content{
     padding:60px
