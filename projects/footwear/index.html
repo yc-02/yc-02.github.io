@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yc-02</title>
+    <link rel="stylesheet"  type="text/css" href="../../styles.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+  </head>
+  <body class="projectItemBody">
+    <div id="navbar"></div>
+    <script>
+        fetch('../../navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching HTML file:', error));
+    </script>
+    <div class="projectItemContainer">
+      <div class="gallery" >
+        <div class="galleryContent">
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/filter.png"  class="projectItemImage">
+          <div class="caption">Filter & Sort</div>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/details.png"  class="projectItemImage"/>
+          <div class="caption">Product Details</div>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/orders.png"  class="projectItemImage"/>
+          <div class="caption">Order History</div>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/wishList.png"  class="projectItemImage"/>
+          <div class="caption">Wish List</div>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/guestCheckout.png"  class="projectItemImage"/>
+          <div class="caption">Gusest Checkout</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <script src="../script.js"></script>
+      </div>
+      <div>
+        <p style="font-weight: 600; font-size: 15px;">Footwear e-commerce platform built with Next.js, Contentful, and Supabase.</p>
+        <div style="display: flex; gap: 16px;">
+          <a href="https://02footwear.vercel.app/" class="projectItemLink"> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="13" height="13" class="linkSvg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg>          
+          <p>Vercel Deployment</p>
+        </a>
+          <a href="https://github.com/yc-02/02footwear" class="projectItemLink">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="13" height="13" class="linkSvg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg> 
+            <p>GitHub Repository</p>
+          </a>
+        </div>
+        <p>Footwear pictures sourced from Unsplash.</p>
+        <p>Responsive design.</p>
+          <article>
+            <p>This platform has options for both user and guest checkout.</p>
+            <p>The filtering system allows customers to refine their search by brand and size, and sort by price or new arrivals.</p>
+            <p>Customers can view the remaining quantity of low-stock items and see which sizes are currently out of stock. Additionally, they can search for products using keywords.</p>         
+            <p>In the user account section, users can manage their profiles, track order histories, and save their favorite items to a personalized wishlist.</p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
