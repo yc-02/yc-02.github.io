@@ -209,7 +209,7 @@ li a{
     body{
         height: 100vh;
     }
-    .aboutImagem, .contactImage{
+    .aboutImage, .contactImage{
         width: 130px;
         height: 130px;
     }
