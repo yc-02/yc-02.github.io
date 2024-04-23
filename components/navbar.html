@@ -16,7 +16,7 @@
         </div>
     </ul>
     <div class="smNav">
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding:20px;">
         <a href="/" style="font-style: italic; font-size: 16px; text-decoration: none; color: inherit;">02</a>
         <div class="openNavButton" onclick="openMenu()" id="openButton">
           <i class="fa-solid fa-bars fa-lg" style="color:#292524;"></i>
@@ -24,25 +24,29 @@
       </div>
       <div class="smNavContents" id="contents" style="display: none;">
         <div onclick="closeMenu()"
-        style="width:30%; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; padding: 10px; opacity: 0.5; background-color: #fafaf9">
+        style="width:30%; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; padding: 10px; opacity: 0.5; background-color:black;">
         </div>
-        <div style="position: absolute;top: 0;right: 0;background-color: #fafaf9; height: 100vh; padding: 10px;  z-index: 1; width: 70%;">
+        <div style="position: absolute;top:0; right: 0;background-color:white; height: 100vh; z-index: 1; width: 70%;">
           <div class="closeNavButton" onclick="closeMenu()">
             <i class="fa-solid fa-xmark fa-lg" style="color:#292524;"></i>
           </div>
-          <div id="mainSmNav">
+          <div id="mainSmNav" style="display: flex; flex-direction: column; gap: 10px;">
             <a href="/">
-              <div  class="navIcon">
+              <div class="navIcon">
                 <i class="fa-solid fa-house"></i>          
                 <p>Home</p>
               </div>
             </a>
-            <div style="padding-left: 16px;">
-              <div class="navIcon">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Apps</p>            
+            <div style="padding:0px 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;"   onclick="toggleApps()">
+                <div class="navIcon">
+                  <i class="fa-solid fa-folder-open"></i>
+                  <p>Apps</p>            
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+
               </div>
-              <div style="padding-left: 6px;">
+              <div style="padding-left: 6px; display: none;" id="apps">
                 <a href="/apps/roamer/">
                   <div class="navIcon">
                     <i class="fa-solid fa-code"></i>            
@@ -51,12 +55,15 @@
                   </a>
               </div>
             </div>
-            <div style="padding-left: 16px;">
-              <div class="navIcon">
-                <i class="fa-solid fa-folder-open"></i>
-                <p>Projects</p>            
+            <div style="padding:0px 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;"  onclick="toggleProjects()">
+                <div class="navIcon">
+                  <i class="fa-solid fa-folder-open"></i>
+                  <p>Projects</p>            
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
               </div>
-              <div style="padding-left: 6px;">
+              <div style="padding-left: 6px; display: none;" id="projects">
                 <a href="/projects/footwear/">
                   <div class="navIcon">
                     <i class="fa-solid fa-code"></i>          

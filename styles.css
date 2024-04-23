@@ -20,6 +20,10 @@ body {
     font-weight: 600;
 }
 
+#navbar{
+    background-color: #f4f4f5;
+}
+
 .webNav{
     list-style-type: none;
     margin:0;
@@ -34,15 +38,15 @@ li a{
     text-align: center;
     padding: 13px;
     text-decoration: none;
-    color:#292524;
+    color:inherit;
     font-size: large;
     font-weight:500;
     border-radius: 5px;
 }
 
-li a:visited {
+/* li a:hover {
     background-color: #f5f5f4;
-  }
+  } */
 
 .about, .contact{
     padding: 0px 20px;
@@ -97,10 +101,6 @@ li a:visited {
 
 /* project - items */
 
-.projectItemBody{
-    background-color:#f5f5f4;
-
-}
 .projectItemContainer{
     display: grid; 
     grid-template-columns: repeat(2,1fr);
@@ -242,6 +242,7 @@ li a:visited {
     }
     .smNav{
         display: block;
+        border-radius: 10px;
     }
     .smNavContents a{
         text-decoration: none;
@@ -249,7 +250,7 @@ li a:visited {
         flex-direction: column;
         color:#292524;
         align-items: flex-start;
-        padding-left: 16px;
+        padding:0px 20px
     }
     .openNavButton{
         border: none; 
@@ -258,13 +259,11 @@ li a:visited {
     }
     .closeNavButton{
         border: none; 
-        display: flex; 
-        width: 100%; 
-        justify-content: flex-end; 
         background-color:inherit; 
         cursor: pointer;
-        padding-top: 20px;  
-        padding-bottom: 20px;      
+        text-align: end;
+        padding: 20px;
+
     }
     .navIcon{
         display: flex; 
@@ -291,4 +290,5 @@ li a:visited {
         height: auto;
     
     }
+
 }
