@@ -278,10 +278,14 @@ li a:visited {
     
     }
     .h3Title{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
     }
     p{
         font-size: 14px;
+    }
+    .projectItemBody{
+        height: auto;
+    
     }
 }
