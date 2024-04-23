@@ -44,8 +44,8 @@ li a:visited {
     background-color: #f5f5f4;
   }
 
-.about{
-    padding: 30px;
+.about, .contact{
+    padding: 0px 20px;
     display:flex; 
     height:70vh;
     gap: 30px;
@@ -53,9 +53,12 @@ li a:visited {
     align-items: center;
 }
 
-.aboutImage{
+.aboutImage, .contactImage{
     width: 300px; 
     height: 300px;
+}
+.roamer{
+    padding: 20px 20px;
 }
 .homeImage{
     width: 300px; 
@@ -73,7 +76,7 @@ li a:visited {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    padding: 30px;
+    padding: 20px;
 
 }
 .projectCard{
@@ -105,7 +108,7 @@ li a:visited {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    padding: 30px;
+    padding: 0px 20px;
 }
 
 .gallery{
@@ -206,11 +209,11 @@ li a:visited {
     body{
         height: 100vh;
     }
-    .aboutImage{
+    .aboutImagem, .contactImage{
         width: 130px;
         height: 130px;
     }
-    .about{
+    .about, .contact{
         justify-content: space-between;
     }
     .homeImage{
