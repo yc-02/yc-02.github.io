@@ -7,23 +7,22 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Contact</title>
   </head>
-  <body>
-    <div id="navbar"></div>
+  <body style="display: none;" id="body">
     <script>
         fetch('../navbar.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('navbar').innerHTML = html;
+              document.getElementById('navbar').innerHTML = html;
+              document.getElementById('body').style.display = 'block';
             })
             .catch(error => console.error('Error fetching HTML file:', error));
     </script>
-       <div class="content">
-        <div style="height:50vh; display: flex; flex-direction: column; justify-content: center;">
+      <div id="navbar"></div>
+        <div style="height:50vh; display: flex; flex-direction: column; justify-content: center; padding: 30px;">
             <h1>Contact Me</h1>
             <p>For any inquiries, please feel free to contact me at <span style="font-weight: 600;">yingcui02@gmail.com</span>.</p>
             <p>For specific inquiries regarding to Roamer app, please reach out to <span style="font-weight: 600;">yingcui.roamer@gmail.com</span>.</p>
         </div>
-      </div>
-  
+      <script src="../toggleMenu.js"></script>
   </body>
 </html>

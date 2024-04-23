@@ -7,16 +7,17 @@
     <link rel="stylesheet"  type="text/css" href="../../styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
   </head>
-  <body class="projectItemBody">
-    <div id="navbar"></div>
+  <body class="projectItemBody" id="body" style="display: none;">
     <script>
         fetch('../../navbar.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('navbar').innerHTML = html;
+              document.getElementById('navbar').innerHTML = html;
+              document.getElementById('body').style.display = 'block';
             })
             .catch(error => console.error('Error fetching HTML file:', error));
     </script>
+    <div id="navbar"></div>
     <div class="projectItemContainer">
       <div class="gallery" >
         <div class="galleryContent">
@@ -40,8 +41,20 @@
           <img src="../../images/projects/footwear/guestCheckout.png"  class="projectItemImage"/>
           <div class="caption">Gusest Checkout</div>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)">
+          <div class="prevContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="26" height="26">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>   
+          </div>       
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+          <div class="nextContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="26" height="26">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>     
+          </div>     
+        </a>
       </div>
       <br>
       <div>
@@ -51,7 +64,6 @@
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
       </div>
-      <script src="../script.js"></script>
       </div>
       <div>
         <p style="font-weight: 600; font-size: 15px;">Footwear e-commerce platform built with Next.js, Contentful, and Supabase.</p>
@@ -79,5 +91,7 @@
         </article>
       </div>
     </div>
+    <script src="../script.js"></script>
+    <script src="../../toggleMenu.js"></script>
   </body>
 </html>

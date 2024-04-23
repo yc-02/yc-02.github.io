@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
   </head>
-  <body>
-    <div id="navbar"></div>
+  <body style="display: none; " id="body" class="projectItemBody">
     <script>
         fetch('../navbar.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('navbar').innerHTML = html;
+              document.getElementById('navbar').innerHTML = html;
+              document.getElementById('body').style.display = 'block';
             })
             .catch(error => console.error('Error fetching HTML file:', error));
     </script>
-    <div class="content">
+    <div id="navbar"></div>
       <div class="project">
         <a href="./footwear/" class="projectCard">
-          <img src="../images/projects/footwear/home.png" style="width: 90%; height:auto; border-radius: 5px;"/>  
+          <img src="../images/projects/footwear/home.png" style="width: 90%; height:auto; border-radius: 10px;"/>  
           <div style="height: 10%;">
             <p>Footwear E-commerce Platform</p>  
           </div>   
         </a>
         <a href="./restaurant/" class="projectCard">  
-          <img src="../images/projects/restaurant/home.png" style="width: 90%; height:auto; border-radius: 5px;"/>
+          <img src="../images/projects/restaurant/home.png" style="width: 90%; height:auto; border-radius: 10px;"/>
           <div style="height: 10%;">
             <p>Restaurant Reservation and Menu Platform</p>
           </div>     
@@ -36,6 +36,6 @@
           <p>Footwear E-commerce Platform</p>
         </a> -->
       </div>
-    </div>
+    <script src="../toggleMenu.js"></script>
   </body>
 </html>

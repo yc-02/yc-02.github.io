@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <ul style="background-color: #f5f5f4;">
+    <ul class="webNav">
       <li><a href="/">Home</a></li>
         <div style="display: flex; justify-content: flex-end; align-items: center;">
-          <!-- <li><a href="/roamer/">Roamer</a></li> -->
           <li><a href="/apps/roamer/">Apps</a></li>
           <li><a href="/projects/">Projects</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>
         </div>
     </ul>
+    <div class="smNav">
+        <button class="openNavButton" onclick="openMenu()" id="openButton">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      <div class="smNavContents" id="contents">
+        <button class="closeNavButton" onclick="closeMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>   
+        </button>  
+        <ul>
+          <a href="/">Home</a>
+          <a href="/apps/roamer/">Apps</a>
+          <a href="/projects/">Projects</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </ul>   
+      </div>
+    </div>
   </body>
 </html>
