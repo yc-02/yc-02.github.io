@@ -75,6 +75,12 @@ li a:hover{
     align-items: center;
 }
 
+.projectImage{
+    width: 90%; 
+    height:auto; 
+    border-radius: 5px;
+}
+
 /* project - items */
 
 .projectItemBody{
@@ -186,7 +192,13 @@ li a:hover{
 
 
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
+    body{
+        height: 100vh;
+    }
+    .roamer{
+        margin-top: 3vh;
+    }
     .aboutImage{
         width: 130px;
         height: 130px;
@@ -204,10 +216,12 @@ li a:hover{
         justify-content: center;
         align-items: center;
         gap: 3px;
+        margin-top: 3vh;
     }
     .projectItemContainer{
         display: flex; 
         flex-direction: column-reverse;
+        margin-top: 3vh;
     }
     .galleryContent{
         position: relative;
@@ -218,7 +232,6 @@ li a:hover{
     }
     .smNav{
         display: block;
-        float: right;
     }
     .smNavContents{
         display: none;
@@ -238,7 +251,7 @@ li a:hover{
         align-items: flex-end;
         color: black;
         padding-bottom: 16px;
-        padding-right: 9px;
+        padding-right: 10px;
         font-size: medium;
         font-weight: 500;
 
@@ -251,7 +264,6 @@ li a:hover{
         right: 10px;
         top: 10px;
         z-index: 1;
-
     }
     .closeNavButton{
         border: none; 
