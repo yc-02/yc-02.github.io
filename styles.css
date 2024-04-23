@@ -2,7 +2,6 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     flex: 1;
     color:#292524;
-    max-width: 2000px;
 }
 
 .webNav{
@@ -234,10 +233,11 @@ li a:hover{
         position: absolute;
         right: 0;
         top: 0;
-        width: 60%;
+        width: 70%;
         height: 100%;
         z-index: 1;
         background-color: #f5f5f4;
+        padding-right: 9px;
     }
     .smNavContents a{
         text-decoration: none;
