@@ -10,20 +10,23 @@
   </head>
   <body style="display: none;" id="body">
     <script>
-        fetch('../navbar.html')
-            .then(response => response.text())
-            .then(html => {
-              document.getElementById('navbar').innerHTML = html;
-              document.getElementById('body').style.display = 'block';
-            })
-            .catch(error => console.error('Error fetching HTML file:', error));
+      Promise.all([
+      fetch('../components/navbar.html').then(response => response.text()),
+      fetch('../components/footer.html').then(response => response.text())
+      ]).then(([navHtml,footerHtml])=>{
+        document.getElementById('navbar').innerHTML = navHtml;
+        document.getElementById('footer').innerHTML = footerHtml;
+        document.getElementById('body').style.display = 'block';
+
+      }).catch(error => console.error('Error fetching HTML file:', error));
     </script>
       <div id="navbar"></div>
-        <div style="height:50vh; display: flex; flex-direction: column; justify-content: center; padding: 30px;">
+        <div style="height:70vh; display: flex; flex-direction: column; justify-content: center; padding: 30px;">
             <h1>Contact Me</h1>
             <p>For any inquiries, please feel free to contact me at <span style="font-weight: 600;">yingcui02@gmail.com</span>.</p>
             <p>For specific inquiries regarding to Roamer app, please reach out to <span style="font-weight: 600;">yingcui.roamer@gmail.com</span>.</p>
         </div>
+      <div id="footer"></div>
       <script src="../toggleMenu.js"></script>
   </body>
 </html>

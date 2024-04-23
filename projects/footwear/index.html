@@ -10,13 +10,15 @@
   </head>
   <body class="projectItemBody" id="body" style="display: none;">
     <script>
-        fetch('../../navbar.html')
-            .then(response => response.text())
-            .then(html => {
-              document.getElementById('navbar').innerHTML = html;
-              document.getElementById('body').style.display = 'block';
-            })
-            .catch(error => console.error('Error fetching HTML file:', error));
+      Promise.all([
+      fetch('../../components/navbar.html').then(response => response.text()),
+      fetch('../../components/footer.html').then(response => response.text())
+      ]).then(([navHtml,footerHtml])=>{
+        document.getElementById('navbar').innerHTML = navHtml;
+        document.getElementById('footer').innerHTML = footerHtml;
+        document.getElementById('body').style.display = 'block';
+
+      }).catch(error => console.error('Error fetching HTML file:', error));
     </script>
     <div id="navbar"></div>
     <div class="projectItemContainer">
@@ -44,16 +46,12 @@
         </div>
         <a class="prev" onclick="plusSlides(-1)">
           <div class="prevContainer">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="26" height="26">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-            </svg>   
+            <i class="fa-solid fa-chevron-left"></i>
           </div>       
         </a>
         <a class="next" onclick="plusSlides(1)">
           <div class="nextContainer">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="26" height="26">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-            </svg>     
+            <i class="fa-solid fa-chevron-right"></i>  
           </div>     
         </a>
       </div>
@@ -70,15 +68,11 @@
         <h2>Footwear e-commerce platform built with Next.js, Contentful, and Supabase.</h2>
         <div style="display: flex; gap: 16px;">
           <a href="https://02footwear.vercel.app/" class="projectItemLink"> 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="13" height="13" class="linkSvg">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
-            </svg>          
+            <i class="fa-solid fa-link"></i>       
           <p>Vercel Deployment</p>
         </a>
           <a href="https://github.com/yc-02/02footwear" class="projectItemLink">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="13" height="13" class="linkSvg">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
-            </svg> 
+            <i class="fa-solid fa-link"></i>
             <p>GitHub Repository</p>
           </a>
         </div>
@@ -92,6 +86,7 @@
         </article>
       </div>
     </div>
+    <div id="footer"></div>
     <script src="../script.js"></script>
     <script src="../../toggleMenu.js"></script>
   </body>

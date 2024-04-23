@@ -10,19 +10,22 @@
   </head>
   <body style="display: none;" id="body">
     <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-              document.getElementById('navbar').innerHTML = html;
-              document.getElementById('body').style.display = 'block';
-            })
-            .catch(error => console.error('Error fetching HTML file:', error));
+      Promise.all([
+      fetch('./components/navbar.html').then(response => response.text()),
+      fetch('./components/footer.html').then(response => response.text())
+      ]).then(([navHtml,footerHtml])=>{
+        document.getElementById('navbar').innerHTML = navHtml;
+        document.getElementById('footer').innerHTML = footerHtml;
+        document.getElementById('body').style.display = 'block';
+
+      }).catch(error => console.error('Error fetching HTML file:', error));
     </script>
     <div id="navbar"></div>
     <div style="display:flex; flex-direction: column; height:80vh; justify-content: center; align-items: center;">
         <h1 style="text-align: center;">Welcome</h1>
         <img src="./images/welcome.jpeg" class="homeImage"/>
     </div>
+    <div id="footer"></div>
     <script src="../toggleMenu.js"></script>
   </body>
 </html>
