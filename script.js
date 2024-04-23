@@ -8,6 +8,8 @@ function openNav() {
 function closeNav(){
   document.getElementById("contents").style.display ='none'
   document.getElementById("openButton").style.display ='block'
+  document.getElementById('projects').style.display='none'
+  document.getElementById('apps').style.display='none'
   document.body.style.overflow ="scroll";
 }
 
@@ -29,3 +31,24 @@ function toggleApps(){
   }
 
 }
+
+
+
+// if(currentUrl.endsWith('/roamer/')){
+//   const link = document.getElementById("appLink")
+//   if(link){
+//     link.style.color='pink'
+//   }
+// }else{
+  
+// }
+
+
+
+
+
+// window.addEventListener('DOMContentLoaded',function(){
+//   const links = document.querySelectorAll('#navbar a')
+//   console.log('what is this',links)
+
+// })

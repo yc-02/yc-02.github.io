@@ -45,9 +45,6 @@ li a{
     border-radius: 5px;
 }
 
-/* li a:hover {
-    background-color: #f5f5f4;
-  } */
 
 .about, .contact{
     display:flex; 
@@ -240,15 +237,10 @@ li a{
     }
     .smNav{
         display: block;
-        border-radius: 10px;
     }
     .smNavContents a{
         text-decoration: none;
-        display: flex;
-        flex-direction: column;
         color:inherit;
-        align-items: flex-start;
-        padding:0px 20px
     }
     .openNav{
         display: flex; 
@@ -273,6 +265,7 @@ li a{
         background-color:white; 
         height: 100vh; 
         z-index: 1; 
+        width: 70%;
     }
     .openNavButton{
         border: none; 
@@ -331,3 +324,4 @@ li a{
     to {background-color: black;}
     
 }
+
