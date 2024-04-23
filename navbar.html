@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <ul class="webNav">
-      <li><a href="/">Home</a></li>
+      <li><a href="/" style="font-style: italic;">02</a></li>
         <div style="display: flex; justify-content: flex-end; align-items: center;">
           <li><a href="/apps/roamer/">Apps</a></li>
           <li><a href="/projects/">Projects</a></li>
@@ -15,24 +16,79 @@
         </div>
     </ul>
     <div class="smNav">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px;">
+        <a href="/" style="text-decoration: none; color:#292524; font-style: italic; font-size: large;">02</a>
         <button class="openNavButton" onclick="openMenu()" id="openButton">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
+      </div>
       <div class="smNavContents" id="contents">
         <button class="closeNavButton" onclick="closeMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>   
-        </button>  
-        <ul>
-          <a href="/">Home</a>
-          <a href="/apps/roamer/">Apps</a>
-          <a href="/projects/">Projects</a>
-          <a href="/about/">About</a>
-          <a href="/contact/">Contact</a>
-        </ul>   
+        </button>
+        <div id="mainSmNav">
+          <a href="/">
+            <div  class="navIcon">
+              <i class="fa-solid fa-house"></i>          
+              <p>Home</p>
+            </div>
+          </a>
+          <div>
+            <a href="#">
+              <div class="navIcon">
+                <i class="fa-solid fa-folder-open"></i>
+                <p>Apps</p>            
+              </div>
+            </a>
+            <div style="padding-left: 16px;">
+              <a href="/apps/roamer/">
+                <div class="navIcon">
+                  <i class="fa-solid fa-code"></i>            
+                  <P>Roamer - Plan & Pack</P>
+                </div>
+                </a>
+            </div>
+          </div>
+          <div>
+            <a href="#">
+              <div class="navIcon">
+                <i class="fa-solid fa-folder-open"></i>
+                <p>Projects</p>            
+              </div>
+            </a>
+            <div style="padding-left: 16px;">
+              <a href="/projects/footwear/">
+                <div class="navIcon">
+                  <i class="fa-solid fa-code"></i>          
+                  <p>Footwear E-commerce Platform</p>
+                </div>
+              </a>
+              <a href="/projects/restaurant/">
+              <div class="navIcon">
+                <i class="fa-solid fa-code"></i>            
+                <P>Restaurant Reservation and Menu Platform</P>
+              </div>
+              </a>
+
+            </div>
+          </div>
+          <a href="/about/">
+            <div class="navIcon">
+              <i class="fa-solid fa-address-card"></i>                                   
+              <p>About</p>            
+            </div>
+          </a>
+          <a href="/contact/">
+            <div class="navIcon">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Contact</p>            
+            </div>
+          </a> 
+        </div> 
       </div>
     </div>
   </body>
