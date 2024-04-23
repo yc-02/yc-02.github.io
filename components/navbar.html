@@ -16,20 +16,20 @@
         </div>
     </ul>
     <div class="smNav">
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
-        <a href="/" style="text-decoration: none; color:#292524; font-style: italic; font-size: large;">02</a>
-        <button class="openNavButton" onclick="openMenu()" id="openButton">
-          <i class="fa-solid fa-bars fa-xl" style="color:#292524;"></i>
-        </button>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <p style="font-style: italic; font-size: 16px;">02</p>
+        <div class="openNavButton" onclick="openMenu()" id="openButton">
+          <i class="fa-solid fa-bars fa-lg" style="color:#292524;"></i>
+        </div>
       </div>
       <div class="smNavContents" id="contents" style="display: none;">
         <div onclick="closeMenu()"
         style="width:30%; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; padding: 10px; opacity: 0.5; background-color: #fafaf9">
         </div>
         <div style="position: absolute;top: 0;right: 0;background-color: #fafaf9; height: 100vh; padding: 10px;  z-index: 1; width: 70%;">
-          <button class="closeNavButton" onclick="closeMenu()">
-            <i class="fa-solid fa-xmark fa-2xl" style="color:#292524;"></i>
-          </button>
+          <div class="closeNavButton" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark fa-lg" style="color:#292524;"></i>
+          </div>
           <div id="mainSmNav">
             <a href="/">
               <div  class="navIcon">

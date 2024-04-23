@@ -206,9 +206,6 @@ li a:visited {
     body{
         height: 100vh;
     }
-    .roamer{
-        margin-top: 20px;
-    }
     .aboutImage{
         width: 130px;
         height: 130px;
@@ -263,9 +260,8 @@ li a:visited {
         justify-content: flex-end; 
         background-color:inherit; 
         cursor: pointer;
-        padding-top: 20px;
-        margin-bottom: 30px;
-        
+        padding-top: 20px;  
+        padding-bottom: 20px;      
     }
     .navIcon{
         display: flex; 
