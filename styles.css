@@ -50,12 +50,12 @@ li a{
   } */
 
 .about, .contact{
-    padding: 0px 30px;
     display:flex; 
     height:70vh;
     gap: 30px;
     justify-content: center;
     align-items: center;
+    padding: 0 30px;
 }
 
 .aboutImage, .contactImage{
@@ -213,9 +213,6 @@ li a{
     .aboutImage, .contactImage{
         width: 130px;
         height: 130px;
-    }
-    .about, .contact{
-        justify-content: space-between;
     }
     .homeImage{
         width: 230px; 
