@@ -16,69 +16,74 @@
         </div>
     </ul>
     <div class="smNav">
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
         <a href="/" style="text-decoration: none; color:#292524; font-style: italic; font-size: large;">02</a>
-        <button class="openNavButton" onclick="openMenu()">
-          <i class="fa-solid fa-bars fa-xl"></i>
+        <button class="openNavButton" onclick="openMenu()" id="openButton">
+          <i class="fa-solid fa-bars fa-xl" style="color:#292524;"></i>
         </button>
       </div>
-      <div class="smNavContents" id="contents">
-        <button class="closeNavButton" onclick="closeMenu()">
-          <i class="fa-solid fa-xmark fa-2xl"></i>
-        </button>
-        <div id="mainSmNav">
-          <a href="/">
-            <div  class="navIcon">
-              <i class="fa-solid fa-house"></i>          
-              <p>Home</p>
+      <div class="smNavContents" id="contents" style="display: none;">
+        <div onclick="closeMenu()"
+        style="width:30%; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; padding: 10px; opacity: 0.5; background-color: #fafaf9">
+        </div>
+        <div style="position: absolute;top: 0;right: 0;background-color: #fafaf9; height: 100vh; padding: 10px;  z-index: 1; width: 70%;">
+          <button class="closeNavButton" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark fa-2xl" style="color:#292524;"></i>
+          </button>
+          <div id="mainSmNav">
+            <a href="/">
+              <div  class="navIcon">
+                <i class="fa-solid fa-house"></i>          
+                <p>Home</p>
+              </div>
+            </a>
+            <div style="padding-left: 16px;">
+              <div class="navIcon">
+                <i class="fa-solid fa-folder-open"></i>
+                <p>Apps</p>            
+              </div>
+              <div style="padding-left: 6px;">
+                <a href="/apps/roamer/">
+                  <div class="navIcon">
+                    <i class="fa-solid fa-code"></i>            
+                    <P>Roamer - Plan & Pack</P>
+                  </div>
+                  </a>
+              </div>
             </div>
-          </a>
-          <div style="padding-left: 16px;">
-            <div class="navIcon">
-              <i class="fa-solid fa-folder-open"></i>
-              <p>Apps</p>            
-            </div>
-            <div style="padding-left: 6px;">
-              <a href="/apps/roamer/">
+            <div style="padding-left: 16px;">
+              <div class="navIcon">
+                <i class="fa-solid fa-folder-open"></i>
+                <p>Projects</p>            
+              </div>
+              <div style="padding-left: 6px;">
+                <a href="/projects/footwear/">
+                  <div class="navIcon">
+                    <i class="fa-solid fa-code"></i>          
+                    <p>Footwear E-commerce Platform</p>
+                  </div>
+                </a>
+                <a href="/projects/restaurant/">
                 <div class="navIcon">
                   <i class="fa-solid fa-code"></i>            
-                  <P>Roamer - Plan & Pack</P>
+                  <P>Restaurant Reservation and Menu Platform</P>
                 </div>
                 </a>
-            </div>
-          </div>
-          <div style="padding-left: 16px;">
-            <div class="navIcon">
-              <i class="fa-solid fa-folder-open"></i>
-              <p>Projects</p>            
-            </div>
-            <div style="padding-left: 6px;">
-              <a href="/projects/footwear/">
-                <div class="navIcon">
-                  <i class="fa-solid fa-code"></i>          
-                  <p>Footwear E-commerce Platform</p>
-                </div>
-              </a>
-              <a href="/projects/restaurant/">
-              <div class="navIcon">
-                <i class="fa-solid fa-code"></i>            
-                <P>Restaurant Reservation and Menu Platform</P>
               </div>
-              </a>
             </div>
-          </div>
-          <a href="/about/">
-            <div class="navIcon">
-              <i class="fa-solid fa-address-card"></i>                                   
-              <p>About</p>            
-            </div>
-          </a>
-          <a href="/contact/">
-            <div class="navIcon">
-              <i class="fa-solid fa-envelope"></i>
-              <p>Contact</p>            
-            </div>
-          </a> 
+            <a href="/about/">
+              <div class="navIcon">
+                <i class="fa-solid fa-address-card"></i>                                   
+                <p>About</p>            
+              </div>
+            </a>
+            <a href="/contact/">
+              <div class="navIcon">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Contact</p>            
+              </div>
+            </a> 
+        </div>
         </div> 
       </div>
     </div>
