@@ -6,15 +6,6 @@
     <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <ul class="webNav">
-      <li><a href="/" style="font-style: italic;">02</a></li>
-        <div style="display: flex; justify-content: flex-end; align-items: center;">
-          <li><a href="/apps/roamer/" id="appsLink">Apps</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </div>
-    </ul>
     <div class="smNav">
       <div class="openNav">
         <a href="/" style="font-style: italic; font-size: 16px; text-decoration: none; color: inherit;">02</a>
@@ -34,7 +25,7 @@
                 <i class="fa-solid fa-house" style="color:inherit"></i>          
                 <p>Home</p>
             </a>
-              <div style="display: flex; align-items: center; justify-content: space-between; user-select: none;"   onclick="toggleApps()">
+              <div style="display: flex; align-items: center; justify-content: space-between; user-select: none; cursor: pointer;"   onclick="toggleApps()">
                 <div class="navIcon">
                   <i class="fa-solid fa-folder-open"  style="color:inherit"></i>
                   <p>Apps</p>            
@@ -47,7 +38,7 @@
                     <P>Roamer - Plan & Pack</P>
                   </a>
               </div>
-              <div style="display: flex; align-items: center; justify-content: space-between; user-select: none;"  onclick="toggleProjects()">
+              <div style="display: flex; align-items: center; justify-content: space-between; user-select: none; cursor: pointer;"  onclick="toggleProjects()">
                 <div class="navIcon">
                   <i class="fa-solid fa-folder-open"  style="color:inherit"></i>
                   <p>Projects</p>            

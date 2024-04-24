@@ -34,21 +34,41 @@ function toggleApps(){
 
 
 
-// if(currentUrl.endsWith('/roamer/')){
-//   const link = document.getElementById("appLink")
-//   if(link){
-//     link.style.color='pink'
-//   }
-// }else{
-  
-// }
+const currentUrl = window.location.href
+const appsLink = document.getElementById('appsLink')
+const projectsLink = document.getElementById('projectsLink')
+const aboutLink = document.getElementById('aboutLink')
+const contactLink = document.getElementById('contactLink')
 
 
+if(appsLink){
+  if(currentUrl.endsWith('/roamer/')){
+    appsLink.classList.add('currentLink')
+  }else{
+    appsLink.classList.remove('currentLink')
+  }
+}
 
+if(projectsLink){
+  if(currentUrl.endsWith('/projects/')|| currentUrl.endsWith('/footwear/') || currentUrl.endsWith('/restaurant/')){
+    projectsLink.classList.add('currentLink')
+  }else{
+    projectsLink.classList.remove('currentLink')
+  }
+}
 
+if(aboutLink){
+  if(currentUrl.endsWith('/about/')){
+    aboutLink.classList.add('currentLink')
+  }else{
+    aboutLink.classList.remove('currentLink')
+  }
+}
+if(contactLink){
+  if(currentUrl.endsWith('/contact/')){
+    contactLink.classList.add('currentLink')
+  }else{
+    contactLink.classList.remove('currentLink')
+  }
+}
 
-// window.addEventListener('DOMContentLoaded',function(){
-//   const links = document.querySelectorAll('#navbar a')
-//   console.log('what is this',links)
-
-// })

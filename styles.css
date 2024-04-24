@@ -29,20 +29,30 @@ body {
     list-style-type: none;
     margin:0;
     padding:16px;
-    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f4f4f5;
+}
+
+.webNavRight{
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    gap: 20px;
 }
   
 li a{
     text-align: center;
-    padding: 13px;
     text-decoration: none;
     color:inherit;
     font-size: large;
     font-weight:500;
-    border-radius: 5px;
+    padding: 3px;
+}
+
+.currentLink{
+    border-bottom: solid #71717a;
 }
 
 
