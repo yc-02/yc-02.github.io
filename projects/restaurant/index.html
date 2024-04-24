@@ -8,7 +8,7 @@
     <link rel="stylesheet"  type="text/css" href="../../styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
   </head>
-  <body class="projectItemBody" id="body" style="display: none;">
+  <body style="display: none;" id="body">
     <script>
       Promise.all([
       fetch('../../components/navbar.html').then(response => response.text()),
@@ -35,23 +35,23 @@
         <div class="galleryContent">
         <div class="mySlides">
           <img src="../../images/projects/restaurant/homePage.png"  class="projectItemImage">
-          <div class="caption">Home Page</div>
+          <p class="caption">Home Page</p>
         </div>
         <div class="mySlides">
           <img src="../../images/projects/restaurant/menu.png"  class="projectItemImage"/>
-          <div class="caption">Menu</div>
+          <p class="caption">Menu</p>
         </div>
         <div class="mySlides">
           <img src="../../images/projects/restaurant/reserve.png"  class="projectItemImage"/>
-          <div class="caption">Make a Reservation</div>
+          <p class="caption">Make a Reservation</p>
         </div>
         <div class="mySlides">
           <img src="../../images/projects/restaurant/operation.png"  class="projectItemImage"/>
-          <div class="caption">Operating Hours</div>
+          <p class="caption">Operating Hours</p>
         </div>
         <div class="mySlides">
           <img src="../../images/projects/restaurant/auth.png"  class="projectItemImage"/>
-          <div class="caption">Manage Reservations</div>
+          <p class="caption">Manage Reservations</p>
         </div>
         <a class="prev" onclick="plusSlides(-1)">
           <div class="prevContainer">
