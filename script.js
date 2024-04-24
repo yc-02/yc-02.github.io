@@ -50,7 +50,7 @@ if(appsLink){
 }
 
 if(projectsLink){
-  if(currentUrl.endsWith('/projects/')|| currentUrl.endsWith('/footwear/') || currentUrl.endsWith('/restaurant/')){
+  if(currentUrl.endsWith('/projects/')|| currentUrl.endsWith('/footwear/') || currentUrl.endsWith('/restaurant/')||currentUrl.endsWith('/recipes-blog/')){
     projectsLink.classList.add('currentLink')
   }else{
     projectsLink.classList.remove('currentLink')

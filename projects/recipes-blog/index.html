@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
+    <title>Recipes</title>
+    <link rel="stylesheet"  type="text/css" href="../../styles.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+  </head>
+  <body style="display: none;" id="body" >
+    <script>
+      Promise.all([
+      fetch('../../components/navbar.html').then(response => response.text()),
+      fetch('../../components/footer.html').then(response => response.text())
+      ]).then(([navHtml,footerHtml])=>{
+        document.getElementById('navbar').innerHTML = navHtml;
+        document.getElementById('footer').innerHTML = footerHtml;
+        document.getElementById('body').style.display = 'block';
+      }).catch(error => console.error('Error fetching HTML file:', error));
+    </script>
+    <div id="navbar"></div>
+    <ul class="webNav">
+      <li><a href="/" style="font-style: italic;">02</a></li>
+        <div class="webNavRight">
+          <li><a href="/apps/roamer/" id="appsLink">Apps</a></li>
+          <li><a href="/projects/" id="projectsLink">Projects</a></li>
+          <li><a href="/about/" id="aboutLink">About</a></li>
+          <li><a href="/contact/" id="contactLink">Contact</a></li>
+        </div>
+    </ul>
+    <div class="projectItemContainer">
+      <div class="gallery" >
+        <div class="galleryContent">
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/filter.png"  class="projectItemImage">
+          <p class="caption">Filter & Sort</p>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/details.png"  class="projectItemImage"/>
+          <p class="caption">Product Details</p>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/orders.png"  class="projectItemImage"/>
+          <p class="caption">Order History</p>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/wishList.png"  class="projectItemImage"/>
+          <p class="caption">Wish List</p>
+        </div>
+        <div class="mySlides">
+          <img src="../../images/projects/footwear/guestCheckout.png"  class="projectItemImage"/>
+          <p class="caption">Gusest Checkout</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">
+          <div class="prevContainer">
+            <i class="fa-solid fa-chevron-left"  style="color:inherit"></i>
+          </div>       
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+          <div class="nextContainer">
+            <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>  
+          </div>     
+        </a>
+      </div>
+      <br>
+      <div>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      </div>
+      <div>
+        <p class="subHeaderTitle">Recipes Blog built with Next.js, and Supabase.</p>
+        <div style="display: inline-flex; flex-direction: column; color: #52525b;">
+          <a href="https://github.com/yc-02/02recipes" class="projectItemLink">
+            <i class="fa-solid fa-link"  style="color:inherit"></i>
+            <p>GitHub Repository</p>
+          </a>
+        </div>
+        <p>Responsive design.</p>
+          <article>
+            <p>This platform has options for both user and guest checkout.</p>
+            <p>The filtering system allows customers to refine their search by brand and size, and sort by price or new arrivals.</p>
+            <p>Customers can view the remaining quantity of low-stock items and see which sizes are currently out of stock. Additionally, they can search for products using keywords.</p>         
+            <p>In the user account section, users can manage their profiles, track order histories, and save their favorite items to a personalized wishlist.</p>
+        </article>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="./../slides.js"></script>
+    <script src="../../script.js"></script>
+  </body>
+</html>

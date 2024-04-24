@@ -84,7 +84,7 @@ li a{
 .project{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 30px;
     padding: 30px;
 }
 .projectCard{
@@ -93,13 +93,15 @@ li a{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
 }
 
 .projectImage{
-    width: 80%; 
-    height: auto;
+    width: 80%;
+    height: 80%;
     border-radius: 30px;
     border:2px solid #d4d4d8;
     overflow: hidden;
