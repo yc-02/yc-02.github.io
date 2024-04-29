@@ -40,7 +40,6 @@ const projectsLink = document.getElementById('projectsLink')
 const aboutLink = document.getElementById('aboutLink')
 const contactLink = document.getElementById('contactLink')
 
-
 if(appsLink){
   if(currentUrl.endsWith('/roamer/')){
     appsLink.classList.add('currentLink')

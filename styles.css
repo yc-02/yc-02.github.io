@@ -1,5 +1,5 @@
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Raleway", sans-serif;
     color:#27272a;
     position: relative;
     min-height: 100vh;
@@ -22,33 +22,32 @@ body {
 }
 
 #navbar{
-    background-color: #f4f4f5;
+    background-color: #f9f9f9;
 }
 
 .webNav{
     list-style-type: none;
     margin:0;
-    padding:16px;
+    padding:20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f5;
+    background-color: #f9f9f9;
 }
 
 .webNavRight{
     display: flex;
     align-items: center;
-    padding-right: 16px;
-    gap: 20px;
+    gap: 16px;
 }
-  
+
+
 li a{
     text-align: center;
     text-decoration: none;
     color:inherit;
     font-size: large;
     font-weight:500;
-    padding: 3px;
 }
 
 .currentLink{
@@ -83,27 +82,40 @@ li a{
 
 .project{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
     padding: 30px;
 }
 .projectCard{
     text-decoration: none; 
     color:inherit;
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-
+    background-color: #f4f4f5;
+    border-radius: 5px;
+}
+.projectCardContainer{
+    display: flex; 
+    flex-direction: column;
+    width: 40vh;
+    height: 40vh;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+.projectCardTitle{
+    position: absolute; 
+    bottom: 5px;
+    font-weight: 500;
 }
 
 .projectImage{
     width: 80%;
     height: 80%;
-    border-radius: 10px;
     overflow: hidden;
+    justify-content: center;
+    display: flex;
 }
 
 /* project - items */
@@ -118,17 +130,21 @@ li a{
     padding: 0px 20px;
 }
 
-.gallery{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
+.galleryContainer{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.galleryContent{
+.gallery{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 80%;
+    max-width: 60vh;
 }
+
 
 .caption {
     color: #71717a;
@@ -138,10 +154,10 @@ li a{
 
 .mySlides{
    display: none;
-   border: 2px solid #f4f4f5;
-   border-radius: 10px;
    overflow: hidden;
+   width: 80%;
 }
+
 
 .projectItemImage{
     width: 100%;
@@ -182,20 +198,14 @@ li a{
     display:flex; 
     align-items: center; 
     justify-content: center; 
-    background-color:  #f4f4f5; 
-    padding: 16px;
+    padding: 13px;
+    border-radius: 10px;
 }
 
-.nextContainer{
-    border-radius:9px 0px 0px 9px;
-}
 
-.prevContainer{
-    border-radius:0px 9px 9px 0px;
-}
 
 .prevContainer:hover, .nextContainer:hover {
-  background-color:white;
+    background-color:  #f4f4f5; 
 }
 
 .dot {
@@ -216,7 +226,7 @@ li a{
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .aboutImage, .contactImage{
         width: 130px;
         height: 130px;
@@ -230,8 +240,7 @@ li a{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
-        gap: 3px;
-        margin-top: 3vh;
+        gap: 10px;
     }
     .projectItemContainer{
         display: flex; 
@@ -293,6 +302,7 @@ li a{
         display: flex; 
         align-items: center; 
         gap: 9px;
+        font-weight: 500;
     }
     .headerTitle{
         font-size: 18px;
