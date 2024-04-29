@@ -50,6 +50,9 @@ li a{
     font-weight:500;
 }
 
+li a:hover{
+   color:  #8b8b8b;
+}
 .currentLink{
     border-bottom: solid #71717a;
 }
@@ -174,6 +177,7 @@ li a{
     text-decoration: none;
     color:inherit;
     border-radius: 5px;
+    padding:0px 9px;
 }
 
 
