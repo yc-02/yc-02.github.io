@@ -4,10 +4,10 @@ body {
     color:#27272a;
     position: relative;
     min-height: 100vh;
-    min-width: 100vw;
     margin: 0;
 }
 
+/* text */
 .headerTitle{
     font-size: 26px;
     font-weight: 600;
@@ -22,14 +22,16 @@ body {
     font-weight: 600;
 }
 
+/* navbar  */
 #navbar{
     background-color: #f9f9f9;
 }
 
 .webNav{
     list-style-type: none;
-    margin:0;
-    padding:20px 30px;
+    margin: 20px 20px 0 20px;
+    padding:30px;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,6 +56,18 @@ li a{
 li a:hover{
    color:  #8b8b8b;
 }
+
+.smNav{
+    display: none;
+}
+.navTitle{
+   font-style: italic;
+   font-size: larger;
+}
+
+
+/* nav current link style */
+
 .currentLink{
     border-bottom: solid #71717a;
 }
@@ -74,16 +88,9 @@ li a:hover{
 }
 
 .roamer{
-    padding: 20px 20px;
+    padding: 20px 50px;
 }
 
-.smNav{
-    display: none;
-}
-.navTitle{
-   font-style: italic;
-   font-size: larger;
-}
 
 
 /* project */
@@ -250,6 +257,10 @@ li a:hover{
         width: 230px; 
         height: 230px; 
     }
+    .roamer{
+        padding: 20px;
+    }
+    
     .project{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
