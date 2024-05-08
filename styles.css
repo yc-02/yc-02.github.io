@@ -49,7 +49,7 @@ li a{
     text-align: center;
     text-decoration: none;
     color:inherit;
-    font-size: large;
+    font-size: larger;
     font-weight:500;
 }
 
@@ -62,7 +62,7 @@ li a:hover{
 }
 .navTitle{
    font-style: italic;
-   font-size: larger;
+   font-size:x-large;
 }
 
 
