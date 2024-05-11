@@ -6,7 +6,7 @@
     <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"  type="text/css" href="../../styles.css">
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
-    <title>Recipes Blog</title>
+    <title>Travel Blog</title>
   </head>
   <body style="display: none;">
     <script>
@@ -17,6 +17,7 @@
         document.querySelector('.navbar').innerHTML = navHtml;
        document.querySelector('footer').innerHTML = footerHtml;
         document.querySelector('body').style.display = 'block';
+
       }).catch(error => console.error('Error fetching HTML file:', error));
     </script>
     <div class="navbar"></div>
@@ -33,36 +34,28 @@
       <div class="galleryContainer" >
         <div class="gallery">
         <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-home.png"  class="projectItemImage">
+          <img src="../../images/projects/travel-blog/travel-home.png"  class="projectItemImage">
           <p class="caption">Home Page</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-details.png"  class="projectItemImage"/>
-          <p class="caption">Recipe Details</p>
+          <img src="../../images/projects/travel-blog/travel-details.png"  class="projectItemImage"/>
+          <p class="caption">Details Page</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-signup.png"  class="projectItemImage"/>
-          <p class="caption">Sign up</p>
+          <img src="../../images/projects/travel-blog/travel-add-step-one.png"  class="projectItemImage"/>
+          <p class="caption">Add Post First Step</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-signin.png"  class="projectItemImage"/>
-          <p class="caption">Sign in</p>
+          <img src="../../images/projects/travel-blog/travel-add-step-two.png"  class="projectItemImage"/>
+          <p class="caption">Add Post Second Step</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-profile.png"  class="projectItemImage"/>
-          <p class="caption">User Profile</p>
+          <img src="../../images/projects/travel-blog/travel-edit.png"  class="projectItemImage"/>
+          <p class="caption">Update Post</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-favorites.png"  class="projectItemImage"/>
-          <p class="caption">User Favorites</p>
-        </div>
-        <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-userpage.png"  class="projectItemImage"/>
-          <p class="caption">User Recipes</p>
-        </div>
-        <div class="mySlides">
-          <img src="../../images/projects/recipes/recipes-add.png"  class="projectItemImage"/>
-          <p class="caption">Add Recipes</p>
+          <img src="../../images/projects/travel-blog/travel-login.png"  class="projectItemImage"/>
+          <p class="caption">Login Page</p>
         </div>
         <a class="prev" onclick="plusSlides(-1)">
           <div class="prevContainer">
@@ -71,7 +64,7 @@
         </a>
         <a class="next" onclick="plusSlides(1)">
           <div class="nextContainer">
-            <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>  
+            <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>   
           </div>     
         </a>
       </div>
@@ -83,38 +76,28 @@
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
         <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
       </div>
       </div>
       <div class="desContainer">
-        <p class="subHeaderTitle">Recipes Blog built with Next.js and Supabase.</p>
+        <p class="subHeaderTitle">Travel Blog built with Node.js, Express.js and MongoDB.</p>
         <div class="desHead">
           <div class="projectCardLogo">
-            <img src="../../logos/nextjs.png" height="16px" alt="nextjs"/>
-            <img src="../../logos/supabase.png" height="16px" alt="supabase"/>
-            <img src="../../logos/typescript.png" height="16px" alt="ts"/>
-            <img src="../../logos/tailwind.svg" height="16px" alt="tailwindss"/>
-            <img src="../../logos/vercel.png" height="16px" alt="vercel"/>
+            <img src="../../logos/nodejs.svg" height="20px" alt="nodejs"/>
+            <img src="../../logos/mongoDB.png" height="20px" alt="mongoDB"/>
           </div>
-          <a href="https://recipes-blog-updated.vercel.app/" class="projectItemLink"> 
-            <i class="fa-solid fa-link fa-xs"></i>     
-            Vercel Deployment
-          </a>
-          <a href="https://github.com/yc-02/recipes-blog-updated" class="projectItemLink">
-            <i class="fa-solid fa-link fa-xs"></i>
+          <a href="https://github.com/yc-02/travel-blog" class="projectItemLink">
+            <i class="fa-solid fa-link fa-xs"  style="color:inherit"></i>
             GitHub Repository
           </a>
         </div>
         <p class="featureTitle">Key Features:</p>
         <ul class="featuresList">
           <li>Responsive design.</li>
+          <li>Secure sign-up and sign-in using JSON Web Tokens (JWT).</li>
           <li>Email and username validation in the sign-up form to ensure uniqueness.</li>
-          <li>Sign-up options include email and Google account.</li> 
-          <li>Full control over recipes, allowing users to add, edit, or delete them.</li>
-          <li>Personalization of profiles by updating name, username, and profile pictures.</li>
-          <li>Recipe search using keywords and sorting by popularity, recency, and cooking time.</li>
-          <li>Ability to save recipes as favorites and explore other users' blogs.</li>
+          <li>Secure storage of user information and blog posts in MongoDB.</li> 
+          <li>Full control over posts, allowing users to add, edit, or delete them.</li>
+          <li>The add and edit forms dynamically adjust textarea fields based on the entered number of days, simplifying travel planning for users.</li>
         </ul>
       </div>
     </div>

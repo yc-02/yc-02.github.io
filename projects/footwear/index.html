@@ -8,48 +8,48 @@
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
     <title>Footwear</title>
   </head>
-  <body style="display: none;" id="body" >
+  <body style="display: none;">
     <script>
       Promise.all([
       fetch('../../components/navbar.html').then(response => response.text()),
       fetch('../../components/footer.html').then(response => response.text())
       ]).then(([navHtml,footerHtml])=>{
-        document.getElementById('navbar').innerHTML = navHtml;
-        document.getElementById('footer').innerHTML = footerHtml;
-        document.getElementById('body').style.display = 'block';
+        document.querySelector('.navbar').innerHTML = navHtml;
+       document.querySelector('footer').innerHTML = footerHtml;
+        document.querySelector('body').style.display = 'block';
       }).catch(error => console.error('Error fetching HTML file:', error));
     </script>
-    <div id="navbar"></div>
+    <div class="navbar"></div>
     <ul class="webNav">
         <li><a href="/" class="navTitle">yc-02</a></li>
         <div class="webNavRight">
-          <li><a href="/apps/roamer/" id="appsLink">Published</a></li>
-          <li><a href="/projects/" id="projectsLink">Projects</a></li>
-          <li><a href="/about/" id="aboutLink">About</a></li>
-          <li><a href="/contact/" id="contactLink">Contact</a></li>
+          <li><a href="/apps/roamer/" class="appsLink">Published</a></li>
+          <li><a href="/projects/" class="projectsLink">Projects</a></li>
+          <li><a href="/about/" class="aboutLink">About</a></li>
+          <li><a href="/contact/" class="contactLink">Contact</a></li>
         </div>
     </ul>
     <div class="projectItemContainer">
       <div class="galleryContainer">
         <div class="gallery" >
           <div class="mySlides">
-            <img src="../../images/projects/footwear/filter.png"  class="projectItemImage">
+            <img src="../../images/projects/footwear/footwear-filter-sort.png"  class="projectItemImage">
             <p class="caption">Filter & Sort</p>
           </div>
           <div class="mySlides">
-            <img src="../../images/projects/footwear/details.png"  class="projectItemImage"/>
+            <img src="../../images/projects/footwear/footwear-details.png"  class="projectItemImage"/>
             <p class="caption">Product Details</p>
           </div>
           <div class="mySlides">
-            <img src="../../images/projects/footwear/orders.png"  class="projectItemImage"/>
+            <img src="../../images/projects/footwear/footwear-orders.png"  class="projectItemImage"/>
             <p class="caption">Order History</p>
           </div>
           <div class="mySlides">
-            <img src="../../images/projects/footwear/wishList.png"  class="projectItemImage"/>
+            <img src="../../images/projects/footwear/footwear-wishlist.png"  class="projectItemImage"/>
             <p class="caption">Wish List</p>
           </div>
           <div class="mySlides">
-            <img src="../../images/projects/footwear/guestCheckout.png"  class="projectItemImage"/>
+            <img src="../../images/projects/footwear/footwear-guest-checkout.png"  class="projectItemImage"/>
             <p class="caption">Gusest Checkout</p>
           </div>
           <a class="prev" onclick="plusSlides(-1)">
@@ -72,16 +72,16 @@
         <span class="dot" onclick="currentSlide(5)"></span>
       </div>
       </div>
-      <div>
+      <div class="desContainer">
         <p class="subHeaderTitle">Footwear e-commerce platform built with Next.js, Contentful, and Supabase.</p>
-        <div style="display: inline-flex; flex-direction: column; gap: 16px;">
+        <div class="desHead">
           <div class="projectCardLogo">
-            <img src="../../logos/nextjs-icon-light-background.png" height="16px" alt="nextjs"/>
-            <img src="../../logos/supabase-logo-icon.png" height="16px" alt="supabase"/>
-            <img src="../../logos/Contentful_C Logo_2.5_White.png" height="16px" alt="contentful"/>
-            <img src="../../logos/ts-logo-256.png" height="16px" alt="ts"/>
-            <img src="../../logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" height="16px" alt="tailwindss"/>
-            <img src="../../logos/vercel-icon-dark.png" height="16px" alt="vercel"/>
+            <img src="../../logos/nextjs.png" height="16px" alt="nextjs"/>
+            <img src="../../logos/supabase.png" height="16px" alt="supabase"/>
+            <img src="../../logos/contentful.png" height="16px" alt="contentful"/>
+            <img src="../../logos/typescript.png" height="16px" alt="ts"/>
+            <img src="../../logos/tailwind.svg" height="16px" alt="tailwindss"/>
+            <img src="../../logos/vercel.png" height="16px" alt="vercel"/>
           </div>
           <a href="https://02footwear.vercel.app/" class="projectItemLink"> 
             <i class="fa-solid fa-link fa-xs"  style="color:inherit"></i>       
@@ -92,17 +92,18 @@
              GitHub Repository
           </a>
         </div>
-        <p>Footwear pictures sourced from Unsplash.</p>
-        <p>Responsive design.</p>
-          <article>
-            <p>This platform has options for both user and guest checkout.</p>
-            <p>The filtering system allows customers to refine their search by brand and size, and sort by price or new arrivals.</p>
-            <p>Customers can search for products using keywords and easily identify low-stock items, as well as check which sizes are currently out of stock.</p>     
-            <p>In the user account section, users can manage their profiles, track order histories, and save their favorite items to a personalized wishlist.</p>
-        </article>
+        <p class="featureTitle">Key Features:</p>
+        <ul class="featuresList">
+          <li>Responsive design.</li>
+          <li>Options for both user and guest checkout.</li>
+          <li>Filtering system to refine search by brand and size, and sort by price or new arrivals.</li> 
+          <li>Product search using keywords.</li>
+          <li> Identification of low-stock and out-of-stock items.</li>
+          <li>User account section for profile management, order tracking, and saving favorite items to a personalized wishlist.</li>
+        </ul>
       </div>
     </div>
-    <div id="footer"></div>
+    <footer></footer>
     <script src="./../slides.js"></script>
     <script src="../../script.js"></script>
   </body>

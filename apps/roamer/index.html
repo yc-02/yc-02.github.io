@@ -8,26 +8,26 @@
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
     <title>Roamer</title>
 </head>
-<body style="display: none;" id="body">
+<body style="display: none;">
     <script>
         Promise.all([
         fetch('../../components/navbar.html').then(response => response.text()),
         fetch('../../components/footer.html').then(response => response.text())
         ]).then(([navHtml,footerHtml])=>{
-          document.getElementById('navbar').innerHTML = navHtml;
-          document.getElementById('footer').innerHTML = footerHtml;
-          document.getElementById('body').style.display = 'block';
+          document.querySelector('.navbar').innerHTML = navHtml;
+         document.querySelector('footer').innerHTML = footerHtml;
+          document.querySelector('body').style.display = 'block';
   
         }).catch(error => console.error('Error fetching HTML file:', error));
       </script>
-    <div id="navbar"></div>
+    <div class="navbar"></div>
     <ul class="webNav">
       <li><a href="/" class="navTitle">yc-02</a></li>
           <div class="webNavRight">
-            <li><a href="/apps/roamer/" id="appsLink">Published</a></li>
-            <li><a href="/projects/" id="projectsLink">Projects</a></li>
-            <li><a href="/about/" id="aboutLink">About</a></li>
-            <li><a href="/contact/" id="contactLink">Contact</a></li>
+            <li><a href="/apps/roamer/" class="appsLink">Published</a></li>
+            <li><a href="/projects/" class="projectsLink">Projects</a></li>
+            <li><a href="/about/" class="aboutLink">About</a></li>
+            <li><a href="/contact/" class="contactLink">Contact</a></li>
           </div>
       </ul>
     <div class="roamer">
@@ -35,7 +35,7 @@
         <p class="headerTitle">Roamer - Plan & Pack</p>
         <p>Itinerary & Packing List</p>
         <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155">
-            <img src="../../logos/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="app store"/>
+            <img src="../../logos/apple-store.svg" alt="app store"/>
         </a>
         <article>
             <p class="subHeaderTitle">Trip Planning and Packing Management!</p>
@@ -52,7 +52,7 @@
             <p>Thank you for choosing Roamer!</p>
         </div>
     </div>
-    <div id="footer"></div>
+    <footer></footer>
     <script src="../../script.js"></script>
 </body>
 </html>

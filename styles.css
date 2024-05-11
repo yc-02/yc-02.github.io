@@ -5,6 +5,7 @@ body {
     position: relative;
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* text */
@@ -23,7 +24,7 @@ body {
 }
 
 /* navbar  */
-#navbar{
+.navbar{
     background-color: #f9f9f9;
 }
 
@@ -73,6 +74,7 @@ li a:hover{
 }
 
 
+/* about contact app page and display image*/
 .about, .contact{
     display:flex; 
     height:70vh;
@@ -97,47 +99,40 @@ li a:hover{
 
 .project{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 13px;
-    padding: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 50px;
 }
 .projectCard{
+    display: inline-flex; 
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    border-radius: 10px;
     text-decoration: none; 
     color:inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f5;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
-.projectCardContainer{
-    display: flex; 
-    flex-direction: column;
-    width: 40vh;
-    height: 40vh;
-    justify-content: center; 
-    align-items: center;
-    position: relative;
+
+.projectImage{
+    overflow: hidden;
+    height: 80%;
 }
-.projectCardTitle{
+.projectCardDes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 20%;
+
 }
 .projectCardLogo{
     display: flex;
     gap: 9px;
 }
 
-.projectImage{
-    width: 70%;
-    height: 70%;
-    overflow: hidden;
-    justify-content: center;
-    display: flex;
-}
+
 
 /* project - items */
 
@@ -145,10 +140,31 @@ li a:hover{
     display: grid; 
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    height: 80vh;
     padding: 0px 20px;
+    margin-top: 10vh;
+}
+
+.featuresList{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.featuresList li{
+    padding-bottom: 13px;
+}
+
+.desContainer{
+    width: 80%;
+}
+.desHead{
+    display: inline-flex; 
+    flex-direction: column; 
+    gap: 16px;
+}
+.featureTitle{
+    font-weight: 600;
 }
 
 .galleryContainer{
@@ -156,6 +172,7 @@ li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .gallery{
@@ -163,13 +180,12 @@ li a:hover{
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 60vh;
 }
 
 
 .caption {
     color: #71717a;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -177,11 +193,14 @@ li a:hover{
    display: none;
    overflow: hidden;
    width: 80%;
+   border-radius: 3px;
 }
 
 
 .projectItemImage{
     width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
 }
 
 .projectItemLink{
@@ -200,6 +219,14 @@ li a:hover{
  }
   
 
+.prevContainer, .nextContainer{
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 13px;
+    border-radius: 10px;
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -215,15 +242,6 @@ li a:hover{
 .next {
   right: 0;
 }
-
-.prevContainer, .nextContainer{
-    display:flex; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 13px;
-    border-radius: 10px;
-}
-
 
 
 .prevContainer:hover, .nextContainer:hover {
@@ -246,7 +264,15 @@ li a:hover{
 }
 
 
+@media(max-width:1500px){
+    .project{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px 50px;
+    }
 
+}
 
 @media (max-width: 900px) {
     .aboutImage, .contactImage{
@@ -272,12 +298,14 @@ li a:hover{
         display: flex; 
         flex-direction: column-reverse;
         height: auto;
+        margin-top: 20px;
         
     }
-    .galleryContent{
-        position: relative;
-        width: 99%;
-        overflow: hidden;
+    .desContainer{
+        width: 90vw;
+    }
+    .galleryContainer{
+        width: 90vw;
     }
     .webNav{
         display: none;
@@ -357,11 +385,11 @@ li a:hover{
     to {width: 70%;}
     
 }
-@keyframes slideOut {
+/* @keyframes slideOut {
     from {width: 70%;}
     to {width: 0;}
     
-}
+} */
 
 @keyframes opacity {
     from {background-color: inherit;}

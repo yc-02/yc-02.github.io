@@ -35,11 +35,10 @@ function toggleApps(){
 
 
 const currentUrl = window.location.href
-const appsLink = document.getElementById('appsLink')
-const projectsLink = document.getElementById('projectsLink')
-const aboutLink = document.getElementById('aboutLink')
-const contactLink = document.getElementById('contactLink')
-
+const appsLink = document.querySelector('.appsLink')
+const projectsLink = document.querySelector('.projectsLink')
+const aboutLink = document.querySelector('.aboutLink')
+const contactLink = document.querySelector('.contactLink')
 if(appsLink){
   if(currentUrl.endsWith('/roamer/')){
     appsLink.classList.add('currentLink')

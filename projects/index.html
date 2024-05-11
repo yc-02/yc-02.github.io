@@ -8,96 +8,100 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Projects</title>
   </head>
-  <body style="display: none;" id="body">
+  <body style="display: none;">
     <script>
       Promise.all([
       fetch('../components/navbar.html').then(response => response.text()),
       fetch('../components/footer.html').then(response => response.text())
       ]).then(([navHtml,footerHtml])=>{
-        document.getElementById('navbar').innerHTML = navHtml;
-        document.getElementById('footer').innerHTML = footerHtml;
-        document.getElementById('body').style.display = 'block';
+        document.querySelector('.navbar').innerHTML = navHtml;
+       document.querySelector('footer').innerHTML = footerHtml;
+        document.querySelector('body').style.display = 'block';
 
       }).catch(error => console.error('Error fetching HTML file:', error));
     </script>
-    <div id="navbar" style="background-color: white;"></div>
+    <div class="navbar" style="background-color: white;"></div>
     <ul class="webNav" style="background-color: white;">
         <li><a href="/" class="navTitle">yc-02</a></li>
         <div class="webNavRight">
-          <li><a href="/apps/roamer/" id="appsLink">Published</a></li>
-          <li><a href="/projects/" id="projectsLink">Projects</a></li>
-          <li><a href="/about/" id="aboutLink">About</a></li>
-          <li><a href="/contact/" id="contactLink">Contact</a></li>
+          <li><a href="/apps/roamer/" class="appsLink">Published</a></li>
+          <li><a href="/projects/" class="projectsLink">Projects</a></li>
+          <li><a href="/about/" class="aboutLink">About</a></li>
+          <li><a href="/contact/" class="contactLink">Contact</a></li>
         </div>
     </ul>
       <div class="project">
         <a href="./recipes-blog/" class="projectCard"> 
-          <div class="projectCardContainer">
             <div class="projectImage">
-              <img src="../images/projects/recipes/githome.png" style="height: 100%;"/>
+              <img src="../images/projects/recipes/project-home.png" style="height: 100%; object-fit: cover;"/>
             </div> 
-            <div class="projectCardTitle">
+            <div class="projectCardDes">
               <p> Recipes Blog </p> 
               <div class="projectCardLogo">
-                <img src="../logos/nextjs-icon-light-background.png" height="16px" alt="nextjs"/>
-                <img src="../logos/supabase-logo-icon.png" height="16px" alt="supabase"/>
-                <img src="../logos/ts-logo-256.png" height="16px" alt="ts"/>
-                <img src="../logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" height="16px" alt="tailwindss"/>
-                <img src="../logos/vercel-icon-dark.png" height="16px" alt="vercel"/>
+                <img src="../logos/nextjs.png" height="16px" alt="nextjs"/>
+                <img src="../logos/supabase.png" height="16px" alt="supabase"/>
+                <img src="../logos/typescript.png" height="16px" alt="ts"/>
+                <img src="../logos/tailwind.svg" height="16px" alt="tailwindss"/>
+                <img src="../logos/vercel.png" height="16px" alt="vercel"/>
               </div>
-            </div>  
           </div>  
         </a>
         <a href="./footwear/" class="projectCard">
-          <div class="projectCardContainer">
             <div class="projectImage">
-              <img src="../images/projects/footwear/home.png" style="height: 100%;"/>  
+              <img src="../images/projects/footwear/project-home.png" style="height: 100%; object-fit: cover;"/>  
             </div>
-              <div class="projectCardTitle">
+              <div class="projectCardDes">
                 <p>Footwear E-commerce Platform</p> 
                 <div class="projectCardLogo">
-                  <img src="../logos/nextjs-icon-light-background.png" height="16px" alt="nextjs"/>
-                  <img src="../logos/supabase-logo-icon.png" height="16px" alt="supabase"/>
-                  <img src="../logos/Contentful_C Logo_2.5_White.png" height="16px" alt="contentful"/>
-                  <img src="../logos/ts-logo-256.png" height="16px" alt="ts"/>
-                  <img src="../logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" height="16px" alt="tailwindss"/>
-                  <img src="../logos/vercel-icon-dark.png" height="16px" alt="vercel"/>
-                </div>
-              </div>  
+                  <img src="../logos/nextjs.png" height="16px" alt="nextjs"/>
+                  <img src="../logos/supabase.png" height="16px" alt="supabase"/>
+                  <img src="../logos/contentful.png" height="16px" alt="contentful"/>
+                  <img src="../logos/typescript.png" height="16px" alt="ts"/>
+                  <img src="../logos/tailwind.svg" height="16px" alt="tailwindss"/>
+                  <img src="../logos/vercel.png" height="16px" alt="vercel"/>
+                </div> 
           </div>
         </a>
-        <a href="./restaurant/" class="projectCard"> 
-          <div class="projectCardContainer">
+        <a href="./travel-blog/" class="projectCard">
             <div class="projectImage">
-              <img src="../images/projects/restaurant/home.png" style="height: 100%;"/>
-            </div> 
-              <div class="projectCardTitle">
-                <p>Restaurant Reservation and Menu Platform</p> 
+              <img src="../images/projects/travel-blog/project-home.png" style="height: 100%; object-fit: cover;"/>  
+            </div>
+              <div class="projectCardDes">
+                <p>Travel Blog</p> 
                 <div class="projectCardLogo">
-                  <img src="../logos/nextjs-icon-light-background.png" height="16px" alt="nextjs"/>
-                  <img src="../logos/supabase-logo-icon.png" height="16px" alt="supabase"/>
-                  <img src="../logos/ts-logo-256.png" height="16px" alt="ts"/>
-                  <img src="../logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" height="16px" alt="tailwindss"/>
+                  <img src="../logos/nodejs.svg" height="20px" alt="nodejs"/>
+                  <img src="../logos/mongoDB.png" height="20px" alt="mongodb"/>
                 </div>
               </div>  
-          </div>    
+        </a>
+        <a href="./restaurant/" class="projectCard"> 
+            <div class="projectImage">
+              <img src="../images/projects/restaurant/project-home.png" style="height: 100%; object-fit: cover;"/>
+            </div> 
+              <div class="projectCardDes">
+                <p>Restaurant Reservation and Menu Platform</p> 
+                <div class="projectCardLogo">
+                  <img src="../logos/nextjs.png" height="16px" alt="nextjs"/>
+                  <img src="../logos/supabase.png" height="16px" alt="supabase"/>
+                  <img src="../logos/typescript.png" height="16px" alt="ts"/>
+                  <img src="../logos/tailwind.svg" height="16px" alt="tailwindss"/>
+                </div>
+              </div>    
         </a>
         <a href="./coffee-mobile/" class="projectCard"> 
-          <div class="projectCardContainer">
             <div class="projectImage">
-              <img src="../images/projects/coffeeshop/coffee-home.png" style="height: 100%;"/>
+              <img src="../images/projects/coffeeshop/coffee-home.png" style="height: 100%; object-fit: cover;"/>
             </div> 
-            <div class="projectCardTitle">
+            <div class="projectCardDes">
               <p>Coffee Shop Mobile App</p> 
               <div class="projectCardLogo">
-                <img src="../logos/React-icon.svg" height="16px" alt="react"/>
-                <img src="../logos/logo-javascript.svg" height="16px" alt="js"/>
+                <img src="../logos/react.svg" height="16px" alt="react"/>
+                <img src="../logos/javascript.svg" height="16px" alt="js"/>
               </div>
-            </div>  
           </div>   
         </a>
       </div>
-      <div id="footer"></div>
+      <footer></footer>
     <script src="../script.js"></script>
   </body>
 </html>

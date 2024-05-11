@@ -8,49 +8,49 @@
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
     <title>Restaurant</title>
   </head>
-  <body style="display: none;" id="body">
+  <body style="display: none;">
     <script>
       Promise.all([
       fetch('../../components/navbar.html').then(response => response.text()),
       fetch('../../components/footer.html').then(response => response.text())
       ]).then(([navHtml,footerHtml])=>{
-        document.getElementById('navbar').innerHTML = navHtml;
-        document.getElementById('footer').innerHTML = footerHtml;
-        document.getElementById('body').style.display = 'block';
+        document.querySelector('.navbar').innerHTML = navHtml;
+       document.querySelector('footer').innerHTML = footerHtml;
+        document.querySelector('body').style.display = 'block';
 
       }).catch(error => console.error('Error fetching HTML file:', error));
     </script>
-    <div id="navbar"></div>
+    <div class="navbar"></div>
     <ul class="webNav">
         <li><a href="/" class="navTitle">yc-02</a></li>
         <div class="webNavRight">
-          <li><a href="/apps/roamer/" id="appsLink">Published</a></li>
-          <li><a href="/projects/" id="projectsLink">Projects</a></li>
-          <li><a href="/about/" id="aboutLink">About</a></li>
-          <li><a href="/contact/" id="contactLink">Contact</a></li>
+          <li><a href="/apps/roamer/" class="appsLink">Published</a></li>
+          <li><a href="/projects/" class="projectsLink">Projects</a></li>
+          <li><a href="/about/" class="aboutLink">About</a></li>
+          <li><a href="/contact/" class="contactLink">Contact</a></li>
         </div>
     </ul>
     <div class="projectItemContainer">
       <div class="galleryContainer" >
         <div class="gallery">
         <div class="mySlides">
-          <img src="../../images/projects/restaurant/homePage.png"  class="projectItemImage">
+          <img src="../../images/projects/restaurant/res-home.png"  class="projectItemImage">
           <p class="caption">Home Page</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/restaurant/menu.png"  class="projectItemImage"/>
+          <img src="../../images/projects/restaurant/res-menu.png"  class="projectItemImage"/>
           <p class="caption">Menu</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/restaurant/reserve.png"  class="projectItemImage"/>
+          <img src="../../images/projects/restaurant/res-reservation.png"  class="projectItemImage"/>
           <p class="caption">Make a Reservation</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/restaurant/operation.png"  class="projectItemImage"/>
+          <img src="../../images/projects/restaurant/res-operation.png"  class="projectItemImage"/>
           <p class="caption">Operating Hours</p>
         </div>
         <div class="mySlides">
-          <img src="../../images/projects/restaurant/auth.png"  class="projectItemImage"/>
+          <img src="../../images/projects/restaurant/rest-auth.png"  class="projectItemImage"/>
           <p class="caption">Manage Reservations</p>
         </div>
         <a class="prev" onclick="plusSlides(-1)">
@@ -73,27 +73,29 @@
         <span class="dot" onclick="currentSlide(5)"></span>
       </div>
       </div>
-      <div>
+      <div class="desContainer">
         <p class="subHeaderTitle">Restaurant Reservation and Menu Platform built with Next.js, Supabase, and Shadcn/ui.</p>
-        <div style="display: inline-flex; flex-direction: column; gap: 16px;">
+        <div class="desHead">
           <div class="projectCardLogo">
-            <img src="../../logos/nextjs-icon-light-background.png" height="16px" alt="nextjs"/>
-            <img src="../../logos/supabase-logo-icon.png" height="16px" alt="supabase"/>
-            <img src="../../logos/ts-logo-256.png" height="16px" alt="ts"/>
-            <img src="../../logos/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" height="16px" alt="tailwindss"/>
+            <img src="../../logos/nextjs.png" height="16px" alt="nextjs"/>
+            <img src="../../logos/supabase.png" height="16px" alt="supabase"/>
+            <img src="../../logos/typescript.png" height="16px" alt="ts"/>
+            <img src="../../logos/tailwind.svg" height="16px" alt="tailwindss"/>
           </div>
           <a href="https://github.com/yc-02/02restautant" class="projectItemLink">
             <i class="fa-solid fa-link fa-xs"  style="color:inherit"></i>
             GitHub Repository
           </a>
         </div>
-        <p>Restaurant food pictures sourced from Pexels.</p>
-        <p>Responsive design.</p>
-        <p>This platform allows guests to make reservations and check restaurant menus.</p>
-        <p>It also features an authentication login for staff to manage reservations, and update operating hours.</p>
+        <p class="featureTitle">Key Features:</p>
+        <ul class="featuresList">
+          <li>Responsive design.</li>
+          <li>Guests can make reservations and check restaurant menus.</li>
+          <li>Authentication login for staff to manage reservations and update operating hours.</li> 
+        </ul>
       </div>
     </div>
-    <div id="footer"></div>
+    <footer></footer>
     <script src="./../slides.js"></script>
     <script src="../../script.js"></script>
   </body>
