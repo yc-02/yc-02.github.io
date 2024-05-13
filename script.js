@@ -95,13 +95,14 @@ const navbar =
 </div>
 </div>
 `
+
 //render navbar and footer
 const promise1 = document.querySelector('nav').insertAdjacentHTML("afterbegin",navbar);
 const promise2 = document.querySelector('footer').insertAdjacentHTML("afterbegin",footer);
 const promise3 = document.querySelector('nav').insertAdjacentHTML("afterend",webNav)
 
 Promise.all([promise1,promise2,promise3]).then(()=>{
-      document.querySelector('body').style.display = 'block';
+      document.body.style.display = 'block';
     })
     .catch(error => console.error('Error fetching HTML file:', error));
 
