@@ -9,26 +9,7 @@
     <title>Coffee Shop Mobile App</title>
   </head>
   <body style="display: none;">
-    <script>
-      Promise.all([
-      fetch('../../components/navbar.html').then(response => response.text()),
-      fetch('../../components/footer.html').then(response => response.text())
-      ]).then(([navHtml,footerHtml])=>{
-        document.querySelector('.navbar').innerHTML = navHtml;
-       document.querySelector('footer').innerHTML = footerHtml;
-        document.querySelector('body').style.display = 'block';
-      }).catch(error => console.error('Error fetching HTML file:', error));
-    </script>
-    <div class="navbar"></div>
-    <ul class="webNav">
-        <li><a href="/" class="navTitle">yc-02</a></li>
-        <div class="webNavRight">
-          <li><a href="/apps/roamer/" class="appsLink">Published</a></li>
-          <li><a href="/projects/" class="projectsLink">Projects</a></li>
-          <li><a href="/about/" class="aboutLink">About</a></li>
-          <li><a href="/contact/" class="contactLink">Contact</a></li>
-        </div>
-    </ul>
+    <nav class="navbar"></nav>
     <div class="projectItemContainer">
         <div class="galleryContainer">
             <div class="gallery">

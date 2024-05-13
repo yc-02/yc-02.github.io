@@ -9,27 +9,7 @@
     <title>Projects</title>
   </head>
   <body style="display: none;">
-    <script>
-      Promise.all([
-      fetch('../components/navbar.html').then(response => response.text()),
-      fetch('../components/footer.html').then(response => response.text())
-      ]).then(([navHtml,footerHtml])=>{
-        document.querySelector('.navbar').innerHTML = navHtml;
-       document.querySelector('footer').innerHTML = footerHtml;
-        document.querySelector('body').style.display = 'block';
-
-      }).catch(error => console.error('Error fetching HTML file:', error));
-    </script>
-    <div class="navbar" style="background-color: white;"></div>
-    <ul class="webNav" style="background-color: white;">
-        <li><a href="/" class="navTitle">yc-02</a></li>
-        <div class="webNavRight">
-          <li><a href="/apps/roamer/" class="appsLink">Published</a></li>
-          <li><a href="/projects/" class="projectsLink">Projects</a></li>
-          <li><a href="/about/" class="aboutLink">About</a></li>
-          <li><a href="/contact/" class="contactLink">Contact</a></li>
-        </div>
-    </ul>
+    <nav class="navbar"></nav>
       <div class="project">
         <a href="./recipes-blog/" class="projectCard"> 
             <div class="projectImage">
@@ -69,8 +49,8 @@
               <div class="projectCardDes">
                 <p>Travel Blog</p> 
                 <div class="projectCardLogo">
-                  <img src="../logos/nodejs.svg" height="20px" alt="nodejs"/>
-                  <img src="../logos/mongoDB.png" height="20px" alt="mongodb"/>
+                  <img src="../logos/nodejs.svg" height="16px" alt="nodejs"/>
+                  <img src="../logos/mongoDB.png" height="16px" alt="mongodb"/>
                 </div>
               </div>  
         </a>
