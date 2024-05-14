@@ -10,16 +10,27 @@ body {
 main{
     display: grid; 
     grid-template-columns: repeat(3,1fr);
-    max-width: 1300px;
-    min-width: 800px;
 }
 
 p,h1,h3,h4,ul{
     margin: 0;
 }
-
+h1{
+    font-size: 36px;
+}
 h3{
+    font-size: 17px;
     text-transform: uppercase;
+}
+h4{
+    font-size: 15px;
+    font-weight: 500;
+}
+p, ul{
+    font-size: 14px;
+}
+em,span{
+    font-size: 13px;
 }
 
 
@@ -57,7 +68,7 @@ h3{
     justify-content: center;
 }
 .resume-left{
-    background-color: #e2eeea;
+    background-color: #e6f6f4;
 }
 
 
@@ -67,11 +78,11 @@ h3{
 .resume-right{
     grid-column:2/ span 3;
 }
+
 .right-links{
     display: flex;
-    flex-direction: column;
-    align-self: flex-start;
     gap: 6px;
+
 }
 
 .right-section a{
@@ -80,43 +91,48 @@ h3{
     align-items: center;
     gap: 6px;
     text-decoration: none;
-    color: #1f352d;
-    font-style: italic;
+    color: rgb(48, 48, 48);
     font-size: 15px;
+
 }
 
 .right-section ul{
     list-style-type: square;
 }
 .right-section li{
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 em{
     color: rgb(48, 48, 48);
 }
 
+
+
 @page {
     size: letter;
-    margin: 0.5in
+    margin: 0.5in;
 }
-
 
 @media print {
     body{
         margin: 0;
+        counter-reset: page;
     }
     .page-break{
         page-break-after: always;
     }
+
     .resume-left{
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
+
 }
 
 @media(max-width:900px){
+
 main{
-    width: auto;
+    width: 100vw;
 }
 
 }
