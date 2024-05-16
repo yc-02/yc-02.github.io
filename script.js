@@ -49,7 +49,7 @@ const navbar =
         </div>
         <div style="padding-left: 6px; display: none;" id="apps">
           <a href="/apps/roamer/" class="navIcon">
-              <i class="fa-solid fa-code"  style="color:inherit"></i>            
+              <i class="fa-brands fa-app-store-ios fa-lg"></i>           
               <P>Roamer - Plan & Pack</P>
             </a>
         </div>
