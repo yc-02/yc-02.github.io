@@ -1,37 +1,48 @@
-const webNav=
+const deskNav=
 `
-<ul class="webNav">
-<li><a href="/" class="navTitle">yc-02</a></li>
-<div class="webNavRight">
-  <li><a href="/apps/roamer/" class="appsLink">Published</a></li>
-  <li><a href="/projects/" class="projectsLink">Projects</a></li>
-  <li><a href="/about/" class="aboutLink">About</a></li>
-  <li><a href="/contact/" class="contactLink">Contact</a></li>
+<div class="desk-nav">
+  <div class="desk-nav-left">
+    <a href="/">yc-02</a>
+  </div>
+  <div class="desk-nav-right">
+      <a href="/" class="home-link current-link">Home</a>
+      <a href="/portfolio" class="portfolio-link">Portfolio</a>
+      <a href="/about" class="about-link">About</a>
+      <a href="/contact" class="contact-link">Contact</a>
+  </div>
 </div>
-</ul>
 `
 
 const footer =
 `
-<div style="position:absolute; bottom:-20vh; width: 100%; display: flex;align-items: center; gap: 10px;justify-content: center; align-items: center; color: #a1a1aa;">
-<i class="fa-regular fa-copyright" color="inherit"></i>
-<p style="font-size:smaller;">2024 Ying Cui</p>
+<div class="footer-container">
+  <div class="footer-left">
+    <i class="fa-regular fa-copyright" color="inherit"></i>
+    <p>2024 Ying Cui</p>
+  </div>
+  <div class="footer-right">
+    <p class="web-title">Contact</p>
+    <div class="footer-contact">
+      <div class="footer-email"><i class="fa-solid fa-envelope"></i> <p>yingcui02@gmail.com</p></div>
+      <div class="footer-email"><i class="fa-solid fa-envelope"></i> <p>yingcui.roamer@gmail.com</p></div>
+    </div>
+  </div>
 </div>
 `
 
-const navbar = 
+const phoneNav = 
 `
-<div class="smNav">
+<div class="mobile-nav">
 <div class="openNav">
   <a href="/" style="font-style: italic; font-size: larger; text-decoration: none; color: inherit; font-weight: 500;">yc-02</a>
   <div class="openNavButton" onclick="openNav()" id="openButton">
     <i class="fa-solid fa-bars fa-lg" style="color:inherit"></i>
   </div>
 </div>
-<div class="smNavContents" id="contents" style="display: none;">
-  <div onclick="closeNav()" class="smNavLeft" id="contentsLeft">
+<div class="mobile-nav-contents" id="contents" style="display: none;">
+  <div onclick="closeNav()" class="mobile-nav-left" id="contentsLeft">
   </div>
-  <div class="smNavRight" id="contentsRight">
+  <div class="mobile-nav-right" id="contentsRight">
     <div class="closeNavButton" onclick="closeNav()">
       <i class="fa-solid fa-xmark fa-lg"  style="color:inherit"></i>
     </div>
@@ -40,27 +51,18 @@ const navbar =
           <i class="fa-solid fa-house" style="color:inherit"></i>          
           <p>Home</p>
       </a>
-        <div style="display: flex; align-items: center; justify-content: space-between; user-select: none; cursor: pointer;"   onclick="toggleApps()">
-          <div class="navIcon">
-            <i class="fa-solid fa-folder-open"  style="color:inherit"></i>
-            <p>Published</p>            
-          </div>
-          <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>
-        </div>
-        <div style="padding-left: 6px; display: none;" id="apps">
-          <a href="/apps/roamer/" class="navIcon">
-              <i class="fa-brands fa-app-store-ios"></i>           
-              <P>Roamer - Plan & Pack</P>
-            </a>
-        </div>
         <div style="display: flex; align-items: center; justify-content: space-between; user-select: none; cursor: pointer;"  onclick="toggleProjects()">
           <div class="navIcon">
             <i class="fa-solid fa-folder-open"  style="color:inherit"></i>
-            <p>Projects</p>            
+            <p>Portfolio</p>            
           </div>
           <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>
         </div>
         <div style="padding-left: 6px; display: none;" id="projects">
+          <a href="/apps/roamer/" class="navIcon">
+              <i class="fa-brands fa-app-store-ios"></i>           
+              <P>Roamer - Plan & Pack</P>
+          </a>
           <a href="/projects/recipes-blog/" class="navIcon">
             <i class="fa-solid fa-code"  style="color:inherit"></i>            
             <P>Recipes Blog</P>
@@ -82,14 +84,14 @@ const navbar =
             <P>Coffee Shop Mobile App</P>
           </a>
         </div>
-      <a href="/about/" class="navIcon">
-          <i class="fa-solid fa-address-card"  style="color:inherit"></i>                                   
-          <p>About</p>            
-      </a>
-      <a href="/contact/" class="navIcon">
-          <i class="fa-solid fa-envelope"  style="color:inherit"></i>
-          <p>Contact</p>            
-      </a> 
+        <a href="/about" class="navIcon">
+          <i class="fa-solid fa-house" style="color:inherit"></i>          
+          <p>About</p>
+        </a>
+        <a href="/contact" class="navIcon">
+          <i class="fa-solid fa-house" style="color:inherit"></i>          
+          <p>Contact</p>
+        </a>
   </div>
   </div> 
 </div>
@@ -97,9 +99,9 @@ const navbar =
 `
 
 //render navbar and footer
-const promise1 = document.querySelector('nav').insertAdjacentHTML("afterbegin",navbar);
+const promise1 = document.querySelector('nav').insertAdjacentHTML("afterbegin",phoneNav);
 const promise2 = document.querySelector('footer').insertAdjacentHTML("afterbegin",footer);
-const promise3 = document.querySelector('nav').insertAdjacentHTML("afterend",webNav)
+const promise3 = document.querySelector('nav').insertAdjacentHTML("afterend",deskNav)
 
 Promise.all([promise1,promise2,promise3]).then(()=>{
       document.body.style.display = 'block';
@@ -144,49 +146,41 @@ Promise.all([promise1,promise2,promise3]).then(()=>{
   }
   
   
-  // navbar current style
+   //navbar current style
   const currentUrl = window.location.href
-  const appsLink = document.querySelector('.appsLink')
-  const projectsLink = document.querySelector('.projectsLink')
-  const aboutLink = document.querySelector('.aboutLink')
-  const contactLink = document.querySelector('.contactLink')
-  if(appsLink){
-    if(currentUrl.endsWith('/roamer/')){
-      appsLink.classList.add('currentLink')
-    }else{
-      appsLink.classList.remove('currentLink')
-    }
-  }
-  
-  if(projectsLink){
-    if(currentUrl.endsWith('/projects/')){
-      const webNav = document.querySelector('.webNav')
-      webNav.style.background = 'white'
-    }
-    if(currentUrl.endsWith('/projects/')|| 
+  const homeLink = document.querySelector('.home-link')
+  const portfolioLink = document.querySelector('.portfolio-link')
+  const aboutLink = document.querySelector('.about-link')
+  const contactLink = document.querySelector('.contact-link')
+
+  if(portfolioLink){
+    if(currentUrl.endsWith('/portfolio/')|| 
     currentUrl.endsWith('/travel-blog/')||
       currentUrl.endsWith('/coffee-mobile/') || 
       currentUrl.endsWith('/footwear/') || 
       currentUrl.endsWith('/restaurant/')||
       currentUrl.endsWith('/recipes-blog/')){
-      projectsLink.classList.add('currentLink')
+      portfolioLink.classList.add('current-link')
+      homeLink.classList.remove('current-link')
     }else{
-      projectsLink.classList.remove('currentLink')
+      portfolioLink.classList.remove('current-link')
     }
   }
   
   if(aboutLink){
     if(currentUrl.endsWith('/about/')){
-      aboutLink.classList.add('currentLink')
+      aboutLink.classList.add('current-link')
+      homeLink.classList.remove('current-link')
     }else{
-      aboutLink.classList.remove('currentLink')
+      aboutLink.classList.remove('current-link')
     }
   }
   if(contactLink){
     if(currentUrl.endsWith('/contact/')){
-      contactLink.classList.add('currentLink')
+      contactLink.classList.add('current-link')
+      homeLink.classList.remove('current-link')
     }else{
-      contactLink.classList.remove('currentLink')
+      contactLink.classList.remove('current-link')
     }
   }
   

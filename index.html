@@ -9,12 +9,24 @@
     <title>yc-02</title>
   </head>
   <body style="display: none;">
-    <nav class="navbar"></nav>
-    <div style="display:flex; flex-direction: column; height:70vh; justify-content: center; align-items: center;">
-        <p style="text-align: center;" class="headerTitle">Welcome</p>
-        <img src="./images/welcome.jpeg" class="homeImage"/>
-    </div>
+    <div class="container">
+      <div>
+        <nav class="navbar"></nav>
+        <main>
+          <div class="home-intro">
+            <div class="home-left">
+              <img src="./images/me.png" class="home-image" alt="home-image"></img>
+            </div>
+            <div class="home-right">
+                <p class="home-title">Welcome!</p>
+                <p class="home-subtitle">I'm Ying, a self-taught developer with a strong passion for coding, specializing in building web and mobile applications.</p>
+                <button class="home-more"><a href="/about">More About Me</a></button>
+            </div>
+          </div>
+        </main>
+      </div>
     <footer></footer>
+    </div>
     <script src="./script.js">
     </script>
   </body>

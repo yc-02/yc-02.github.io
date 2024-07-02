@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  type="text/css" href="../../styles.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <title>Restaurant</title>
+  </head>
+  <body style="display: none;">
+    <div class="container">
+    <div>
+    <nav class="navbar"></nav>
+    <main>
+    <div class="project-grid">
+      <div class="gallery-container" >
+        <div class="gallery-item">
+        <div class="gallery-slides">
+          <img src="../../images/projects/restaurant/res-home.png"  class="project-item-image">
+          <p class="caption">Home Page</p>
+        </div>
+        <div class="gallery-slides">
+          <img src="../../images/projects/restaurant/res-menu.png"  class="project-item-image"/>
+          <p class="caption">Menu</p>
+        </div>
+        <div class="gallery-slides">
+          <img src="../../images/projects/restaurant/res-reservation.png"  class="project-item-image"/>
+          <p class="caption">Make a Reservation</p>
+        </div>
+        <div class="gallery-slides">
+          <img src="../../images/projects/restaurant/res-operation.png"  class="project-item-image"/>
+          <p class="caption">Operating Hours</p>
+        </div>
+        <div class="gallery-slides">
+          <img src="../../images/projects/restaurant/res-manageReservation.png"  class="project-item-image"/>
+          <p class="caption">Manage Reservations</p>
+        </div>
+        <a class="gallery-prev" onclick="plusSlides(-1)">
+          <div class="prev-container">
+            <i class="fa-solid fa-chevron-left"  style="color:inherit"></i>
+          </div>       
+        </a>
+        <a class="gallery-next" onclick="plusSlides(1)">
+          <div class="next-container">
+            <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>   
+          </div>     
+        </a>
+      </div>
+      <br>
+      <div>
+        <span class="gallery-dots" onclick="currentSlide(1)"></span>
+        <span class="gallery-dots" onclick="currentSlide(2)"></span>
+        <span class="gallery-dots" onclick="currentSlide(3)"></span>
+        <span class="gallery-dots" onclick="currentSlide(4)"></span>
+        <span class="gallery-dots" onclick="currentSlide(5)"></span>
+      </div>
+      </div>
+      <div class="des-container">
+        <p class="web-subtitle">Restaurant Reservation and Menu Platform built with Next.js, Supabase, and Shadcn/ui.</p>
+        <div class="des-head">
+          <div class="project-logo">
+            <img src="../../logos/nextjs.png" height="16px" alt="nextjs"/>
+            <img src="../../logos/supabase.png" height="16px" alt="supabase"/>
+            <img src="../../logos/typescript.png" height="16px" alt="ts"/>
+            <img src="../../logos/tailwind.svg" height="16px" alt="tailwindss"/>
+          </div>
+          <a href="https://github.com/yc-02/02restautant" class="project-item-link" target="_blank">
+            <i class="fa-solid fa-link fa-xs"  style="color:inherit"></i>
+            GitHub Repository
+          </a>
+        </div>
+        <p class="feature-title">Key Features:</p>
+        <ul class="features-list">
+          <li>Responsive design.</li>
+          <li>Guests can make reservations and check restaurant menus.</li>
+          <li>Authentication login for staff to manage reservations and update operating hours.</li> 
+        </ul>
+      </div>
+    </div>
+    </main>
+    </div>
+    <footer></footer>
+    </div>
+    <script src="./../slides.js"></script>
+    <script src="../../script.js"></script>
+  </body>
+</html>

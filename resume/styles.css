@@ -104,6 +104,7 @@ em,span{
 }
 em{
     color: rgb(48, 48, 48);
+    font-size: 14px;
 }
 
 
@@ -111,23 +112,34 @@ em{
 @page {
     size: letter;
     margin: 0.5in;
+    @bottom-center{
+        content:counter(page)
+    }
 }
 
 @media print {
     body{
         margin: 0;
-        counter-reset: page;
     }
     .page-break{
         page-break-after: always;
     }
 
-    .resume-left{
+    /* .resume-left{
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+    } */
+    .resume-right{
+        background-color: white
+        
+    }
+    main{
+        background-color: #e6f6f4;
     }
 
 }
+
+
 
 @media(max-width:900px){
 

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  type="text/css" href="../../styles.css">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <title>Coffee Shop Mobile App</title>
+  </head>
+  <body style="display: none;">
+    <div class="container">
+    <div>
+    <nav class="navbar"></nav>
+    <main>
+    <div class="project-grid">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <div class="gallery-slides" style="width: 50%;">
+                  <img src="../../images/projects/coffeeshop/coffee-home.png"  class="project-item-image">
+                </div>
+                <div class="gallery-slides" style="width: 50%;">
+                  <img src="../../images/projects/coffeeshop/coffee-menu.png"  class="project-item-image"/>
+                </div>
+                <div class="gallery-slides" style="width: 50%;">
+                  <img src="../../images/projects/coffeeshop/coffee-add-coffee.png"  class="project-item-image"/>
+                </div>
+                <div class="gallery-slides" style="width: 50%;">
+                  <img src="../../images/projects/coffeeshop/coffee-add-special.png"  class="project-item-image"/>
+                </div>
+                <div class="gallery-slides" style="width: 50%;">
+                    <img src="../../images/projects/coffeeshop/coffee-checkout.png"  class="project-item-image"/>
+                </div>
+                <a class="gallery-prev" onclick="plusSlides(-1)">
+                  <div class="prev-container">
+                    <i class="fa-solid fa-chevron-left"  style="color:inherit"></i>
+                  </div>       
+                </a>
+                <a class="gallery-next" onclick="plusSlides(1)">
+                  <div class="next-container">
+                    <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>  
+                  </div>     
+                </a>
+              </div>
+              <br>
+              <div>
+                <span class="gallery-dots" onclick="currentSlide(1)"></span>
+                <span class="gallery-dots" onclick="currentSlide(2)"></span>
+                <span class="gallery-dots" onclick="currentSlide(3)"></span>
+                <span class="gallery-dots" onclick="currentSlide(4)"></span>
+                <span class="gallery-dots" onclick="currentSlide(5)"></span>
+              </div>
+        </div>
+      <div class="des-container">
+        <p class="web-subtitle">Coffee Shop Mobile App built with React Native.</p>
+        <div class="des-head">
+          <div class="project-logo">
+            <img src="../../logos/react.svg" height="16px" alt="react"/>
+            <img src="../../logos/javascript.svg" height="16px" alt="js"/>
+          </div>
+          <a href="https://github.com/yc-02/react-native-coffee" class="project-item-link" target="_blank">
+            <i class="fa-solid fa-link fa-xs"  style="color:inherit"></i>
+            GitHub Repository
+          </a>
+        </div>
+        <p class="feature-title">Key Features:</p>
+        <ul class="features-list">
+          <li>Browse menus and conveniently order coffee from a mobile device</li>
+          <li>Customize orders with options for size and milk type.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  </div>
+  <footer></footer>
+  </div>
+    <script src="./../slides.js"></script>
+    <script src="../../script.js"></script>
+  </body>
+</html>
