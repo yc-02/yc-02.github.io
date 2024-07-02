@@ -63,23 +63,23 @@ const phoneNav =
               <i class="fa-brands fa-app-store-ios"></i>           
               <P>Roamer - Plan & Pack</P>
           </a>
-          <a href="/projects/recipes-blog/" class="navIcon">
+          <a href="/portfolio/recipes-blog/" class="navIcon">
             <i class="fa-solid fa-code"  style="color:inherit"></i>            
             <P>Recipes Blog</P>
           </a>
-          <a href="/projects/footwear/" class="navIcon">
+          <a href="/portfolio/footwear/" class="navIcon">
               <i class="fa-solid fa-code"  style="color:inherit"></i>          
               <p>Footwear E-commerce Platform</p>
           </a>
-          <a href="/projects/travel-blog/" class="navIcon">
+          <a href="/portfolio/travel-blog/" class="navIcon">
             <i class="fa-solid fa-code"  style="color:inherit"></i>            
             <P>Travel Blog</P>
           </a>
-          <a href="/projects/restaurant/" class="navIcon">
+          <a href="/portfolio/restaurant/" class="navIcon">
             <i class="fa-solid fa-code"  style="color:inherit"></i>            
             <P>Restaurant Reservation and Menu Platform</P>
           </a>
-          <a href="/projects/coffee-mobile/" class="navIcon">
+          <a href="/portfolio/coffee-mobile/" class="navIcon">
             <i class="fa-solid fa-code"  style="color:inherit"></i>            
             <P>Coffee Shop Mobile App</P>
           </a>
