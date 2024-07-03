@@ -231,6 +231,13 @@ footer{
     height: 100%;
     object-fit: cover;
 }
+.roamer-email{
+    text-decoration: none;
+    color: inherit;
+}
+.roamer-email:hover{
+    color: rgb(99, 99, 99);
+}
 
 /* about page */
 .about-container{
@@ -281,6 +288,7 @@ footer{
     flex-direction: column;
 }
 
+
 /* contact page */
 .contact-container{
     min-height: 70vh;
@@ -328,8 +336,10 @@ footer{
 }
 .contact-submit:disabled:hover{
     background-color: rgb(50, 50, 50);
-
-
+}
+#email-error{
+    display: none; 
+    color: tomato;
 }
 /* project - items */
 .project-grid{
@@ -499,13 +509,7 @@ footer{
         border-radius: 46px;
         overflow: hidden;
     }
-    .roamer-email{
-        text-decoration: none;
-        color: inherit;
-    }
-    .roamer-email:hover{
-        color: rgb(99, 99, 99);
-    }
+
     /* about page */
 
     .about-git{
