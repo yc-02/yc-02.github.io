@@ -167,7 +167,6 @@ footer{
     width: 95%;
     gap: 9px; 
     padding: 30px 20px;
-    overflow-x: hidden;
 }
 .card-link{
     display:flex; 
@@ -246,7 +245,7 @@ footer{
 }
 
 .about-git{
-    display: flex;
+    display:inline-flex;
     align-items: center;
     font-size: 16px;
     margin: 6px;
@@ -254,6 +253,7 @@ footer{
     text-decoration: none;
     color: whitesmoke;
 }
+
 .about-git:hover{
     color: rgb(99, 99, 99);
 }
@@ -468,6 +468,7 @@ footer{
     /* portfolio page */
     .portfolio-grid{
         grid-template-columns: repeat(2, 1fr); 
+        padding:10px 0px;
     }
     .card-image{
         height: 130px;
