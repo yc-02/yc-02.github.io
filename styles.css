@@ -499,6 +499,13 @@ footer{
         border-radius: 46px;
         overflow: hidden;
     }
+    .roamer-email{
+        text-decoration: none;
+        color: inherit;
+    }
+    .roamer-email:hover{
+        color: rgb(99, 99, 99);
+    }
     /* about page */
 
     .about-git{
