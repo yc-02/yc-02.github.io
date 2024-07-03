@@ -51,47 +51,18 @@ const phoneNav =
           <i class="fa-solid fa-house" style="color:inherit"></i>          
           <p>Home</p>
       </a>
-        <div style="display: flex; align-items: center; justify-content: space-between; user-select: none; cursor: pointer;"  onclick="toggleProjects()">
-          <div class="navIcon">
-            <i class="fa-solid fa-folder-open"  style="color:inherit"></i>
-            <p>Portfolio</p>            
-          </div>
-          <i class="fa-solid fa-chevron-right"  style="color:inherit"></i>
-        </div>
-        <div style="padding-left: 6px; display: none;" id="projects">
-          <a href="/apps/roamer/" class="navIcon">
-              <i class="fa-brands fa-app-store-ios"></i>           
-              <P>Roamer - Plan & Pack</P>
-          </a>
-          <a href="/portfolio/recipes-blog/" class="navIcon">
-            <i class="fa-solid fa-code"  style="color:inherit"></i>            
-            <P>Recipes Blog</P>
-          </a>
-          <a href="/portfolio/footwear/" class="navIcon">
-              <i class="fa-solid fa-code"  style="color:inherit"></i>          
-              <p>Footwear E-commerce Platform</p>
-          </a>
-          <a href="/portfolio/travel-blog/" class="navIcon">
-            <i class="fa-solid fa-code"  style="color:inherit"></i>            
-            <P>Travel Blog</P>
-          </a>
-          <a href="/portfolio/restaurant/" class="navIcon">
-            <i class="fa-solid fa-code"  style="color:inherit"></i>            
-            <P>Restaurant Reservation and Menu Platform</P>
-          </a>
-          <a href="/portfolio/coffee-mobile/" class="navIcon">
-            <i class="fa-solid fa-code"  style="color:inherit"></i>            
-            <P>Coffee Shop Mobile App</P>
-          </a>
-        </div>
-        <a href="/about" class="navIcon">
-          <i class="fa-solid fa-house" style="color:inherit"></i>          
-          <p>About</p>
-        </a>
-        <a href="/contact" class="navIcon">
-          <i class="fa-solid fa-house" style="color:inherit"></i>          
-          <p>Contact</p>
-        </a>
+      <a href="/portfolio" class="navIcon">
+        <i class="fa-solid fa-folder-open"  style="color:inherit"></i>
+        <p>Portfolio</p>            
+      </a>
+      <a href="/about" class="navIcon">
+        <i class="fa-solid fa-house" style="color:inherit"></i>          
+        <p>About</p>
+      </a>
+      <a href="/contact" class="navIcon">
+        <i class="fa-solid fa-house" style="color:inherit"></i>          
+        <p>Contact</p>
+      </a>
   </div>
   </div> 
 </div>
@@ -126,24 +97,24 @@ Promise.all([promise1,promise2,promise3]).then(()=>{
     document.body.style.overflow ="scroll";
   }
   
-  function toggleProjects() {
-    const projectsDiv = document.getElementById('projects');
-    if (projectsDiv.style.display === 'block') {
-        projectsDiv.style.display = 'none';
-    } else {
-        projectsDiv.style.display = 'block';
-    }
-  }
+  // function toggleProjects() {
+  //   const projectsDiv = document.getElementById('projects');
+  //   if (projectsDiv.style.display === 'block') {
+  //       projectsDiv.style.display = 'none';
+  //   } else {
+  //       projectsDiv.style.display = 'block';
+  //   }
+  // }
   
-  function toggleApps(){
-    const appsDiv = document.getElementById('apps');
-    if (appsDiv.style.display === 'block') {
-        appsDiv.style.display = 'none';
-    } else {
-        appsDiv.style.display = 'block';
-    }
+  // function toggleApps(){
+  //   const appsDiv = document.getElementById('apps');
+  //   if (appsDiv.style.display === 'block') {
+  //       appsDiv.style.display = 'none';
+  //   } else {
+  //       appsDiv.style.display = 'block';
+  //   }
   
-  }
+  // }
   
   
    //navbar current style

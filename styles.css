@@ -227,6 +227,42 @@ footer{
     object-fit: cover;
 }
 
+/* about page */
+.about-container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    padding: 30px;
+}
+.about-title{
+    align-self:flex-start;
+    font-size: 25px;
+}
+.about-subtitle{
+    font-size: 19px;
+    margin: 6px;
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin: 6px;
+}
+.about-logo{
+    height: 25px;
+}
+.logo-line{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* project - items */
 .project-grid{
     display: grid; 
@@ -234,7 +270,6 @@ footer{
     gap: 20px;
     align-items: center;
     justify-content: center;
-    padding:30px 20px;
     width: 95%;
 }
 
@@ -360,7 +395,7 @@ footer{
 
 /* small screen */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     /* homepage */
     .home-left{
         width: 150px;
@@ -376,7 +411,36 @@ footer{
     .home-more a{
         font-size: 13px;
     }
-
+    /* roamer page */
+    .roamer-image-container{
+        width: 150px;
+        height: 150px;
+        border-radius: 53px;
+        overflow: hidden;
+    }
+    .roamer-image-container{
+        width: 130px;
+        height: 130px;
+        border-radius: 46px;
+        overflow: hidden;
+    }
+    /* about page */
+    .about-title{
+        font-size: 19px;
+    }
+    .about-subtitle{
+        font-size: 15px;
+        margin: 6px;
+    }
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        margin: 6px;
+    }
+    .about-logo{
+        height: 19px;
+    }
     /* portfolio page */
     .portfolio-grid{
         grid-template-columns: repeat(2, 1fr); 
