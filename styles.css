@@ -326,6 +326,11 @@ footer{
 .contact-submit:hover{
     background-color: rgb(99, 99, 99);
 }
+.contact-submit:disabled:hover{
+    background-color: rgb(50, 50, 50);
+
+
+}
 /* project - items */
 .project-grid{
     display: grid; 
@@ -453,7 +458,14 @@ footer{
   background-color:whitesmoke;
 }
 
-
+.not-found-link{
+    color: inherit;
+    font-weight: 600;
+    font-size: large;
+}
+.not-found-link:hover{
+    color:rgb(99, 99, 99);
+}
 
 
 /* small screen */
@@ -523,7 +535,15 @@ footer{
 
     }
     .contact-label{
-        font-size: 17px;
+        font-size: 15px;
+
+    }
+    .contact-input{
+        font-size: 15px;
+    }
+    .contact-message{
+        font-size: 15px;
+        height: 160px;
     }
 
     /* portfolio page */
