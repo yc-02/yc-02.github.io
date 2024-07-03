@@ -157,6 +157,11 @@ footer{
     display: flex;
     align-items: center;
     gap: 6px;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-email:hover{
+    color: whitesmoke;
 }
 
 
@@ -235,13 +240,9 @@ footer{
     padding: 30px;
     gap: 3vh;
 }
-.about-title{
-    align-self:flex-start;
-    font-size: 25px;
-}
 .about-skill-title{
     font-size: 20px;
-    align-self: flex-start;
+    font-weight: 500;
 }
 
 .about-git{
@@ -280,7 +281,51 @@ footer{
     flex-direction: column;
 }
 
-
+/* contact page */
+.contact-container{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 19px;
+    
+}
+.contact-head{
+    width: 400px;
+}
+.contact-label{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.contact-input,.contact-submit{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+.contact-message{
+    height: 200px;
+    border-radius: 6px;
+    padding: 10px;
+    resize: none;
+    font-size: 15px;
+    
+}
+.contact-submit{
+    background-color: rgb(50, 50, 50);
+    color: whitesmoke;
+    cursor: pointer;
+}
+.contact-submit:hover{
+    background-color: rgb(99, 99, 99);
+}
 /* project - items */
 .project-grid{
     display: grid; 
@@ -443,9 +488,7 @@ footer{
         overflow: hidden;
     }
     /* about page */
-    .about-title{
-        font-size: 19px;
-    }
+
     .about-git{
         font-size: 14px;
     }
@@ -465,6 +508,24 @@ footer{
     .about-logo{
         height: 19px;
     }
+
+    /* contact page */
+    .contact-container{
+        width: 95%;
+        align-items: center;
+    }
+    #contact-form{
+        width: 80%;
+
+    }
+    .contact-head{
+        width: 80%;
+
+    }
+    .contact-label{
+        font-size: 17px;
+    }
+
     /* portfolio page */
     .portfolio-grid{
         grid-template-columns: repeat(2, 1fr); 
@@ -547,12 +608,10 @@ footer{
     }
     .web-title{
         font-size: 20px;
-        font-weight: 600;
     }
     .web-subtitle{
         font-size: 17px;
-        font-weight: 600;
-    
+
     }
     p{
         font-size: 15px;

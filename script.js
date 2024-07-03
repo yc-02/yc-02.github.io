@@ -23,9 +23,9 @@ const footer =
   <div class="footer-right">
     <p class="web-title">Contact</p>
     <div class="footer-contact">
-      <div class="footer-email"><i class="fa-solid fa-envelope"></i> <p>yingcui02@gmail.com</p></div>
-      <div class="footer-email"><i class="fa-solid fa-envelope"></i> <p>yingcui.roamer@gmail.com</p></div>
-      <div class="footer-email"><i class="fa-brands fa-github"></i><p>https://github.com/yc-02</p></div>
+      <a class="footer-email" href="mailto:yingcui02@gmail.com"><i class="fa-solid fa-envelope"></i><p>yingcui02@gmail.com</p></a>
+      <a class="footer-email" href="mailto:yingcui.roamer@gmail.com"><i class="fa-solid fa-envelope"></i><p>yingcui02@gmail.com</p></a>
+      <a class="footer-email" href="https://github.com/yc-02"><i class="fa-brands fa-github"></i><p>https://github.com/yc-02</p></a>
     </div>
   </div>
 </div>
