@@ -44,7 +44,7 @@ const phoneNav =
   </div>
   <div class="mobile-nav-right" id="contentsRight">
     <div class="closeNavButton" onclick="closeNav()">
-      <i class="fa-solid fa-xmark fa-lg"  style="color:inherit"></i>
+      <i class="fa-solid fa-xmark fa-lg" style="color:inherit"></i>
     </div>
     <div style="display: flex; flex-direction: column; gap: 10px; padding: 0px 20px;">
       <a href="/" class="navIcon">
@@ -52,15 +52,15 @@ const phoneNav =
           <p>Home</p>
       </a>
       <a href="/portfolio" class="navIcon">
-        <i class="fa-solid fa-folder-open"  style="color:inherit"></i>
+        <i class="fa-solid fa-folder-open" style="color:inherit"></i>
         <p>Portfolio</p>            
       </a>
       <a href="/about" class="navIcon">
-        <i class="fa-solid fa-house" style="color:inherit"></i>          
+        <i class="fa-solid fa-address-card" style="color:inherit"></i>          
         <p>About</p>
       </a>
       <a href="/contact" class="navIcon">
-        <i class="fa-solid fa-house" style="color:inherit"></i>          
+        <i class="fa-solid fa-envelope" style="color:inherit"></i>        
         <p>Contact</p>
       </a>
   </div>

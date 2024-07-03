@@ -167,6 +167,7 @@ footer{
     width: 95%;
     gap: 9px; 
     padding: 30px 20px;
+    overflow-x: hidden;
 }
 .card-link{
     display:flex; 
@@ -239,16 +240,26 @@ footer{
     align-self:flex-start;
     font-size: 25px;
 }
+.about-skill-title{
+    font-size: 20px;
+    align-self: flex-start;
+}
+
 .about-git{
     display: flex;
     align-items: center;
-}
-.about-subtitle{
-    font-size: 19px;
+    font-size: 16px;
     margin: 6px;
     gap: 6px;
     text-decoration: none;
     color: whitesmoke;
+}
+.about-git:hover{
+    color: rgb(99, 99, 99);
+}
+.about-subtitle{
+    font-size: 19px;
+    margin: 6px;
 }
 .logo-container{
     display: flex;
@@ -434,6 +445,12 @@ footer{
     /* about page */
     .about-title{
         font-size: 19px;
+    }
+    .about-git{
+        font-size: 14px;
+    }
+    .about-skill-title{
+        font-size: 16px;
     }
     .about-subtitle{
         font-size: 15px;
