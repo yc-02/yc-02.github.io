@@ -16,23 +16,25 @@ p,h1,h3,h4,ul{
     margin: 0;
 }
 h1{
-    font-size: 36px;
+    font-size: 33px;
 }
 h3{
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 h4{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
 }
 p, ul{
-    font-size: 14px;
+    font-size: 12px;
 }
-em,span{
-    font-size: 13px;
+span,em{
+    font-size: 11px;
 }
-
+em{
+    color: rgb(48, 48, 48);
+}
 
 .resume-left, .resume-right{
     display:flex;
@@ -42,8 +44,8 @@ em,span{
 .left-section,.right-section{
     display: inline-flex;
     flex-direction: column;
-    gap: 9px;
-    margin: 13px;
+    gap: 6px;
+    margin: 9px;
 }
 
 .section-details{
@@ -51,6 +53,8 @@ em,span{
     flex-direction: column;
     gap: 6px;
 }
+
+
 
 
 /* resume left */
@@ -84,37 +88,32 @@ em,span{
     gap: 6px;
 
 }
-
 .right-section a{
     color: inherit;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    text-decoration: none;
+    gap: 3px;
     color: rgb(48, 48, 48);
-    font-size: 15px;
+    font-size: 11px;
+    text-decoration: none;
 
 }
+
+
 
 .right-section ul{
     list-style-type: square;
 }
 .right-section li{
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
-em{
-    color: rgb(48, 48, 48);
-    font-size: 14px;
-}
+
 
 
 
 @page {
     size: letter;
     margin: 0.5in;
-    @bottom-center{
-        content:counter(page)
-    }
 }
 
 @media print {
