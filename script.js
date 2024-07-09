@@ -24,6 +24,7 @@ const footer =
     <p class="web-title">Contact</p>
     <div class="footer-contact">
       <a href="https://linkedin.com/in/yingcui02" class="footer-email" target="_blank"><i class="fa-brands fa-linkedin"></i><p>LinkedIn</p></a>
+      <a href="https://yingcui02.wordpress.com/" class="footer-email" target="_blank"><i class="fa-brands fa-wordpress"></i><p>Blog</p></a>
       <a class="footer-email" href="mailto:yingcui02@gmail.com"><i class="fa-solid fa-envelope"></i><p>yingcui02@gmail.com</p></a>
     </div>
   </div>
@@ -62,6 +63,10 @@ const phoneNav =
       <a href="/contact" class="navIcon">
         <i class="fa-solid fa-envelope" style="color:inherit"></i>        
         <p>Contact</p>
+      </a>
+      <a href="https://yingcui02.wordpress.com/" class="navIcon" target="_blank">
+        <i class="fa-brands fa-wordpress" style="color:inherit"></i>        
+        <p>Blog</p>
       </a>
   </div>
   </div> 
