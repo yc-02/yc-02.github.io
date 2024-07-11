@@ -64,10 +64,6 @@ const phoneNav =
         <i class="fa-solid fa-envelope" style="color:inherit"></i>        
         <p>Contact</p>
       </a>
-      <a href="https://yingcui02.wordpress.com/" class="navIcon" target="_blank">
-        <i class="fa-brands fa-wordpress" style="color:inherit"></i>        
-        <p>Blog</p>
-      </a>
   </div>
   </div> 
 </div>
