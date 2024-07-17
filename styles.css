@@ -276,8 +276,9 @@ footer{
     margin: 6px;
 }
 .about-logo{
-    height: 25px;
+    height: 26px;
 }
+
 .logo-line{
     display: flex;
     align-items: center;
