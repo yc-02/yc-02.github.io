@@ -204,11 +204,9 @@ footer{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-.card-image{
-    width: 200px;
     object-fit:cover;
 }
+
 .card-logo{
     display: flex;
     align-items: center;
@@ -678,3 +676,18 @@ footer{
     
 }
 
+@keyframes zoomInOut {
+    from {
+        transform: scale(1.0);
+    }
+    25% {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}
+
+.home-image:hover {
+    animation: zoomInOut 4s ease-in-out;
+}
