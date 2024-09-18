@@ -12,7 +12,7 @@ main{
     grid-template-columns: repeat(3,1fr);
 }
 
-p,h1,h3,h4,ul{
+p,h1,h3,h4,h5,ul{
     margin: 0;
 }
 h1{
@@ -26,6 +26,11 @@ h4{
     font-size: 13px;
     font-weight: 500;
 }
+h5{
+    font-size: 12px;
+    font-weight: 400;
+}
+
 p, ul{
     font-size: 12px;
 }

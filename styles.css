@@ -676,7 +676,7 @@ footer{
     
 }
 
-@keyframes zoomInOut {
+/* @keyframes zoomInOut {
     from {
         transform: scale(1);
     }
@@ -690,4 +690,4 @@ footer{
 
 .home-image {
     animation: zoomInOut 4s ease-in-out;
-}
+} */
