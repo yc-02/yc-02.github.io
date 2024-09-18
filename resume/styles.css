@@ -3,6 +3,7 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0.5in;
+    font-size: 15px;
 }
 
 
@@ -12,57 +13,76 @@ main{
     grid-template-columns: repeat(3,1fr);
 }
 
-p,h1,h3,h4,h5,ul{
+p,h1,h2,h3,h4,ul{
     margin: 0;
 }
+
 h1{
-    font-size: 33px;
+    font-size: 2.5em;
+}
+h2{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 6px;
 }
 h3{
-    font-size: 15px;
-    text-transform: uppercase;
-}
-h4{
-    font-size: 13px;
+    font-size: 0.95em;
     font-weight: 500;
 }
-h5{
-    font-size: 12px;
-    font-weight: 400;
+h4{
+    font-size: 0.88em;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(48, 48, 48);
 }
 
-p, ul{
-    font-size: 12px;
+
+p, li, span, em{
+    font-size: 0.85em;
 }
-span,em{
-    font-size: 11px;
-}
+
 em{
     color: rgb(48, 48, 48);
 }
 
-.resume-left, .resume-right{
-    display:flex;
-    flex-direction:column;
+.resume-left, .resume-right {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    gap: 16px;
 }
 
-.left-section,.right-section{
-    display: inline-flex;
-    flex-direction: column;
-    gap: 6px;
-    margin: 9px;
-}
 
-.section-details{
-    display: inline-flex;
+.skills-inner {
+    display: flex;
     flex-direction: column;
+    line-height: 1.5;
     gap: 6px;
 }
 
+.contact-inner, .education-inner, .certifications-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.education-inner, .certifications-inner {
+    gap: 3px;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.education-details p{
+    color: rgb(48, 48, 48);
+    font-size: 0.8em;
+}
 
 
-
-/* resume left */
 .withIcon{
     text-decoration: none;
     color: inherit;
@@ -76,45 +96,68 @@ em{
     display: inline-flex;
     justify-content: center;
 }
+
 .resume-left{
     background-color: #e6f6f4;
 }
 
 
 /* resume right */
-
-
 .resume-right{
     grid-column:2/ span 3;
 }
 
-.right-links{
-    display: flex;
-    gap: 6px;
-
-}
 .right-section a{
     color: inherit;
     display: inline-flex;
     align-items: center;
     gap: 3px;
     color: rgb(48, 48, 48);
-    font-size: 11px;
     text-decoration: none;
-
 }
 
+.project-title{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 6px;
+}
+.project-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
 
+.project-title h2 {
+    padding: 0;
+}
 
 .right-section ul{
     list-style-type: square;
+    padding-top: 6px;
 }
 .right-section li{
     padding-bottom: 3px;
 }
 
+.work-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 
+.work-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.work-second {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 @page {
     size: letter;
