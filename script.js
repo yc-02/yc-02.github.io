@@ -1,5 +1,5 @@
-const deskNav=
-`
+const deskNav =
+  `
 <div class="desk-nav">
   <div class="desk-nav-left">
     <a href="/">yc-02</a>
@@ -14,7 +14,7 @@ const deskNav=
 `
 
 const footer =
-`
+  `
 <div class="footer-container">
   <div class="footer-left">
     <i class="fa-regular fa-copyright" color="inherit"></i>
@@ -30,8 +30,8 @@ const footer =
 </div>
 `
 
-const phoneNav = 
-`
+const phoneNav =
+  `
 <div class="mobile-nav">
 <div class="openNav">
   <a href="/" style="font-style: italic; font-size: larger; text-decoration: none; color: inherit; font-weight: 500;">yc-02</a>
@@ -70,89 +70,88 @@ const phoneNav =
 `
 
 //render navbar and footer
-const promise1 = document.querySelector('nav').insertAdjacentHTML("afterbegin",phoneNav);
-const promise2 = document.querySelector('footer').insertAdjacentHTML("afterbegin",footer);
-const promise3 = document.querySelector('nav').insertAdjacentHTML("afterend",deskNav)
+const promise1 = document.querySelector('nav').insertAdjacentHTML("afterbegin", phoneNav);
+const promise2 = document.querySelector('footer').insertAdjacentHTML("afterbegin", footer);
+const promise3 = document.querySelector('nav').insertAdjacentHTML("afterend", deskNav)
 
-Promise.all([promise1,promise2,promise3]).then(()=>{
-      document.body.style.display = 'block';
-    })
-    .catch(error => console.error('Error fetching HTML file:', error));
+Promise.all([promise1, promise2, promise3]).then(() => {
+  document.body.style.display = 'block';
+})
+  .catch(error => console.error('Error fetching HTML file:', error));
 
 
 
-  // small navbar open and close  
-  function openNav() {
-    document.getElementById("contents").style.display ='block'
-    document.getElementById("openButton").style.display ='none'
-    document.body.style.overflow = "hidden";
-    document.getElementById("contentsRight").style.animation = 'slideIn 0.2s forwards';
-    document.getElementById("contentsLeft").style.animation = 'opacity 0.2s 0.2s forwards';
-  }
-  function closeNav(){
-    document.getElementById("contents").style.display ='none'
-    document.getElementById("openButton").style.display ='block'
-    document.getElementById('projects').style.display='none'
-    document.getElementById('apps').style.display='none'
-    document.body.style.overflow ="scroll";
-  }
-  
-  // function toggleProjects() {
-  //   const projectsDiv = document.getElementById('projects');
-  //   if (projectsDiv.style.display === 'block') {
-  //       projectsDiv.style.display = 'none';
-  //   } else {
-  //       projectsDiv.style.display = 'block';
-  //   }
-  // }
-  
-  // function toggleApps(){
-  //   const appsDiv = document.getElementById('apps');
-  //   if (appsDiv.style.display === 'block') {
-  //       appsDiv.style.display = 'none';
-  //   } else {
-  //       appsDiv.style.display = 'block';
-  //   }
-  
-  // }
-  
-  
-   //navbar current style
-  const currentUrl = window.location.href
-  const homeLink = document.querySelector('.home-link')
-  const portfolioLink = document.querySelector('.portfolio-link')
-  const aboutLink = document.querySelector('.about-link')
-  const contactLink = document.querySelector('.contact-link')
+// small navbar open and close  
+function openNav() {
+  document.getElementById("contents").style.display = 'block'
+  document.getElementById("openButton").style.display = 'none'
+  document.body.style.overflow = "hidden";
+  document.getElementById("contentsRight").style.animation = 'slideIn 0.2s forwards';
+  document.getElementById("contentsLeft").style.animation = 'opacity 0.2s 0.2s forwards';
+}
+function closeNav() {
+  document.getElementById("contents").style.display = 'none'
+  document.getElementById("openButton").style.display = 'block'
+  document.getElementById('projects').style.display = 'none'
+  document.getElementById('apps').style.display = 'none'
+  document.body.style.overflow = "scroll";
+}
 
-  if(portfolioLink){
-    if(currentUrl.endsWith('/portfolio/')|| 
-    currentUrl.endsWith('/travel-blog/')||
-      currentUrl.endsWith('/coffee-mobile/') || 
-      currentUrl.endsWith('/footwear/') || 
-      currentUrl.endsWith('/restaurant/')||
-      currentUrl.endsWith('/recipes-blog/')){
-      portfolioLink.classList.add('current-link')
-      homeLink.classList.remove('current-link')
-    }else{
-      portfolioLink.classList.remove('current-link')
-    }
+// function toggleProjects() {
+//   const projectsDiv = document.getElementById('projects');
+//   if (projectsDiv.style.display === 'block') {
+//       projectsDiv.style.display = 'none';
+//   } else {
+//       projectsDiv.style.display = 'block';
+//   }
+// }
+
+// function toggleApps(){
+//   const appsDiv = document.getElementById('apps');
+//   if (appsDiv.style.display === 'block') {
+//       appsDiv.style.display = 'none';
+//   } else {
+//       appsDiv.style.display = 'block';
+//   }
+
+// }
+
+
+//navbar current style
+const currentUrl = window.location.href
+const homeLink = document.querySelector('.home-link')
+const portfolioLink = document.querySelector('.portfolio-link')
+const aboutLink = document.querySelector('.about-link')
+const contactLink = document.querySelector('.contact-link')
+
+if (portfolioLink) {
+  if (currentUrl.endsWith('/portfolio/') ||
+    currentUrl.endsWith('/travel-blog/') ||
+    currentUrl.endsWith('/coffee-mobile/') ||
+    currentUrl.endsWith('/footwear/') ||
+    currentUrl.endsWith('/restaurant/') ||
+    currentUrl.endsWith('/recipes-blog/')) {
+    portfolioLink.classList.add('current-link')
+    homeLink.classList.remove('current-link')
+  } else {
+    portfolioLink.classList.remove('current-link')
   }
-  
-  if(aboutLink){
-    if(currentUrl.endsWith('/about/')){
-      aboutLink.classList.add('current-link')
-      homeLink.classList.remove('current-link')
-    }else{
-      aboutLink.classList.remove('current-link')
-    }
+}
+
+if (aboutLink) {
+  if (currentUrl.endsWith('/about/')) {
+    aboutLink.classList.add('current-link')
+    homeLink.classList.remove('current-link')
+  } else {
+    aboutLink.classList.remove('current-link')
   }
-  if(contactLink){
-    if(currentUrl.endsWith('/contact/')){
-      contactLink.classList.add('current-link')
-      homeLink.classList.remove('current-link')
-    }else{
-      contactLink.classList.remove('current-link')
-    }
+}
+if (contactLink) {
+  if (currentUrl.endsWith('/contact/')) {
+    contactLink.classList.add('current-link')
+    homeLink.classList.remove('current-link')
+  } else {
+    contactLink.classList.remove('current-link')
   }
-  
-  
+}
+

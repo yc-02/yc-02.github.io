@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,19 @@
     <title>Contact</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-              publicKey: "TFUVPMi4utIkF8R46",
+                publicKey: "TFUVPMi4utIkF8R46",
             });
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // these IDs from the previous steps
-                emailjs.sendForm('service_u5vi5od','template_9kedb7o', this)
+                emailjs.sendForm('service_u5vi5od', 'template_9kedb7o', this)
                     .then(() => {
                         alert("Message sent successfully! I will get back to you soon!");
                         window.location.replace("/")
@@ -33,6 +34,7 @@
         }
     </script>
 </head>
+
 <body style="display: none;">
     <div class="container">
         <div>
@@ -65,19 +67,19 @@
     <script>
         const error = document.getElementById('email-error')
         const button = document.getElementById('submit-button')
-        document.getElementById("contact-email").addEventListener("blur",function(){
+        document.getElementById("contact-email").addEventListener("blur", function () {
             const email = document.getElementById("contact-email").value;
             const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if(!pattern.test(email)){
-                error.style.display="block";
-                button.disabled=true;
-            }else{
-                error.style.display="none";
-                button.disabled=false;
+            if (!pattern.test(email)) {
+                error.style.display = "block";
+                button.disabled = true;
+            } else {
+                error.style.display = "none";
+                button.disabled = false;
             }
         })
     </script>
     <script src="../../script.js"></script>
 </body>
-</html>
 
+</html>
