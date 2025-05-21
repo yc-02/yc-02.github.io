@@ -141,7 +141,7 @@ main {
 }
 
 /* home and about small screen */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .home-title {
         font-size: 2rem;
     }
@@ -292,22 +292,23 @@ footer {
     font-weight: 600;
 }
 
-
-/*  portfolio */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5em;
+    gap: 3rem;
     padding: 2rem;
-    margin-top: 3em;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .card-image-container {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    width: 230px;
-    height: 230px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -348,12 +349,11 @@ footer {
 
 .card-title {
     font-size: 1.1em;
-    max-width: 230px;
     min-height: 30px;
 }
 
 /* small screen */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .desk-nav {
         display: none;
     }
@@ -428,19 +428,6 @@ footer {
         padding: 20px 0;
     }
 
-    .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2em;
-        padding: 2rem;
-        margin-top: 1em;
-    }
-
-    .card-image-container {
-        width: 180px;
-        height: 180px;
-    }
-
     .card-badge img {
         width: 80px;
     }
@@ -450,14 +437,13 @@ footer {
         max-width: 180px;
         min-height: 30px;
     }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .card-image-container {
-        width: 150px;
-        height: 150px;
-    }
-
     .card-badge {
         padding: 3px 5px;
         border-radius: 6px;
