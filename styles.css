@@ -141,7 +141,7 @@ main {
 }
 
 /* home and about small screen */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .home-title {
         font-size: 2rem;
     }
@@ -353,7 +353,7 @@ footer {
 }
 
 /* small screen */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .desk-nav {
         display: none;
     }
@@ -441,10 +441,6 @@ footer {
         height: 180px;
     }
 
-    .card-badge {
-        padding: 6px 10px;
-    }
-
     .card-badge img {
         width: 80px;
     }
@@ -453,6 +449,27 @@ footer {
         font-size: 1em;
         max-width: 180px;
         min-height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-badge {
+        padding: 3px 5px;
+        border-radius: 6px;
+    }
+
+    .card-badge img {
+        width: 50px;
+    }
+
+    .card-title {
+        max-width: 150px;
+        min-height: 50px;
     }
 }
 
