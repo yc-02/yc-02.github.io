@@ -1,5 +1,6 @@
 const deskNav =
   `
+<div class="desk-nav-wrapper">
 <div class="desk-nav">
   <div class="desk-nav-left">
     <a href="/">yc-02</a>
@@ -10,10 +11,13 @@ const deskNav =
       <a href="/about" class="about-link">About</a>
   </div>
 </div>
+</div>
+
 `
 
 const footer =
   `
+<div class="footer-wrapper">
 <div class="footer-container">
   <div class="footer-left">
     <i class="fa-regular fa-copyright" color="inherit"></i>
@@ -26,6 +30,7 @@ const footer =
       <a class="footer-email" href="mailto:yingcui02@gmail.com"><i class="fa-solid fa-envelope"></i><p>yingcui02@gmail.com</p></a>
     </div>
   </div>
+</div>
 </div>
 `
 
