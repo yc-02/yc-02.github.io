@@ -352,6 +352,11 @@ footer {
     min-height: 30px;
 }
 
+.card-wrapper {
+    display: grid;
+    grid-template-rows: (3, auto);
+}
+
 /* small screen */
 @media screen and (max-width: 900px) {
     .desk-nav {
@@ -434,12 +439,11 @@ footer {
 
     .card-title {
         font-size: 1em;
-        max-width: 180px;
-        min-height: 30px;
     }
 
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
     }
 }
 
@@ -451,11 +455,6 @@ footer {
 
     .card-badge img {
         width: 50px;
-    }
-
-    .card-title {
-        max-width: 150px;
-        min-height: 50px;
     }
 }
 
