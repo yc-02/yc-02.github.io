@@ -458,15 +458,20 @@ footer {
     }
 }
 
+
 @media screen and (max-width: 480px) {
-    .card-badge {
-        padding: 3px 5px;
-        border-radius: 6px;
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .card-badge img {
-        width: 50px;
+
+    .card-image-container {
+        aspect-ratio: 1 / 1;
+        /* Still force image to be square */
     }
+
+
 }
 
 @keyframes slideIn {
