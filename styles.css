@@ -136,7 +136,12 @@ main {
 }
 
 .about-logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
+    filter: brightness(1);
+}
+
+.about-cer:hover {
+    transform: scale(5);
     filter: brightness(1);
 }
 
