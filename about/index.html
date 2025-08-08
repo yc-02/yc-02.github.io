@@ -2,67 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
-    <title>About Me</title>
+
+    <link rel="stylesheet" href="../util/styles.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico" />
+    <title>About • Ying Cui</title>
 </head>
 
 <body style="display: none;">
-    <div class="container">
-        <div>
-            <nav class="navbar"></nav>
-            <main>
-                <div class="about-container">
-                    <section class="about-des">
-                        <h1 class="about-title">About</h1>
-                        <p class="about-subtitle">Web developer with a focus on full-stack technologies.</p>
+    <nav></nav>
+    <main class="about-main">
+        <section class="about-hero container">
+            <h1 class="about-title">About</h1>
+            <div class="subtitle-container">
+                <p class="about-subtitle">
+                    Web developer
+                </p>
+                <p class="about-subtitle">
+                    Software engineering intern
+                </p>
+                <p class="about-subtitle">
+                    Master’s student in Software Engineering
+                </p>
+                <br>
+                <p class="regular-subtitle">
+                    Building fast, accessible, and maintainable full-stack apps.
+                </p>
+            </div>
+            <div class="about-profile" role="list">
+                <a href="https://github.com/yc-02" target="_blank" rel="noopener"
+                    aria-label="GitHub (opens in a new tab)" class="about-contact-link" role="listitem">
+                    <i class="fa-brands fa-github fa-xl" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/yingcui02" target="_blank" rel="noopener"
+                    aria-label="LinkedIn (opens in a new tab)" class="about-contact-link" role="listitem">
+                    <i class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
 
-                        <div class="about-profile">
-                            <a href="https://github.com/yc-02" target="_blank" aria-label="GitHub"
-                                class="about-contact-link">
-                                <i class="fa-brands fa-github fa-xl"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/yingcui02" target="_blank" aria-label="LinkedIn"
-                                class="about-contact-link">
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                    </section>
-                    <section class="skill-container">
-                        <h2 class="about-skill-title">Skills</h2>
-                        <div class="logo-grid">
-                            <img src="/logos/C++_Logo.png" class="about-logo" alt="C++" />
-                            <img src="/logos/java.189x256.png" class="about-logo" alt="Java" />
-                            <img src="/logos/python_logo.png" class="about-logo" alt="Python" />
-                            <img src="/logos/javascript.svg" class="about-logo" alt="JavaScript" />
-                            <img src="/logos/typescript.png" class="about-logo" alt="TypeScript" />
-                            <img src="/logos/HTML5_Logo.png" class="about-logo" alt="HTML5" />
-                            <img src="/logos/CSS3_logo.png" class="about-logo" alt="CSS3" />
-                            <img src="/logos/tailwind.svg" class="about-logo" alt="Tailwind CSS" />
-                            <img src="/logos/react.svg" class="about-logo" alt="React" />
-                            <img src="/logos/nextjs.png" class="about-logo" alt="Next.js" />
-                            <img src="/logos/nodejs.svg" class="about-logo" alt="Node.js" />
-                            <img src="/logos/Postgresql_elephant.svg" class="about-logo" alt="PostgreSQL" />
-                            <img src="/logos/mongoDB.png" class="about-logo" alt="MongoDB" />
-                            <img src="/logos/mysql_logo.png" class="about-logo" alt="MySQL" />
-                            <img src="/logos/firebase.png" class="about-logo" alt="Firebase" />
-                            <img src="/logos/aws-logo.png" class="about-logo" alt="AWS" />
-                            <img src="/logos/aws.png" class="about-logo about-cer" alt="AWS" />
-                        </div>
-                    </section>
-                    <div>
-                    </div>
-                </div>
-            </main>
-        </div>
-        <footer></footer>
-    </div>
-    <script src="../../script.js"></script>
+        <section class="skills container">
+            <h2 class="about-skill-title">Skills</h2>
+
+            <ul class="logo-grid" aria-label="Technology logos">
+                <!-- Keep alt text meaningful (tech name only) -->
+                <li class="logo-item">
+                    <img src="/logos/C++_Logo.png" alt="C++" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/java.189x256.png" alt="Java" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/python_logo.png" alt="Python" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/javascript.svg" alt="JavaScript" class="about-logo" loading="lazy"
+                        decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/typescript.png" alt="TypeScript" class="about-logo" loading="lazy"
+                        decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/HTML5_Logo.png" alt="HTML5" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/CSS3_logo.png" alt="CSS3" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/tailwind.svg" alt="Tailwind CSS" class="about-logo" loading="lazy"
+                        decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/react.svg" alt="React" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/nextjs.png" alt="Next.js" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/nodejs.svg" alt="Node.js" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/Postgresql_elephant.svg" alt="PostgreSQL" class="about-logo" loading="lazy"
+                        decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/mongoDB.png" alt="MongoDB" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/mysql_logo.png" alt="MySQL" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/firebase.png" alt="Firebase" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+                <li class="logo-item">
+                    <img src="/logos/aws-logo.png" alt="AWS" class="about-logo" loading="lazy" decoding="async" />
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="../util/script.js" defer></script>
 </body>
 
 </html>

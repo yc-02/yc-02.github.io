@@ -17,7 +17,6 @@ const deskNav =
 
 const footer =
   `
-<div class="footer-wrapper">
 <div class="footer-container">
   <div class="footer-left">
     <i class="fa-regular fa-copyright" color="inherit"></i>
@@ -30,7 +29,6 @@ const footer =
       <a class="footer-email" href="mailto:yingcui02@gmail.com"><i class="fa-solid fa-envelope"></i><p>yingcui02@gmail.com</p></a>
     </div>
   </div>
-</div>
 </div>
 `
 
@@ -70,9 +68,10 @@ const phoneNav =
 `
 
 //render navbar and footer
+
 const promise1 = document.querySelector('nav').insertAdjacentHTML("afterbegin", phoneNav);
 const promise2 = document.querySelector('footer').insertAdjacentHTML("afterbegin", footer);
-const promise3 = document.querySelector('nav').insertAdjacentHTML("afterend", deskNav)
+const promise3 = document.querySelector('nav').insertAdjacentHTML("afterbegin", deskNav)
 
 Promise.all([promise1, promise2, promise3]).then(() => {
   document.body.style.display = 'block';
@@ -96,25 +95,6 @@ function closeNav() {
   document.getElementById('apps').style.display = 'none'
   document.body.style.overflow = "scroll";
 }
-
-// function toggleProjects() {
-//   const projectsDiv = document.getElementById('projects');
-//   if (projectsDiv.style.display === 'block') {
-//       projectsDiv.style.display = 'none';
-//   } else {
-//       projectsDiv.style.display = 'block';
-//   }
-// }
-
-// function toggleApps(){
-//   const appsDiv = document.getElementById('apps');
-//   if (appsDiv.style.display === 'block') {
-//       appsDiv.style.display = 'none';
-//   } else {
-//       appsDiv.style.display = 'block';
-//   }
-
-// }
 
 
 //navbar current style
@@ -141,5 +121,4 @@ if (aboutLink) {
     aboutLink.classList.remove('current-link')
   }
 }
-
 

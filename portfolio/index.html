@@ -5,81 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../util/styles.css">
+  <link rel="stylesheet" href="./portfolio.css">
   <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
   <title>Portfolio</title>
 </head>
 
 <body style="display: none;">
-  <div class="container">
-    <div>
-      <nav class="navbar"></nav>
-      <main>
-        <div class="portfolio-grid">
-          <!-- dashboard -->
-          <div class="card-wrapper">
-            <div class="card-image-container">
-              <img src="../images/projects/medicare/medicare2.png" alt="recipe-blog" class="card-image" />
-              <a href="https://github.com/yc-02/project_x" target="_blank" class="card-badge">
-                <img src="../../logos/github.png" alt="github" />
-              </a>
-            </div>
-            <p class="card-title">Medicare Insights Dashboard</p>
-            <div class="card-logo">
-              <img src="../logos/Postgresql_elephant.svg" height="16px" alt="postgresql" />
-              <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-              <img src="../logos/supabase.png" height="16px" alt="react" />
-              <img src="../logos/typescript.png" height="16px" alt="js" />
-            </div>
+  <nav></nav>
+  <main class="portfolio-main">
+    <div class="portfolio-grid">
+      <!-- app -->
+      <div class="card-wrapper">
+        <div class="card-image-container">
+          <img src="/images/roamer.png" alt="roamer" class="card-image" />
+          <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155" target="_blank" class="card-badge apple-badge">
+            <img src="../../logos/apple-store.svg" alt="app-store" />
+          </a>
+        </div>
+        <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155" target="_blank">
+          <p class="card-title">Roamer App - Itinerary & Packing List</p>
+          <div class="card-logo">
+            <img src="../logos/react.svg" height="16px" alt="react" />
+            <img src="../logos/typescript.png" height="16px" alt="ts" />
           </div>
-          <!-- app -->
-          <div class="card-wrapper">
-            <div class="card-image-container">
-              <img src="/images/roamer.png" alt="roamer" class="card-image" />
-              <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155" target="_blank" class="card-badge">
-                <img src="../../logos/apple-store.svg" alt="app-store" />
-              </a>
-            </div>
-            <p class="card-title">Roamer App - Itinerary & Packing List</p>
-            <div class="card-logo">
-              <img src="../logos/react.svg" height="16px" alt="react" />
-              <img src="../logos/typescript.png" height="16px" alt="ts" />
-            </div>
-          </div>
-          <!-- recipe-blog -->
-          <div class="card-wrapper">
-            <div class="card-image-container">
-              <img src="../images/projects/recipes/project-home.png" alt="recipe-blog" class="card-image" />
-              <a href="https://github.com/yc-02/recipes-blog-updated" target="_blank" class="card-badge">
-                <img src="../../logos/github.png" alt="github" />
-              </a>
-            </div>
-            <p class="card-title"> Recipes Blog </p>
-            <div class="card-logo">
-              <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-              <img src="../logos/supabase.png" height="16px" alt="supabase" />
-              <img src="../logos/typescript.png" height="16px" alt="ts" />
-              <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
-            </div>
-          </div>
-          <!-- footware -->
-          <div class="card-wrapper">
-            <div class="card-image-container">
-              <img src="../images/projects/footwear/project-home.png" alt="recipe-blog" class="card-image" />
-              <a href="https://github.com/yc-02/02footwear" target="_blank" class="card-badge">
-                <img src="../../logos/github.png" alt="github" />
-              </a>
-            </div>
-            <p class="card-title"> Footwear E-commerce Platform </p>
-            <div class="card-logo">
-              <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-              <img src="../logos/supabase.png" height="16px" alt="supabase" />
-              <img src="../logos/contentful.png" height="16px" alt="contentful" />
-              <img src="../logos/typescript.png" height="16px" alt="ts" />
-              <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
-            </div>
-          </div>
-          <!-- <div class="card-wrapper">
+        </a>
+      </div>
+      <!-- <div class="card-wrapper">
             <div class="card-image">
               <img src="../images/projects/travel-blog/project-home.png" class="card-image" alt="card-image" />
             </div>
@@ -89,41 +41,98 @@
               <img src="../logos/mongoDB.png" height="16px" alt="mongodb" />
             </div>
           </div> -->
-          <div class="card-wrapper">
-            <div class="card-image-container">
-              <img src="../images/projects/restaurant/project-home.png" alt="card-image" class="card-image" />
-              <a href="https://github.com/yc-02/02restautant" target="_blank" class="card-badge">
-                <img src="../../logos/github.png" alt="github" />
-              </a>
-            </div>
-            <p class="card-title">Restaurant Reservation and Menu Platform</p>
-            <div class="card-logo">
-              <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-              <img src="../logos/supabase.png" height="16px" alt="supabase" />
-              <img src="../logos/typescript.png" height="16px" alt="ts" />
-              <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
-            </div>
-          </div>
-          <!-- mobile app -->
-          <div class="card-wrapper">
-            <div class="card-image-container">
-              <img src="../images/projects/coffeeshop/coffee-home.png" alt="recipe-blog" class="card-image" />
-              <a href="https://github.com/yc-02/react-native-coffee" target="_blank" class="card-badge">
-                <img src="../../logos/github.png" alt="github" />
-              </a>
-            </div>
-            <p class="card-title">Coffee Shop Mobile App</p>
-            <div class="card-logo">
-              <img src="../logos/react.svg" height="16px" alt="react" />
-              <img src="../logos/javascript.svg" height="16px" alt="js" />
-            </div>
-          </div>
+      <div class="card-wrapper">
+        <div class="card-image-container">
+          <img src="../images/projects/restaurant/project-home.png" alt="card-image" class="card-image" />
+          <a href="https://github.com/yc-02/02restautant" target="_blank" class="card-badge">
+            <img src="../../logos/github.png" alt="github" />
+          </a>
         </div>
-      </main>
+        <a href="https://github.com/yc-02/02restautant" target="_blank">
+          <p class="card-title">Restaurant Reservation and Menu Platform</p>
+          <div class="card-logo">
+            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
+            <img src="../logos/supabase.png" height="16px" alt="supabase" />
+            <img src="../logos/typescript.png" height="16px" alt="ts" />
+            <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
+          </div>
+        </a>
+      </div>
+      <!-- mobile app -->
+      <div class="card-wrapper">
+        <div class="card-image-container">
+          <img src="../images/projects/coffeeshop/coffee-home.png" alt="recipe-blog" class="card-image" />
+          <a href="https://github.com/yc-02/react-native-coffee" target="_blank" class="card-badge">
+            <img src="../../logos/github.png" alt="github" />
+          </a>
+        </div>
+        <a href="https://github.com/yc-02/react-native-coffee" target="_blank">
+          <p class="card-title">Coffee Shop Mobile App</p>
+          <div class="card-logo">
+            <img src="../logos/react.svg" height="16px" alt="react" />
+            <img src="../logos/javascript.svg" height="16px" alt="js" />
+          </div>
+        </a>
+      </div>
+      <!-- footware -->
+      <div class="card-wrapper">
+        <div class="card-image-container">
+          <img src="../images/projects/footwear/project-home.png" alt="recipe-blog" class="card-image" />
+          <a href="https://github.com/yc-02/02footwear" target="_blank" class="card-badge">
+            <img src="../../logos/github.png" alt="github" />
+          </a>
+        </div>
+        <a href="https://github.com/yc-02/02footwear" target="_blank">
+          <p class="card-title"> Footwear E-commerce Platform </p>
+          <div class="card-logo">
+            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
+            <img src="../logos/supabase.png" height="16px" alt="supabase" />
+            <img src="../logos/contentful.png" height="16px" alt="contentful" />
+            <img src="../logos/typescript.png" height="16px" alt="ts" />
+            <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
+          </div>
+        </a>
+      </div>
+      <!-- dashboard -->
+      <div class="card-wrapper">
+        <div class="card-image-container">
+          <img src="../images/projects/medicare/medicare2.png" alt="recipe-blog" class="card-image" />
+          <a href="https://github.com/yc-02/project_x" target="_blank" class="card-badge">
+            <img src="../../logos/github.png" alt="github" />
+          </a>
+        </div>
+        <a href="https://github.com/yc-02/project_x" target="_blank">
+          <p class="card-title">Medicare Insights Dashboard</p>
+          <div class="card-logo">
+            <img src="../logos/Postgresql_elephant.svg" height="16px" alt="postgresql" />
+            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
+            <img src="../logos/supabase.png" height="16px" alt="react" />
+            <img src="../logos/typescript.png" height="16px" alt="js" />
+          </div>
+        </a>
+      </div>
+      <!-- recipe-blog -->
+      <div class="card-wrapper">
+        <div class="card-image-container">
+          <img src="../images/projects/recipes/project-home.png" alt="recipe-blog" class="card-image" />
+          <a href="https://github.com/yc-02/recipes-blog-updated" target="_blank" class="card-badge">
+            <img src="../../logos/github.png" alt="github" />
+          </a>
+        </div>
+        <a href="https://github.com/yc-02/recipes-blog-updated" target="_blank">
+          <p class="card-title"> Recipes Blog </p>
+          <div class="card-logo">
+            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
+            <img src="../logos/supabase.png" height="16px" alt="supabase" />
+            <img src="../logos/typescript.png" height="16px" alt="ts" />
+            <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
+          </div>
+        </a>
+      </div>
     </div>
-    <footer></footer>
-  </div>
-  <script src="../../script.js"></script>
+  </main>
+  <footer></footer>
+  <script src="../util/script.js"></script>
 </body>
 
 </html>
