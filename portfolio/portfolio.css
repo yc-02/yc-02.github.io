@@ -85,9 +85,10 @@ a {
 
 .card-title {
     margin: 14px 14px 8px;
-    font-size: var(--fs-body, clamp(1.125rem, .6vw+1rem, 1.25rem));
+    font-size: var(--fs-body);
     color: var(--fg);
     line-height: 1.35;
+    min-height: 3rem;
 }
 
 .card-logo {
