@@ -1,7 +1,7 @@
 .about-main {
     flex-direction: column;
-    min-height: 80vh;
-    justify-content: center;
+    padding: 3em 2em;
+    gap: 3rem;
 }
 
 .about-hero.container,

@@ -1,70 +1,60 @@
 .portfolio-main {
     flex-direction: column;
-    min-height: 80vh;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 3rem;
+    padding: 3em 2em;
 }
 
-a {
-    text-decoration: none;
+.app-top {
+    display: flex;
 }
 
-.card-wrapper {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px var(--shadow-dark, rgba(0, 0, 0, 0.35));
-    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
-    will-change: transform;
-}
-
-.card-wrapper:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: color-mix(in srgb, var(--accent) 35%, transparent);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
-}
-
-
-.card-image-container {
-    position: relative;
+.app-image-container {
+    width: 150px;
     aspect-ratio: 1;
-    background: #0f141a;
+    border-radius: 13px;
+    overflow: hidden;
+    display: inline-block;
 }
 
-.card-image {
+.app-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: saturate(.95) contrast(1.02);
-    transition: transform .25s ease, filter .25s ease;
+    transition: transform .25s ease, filter .25s ease, box-shadow .2s ease;
 }
 
-.card-wrapper:hover .card-image {
+.app-image-container:hover img {
     transform: scale(1.03);
     filter: saturate(1) contrast(1.05);
 }
 
-.card-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    border-radius: 8px;
-    object-fit: contain;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(4px);
-    text-decoration: none;
-    transition: transform .15s ease, background-color .2s ease, border-color .2s ease;
+.app-right {
+    padding: 3px 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.app-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.app-title {
+    font-size: var(--fs-h2);
+    color: var(--fg);
+    margin: 0;
+    padding: 0;
+}
+
+.app-subtitle {
+    font-size: var(--fs-body);
+    color: var(--fg-dim);
+    margin: 0;
+    padding: 0;
 }
 
 .apple-badge {
@@ -73,63 +63,85 @@ a {
     border-radius: none;
 }
 
-.card-badge:hover {
-    transform: translateY(-1px);
-    background: rgba(0, 0, 0, 0.6);
+.divider-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--fg-dim);
+    margin: 1.5rem 0;
+    border: none;
 }
 
-.card-badge img {
-    width: 100px;
-    object-fit: contain;
+
+/* Archive */
+.arch-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
-.card-title {
-    margin: 14px 14px 8px;
-    font-size: var(--fs-body);
-    color: var(--fg);
-    line-height: 1.35;
-    min-height: 3rem;
+.arch-card summary {
+    cursor: pointer;
+    list-style: none;
 }
 
-.card-logo {
+.arch-head {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 0 14px 16px;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.arch-title {
+    font-size: 1rem;
+    font-weight: 500;
+    flex: 1;
+}
+
+.arch-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     opacity: .9;
 }
 
-.card-logo img {
+.arch-logo img {
     height: 16px;
     width: auto;
     filter: brightness(.95);
 }
 
-.card-wrapper a {
-    color: inherit;
+.nodejs img {
+    height: 26px;
 }
 
-
-.card-wrapper:focus-within,
-.card-badge:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 2px;
+.arch-badge {
+    background: var(--fg-dim);
+    padding: 6px 9px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: var(--fg);
 }
 
-
-@media (max-width: 767px) {
-    .portfolio-main {
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 1rem;
-    }
+.arch-body {
+    padding: 1rem;
 }
 
+.arch-shots {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0.25rem 0;
+}
 
-@media (prefers-reduced-motion: reduce) {
-
-    .card-wrapper,
-    .card-image {
-        transition: none;
-    }
+.arch-shots img {
+    height: clamp(160px, 25vh, 280px);
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #0a0f14;
+    object-fit: cover;
+    scroll-snap-align: center;
 }

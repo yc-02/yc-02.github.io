@@ -14,122 +14,175 @@
 <body style="display: none;">
   <nav></nav>
   <main class="portfolio-main">
-    <div class="portfolio-grid">
-      <!-- app -->
-      <div class="card-wrapper">
-        <div class="card-image-container">
-          <img src="/images/roamer.png" alt="roamer" class="card-image" />
-          <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155" target="_blank" class="card-badge apple-badge">
-            <img src="../../logos/apple-store.svg" alt="app-store" />
+    <section class="active-app">
+      <div class="app-top">
+        <div class="app-image-container">
+          <img src="/images/roamer/roamer.png" alt="Roamer icon" />
+        </div>
+        <div class="app-right">
+          <div class="app-title-container">
+            <p class="app-title">Roamer - Plan & Pack</p>
+            <p class="app-subtitle">Itinerary & Packing List</p>
+          </div>
+          <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155" target="_blank" class="apple-badge">
+            <img src="/logos/apple-store.svg" alt="app-store" />
           </a>
         </div>
-        <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155" target="_blank">
-          <p class="card-title">Roamer App - Itinerary & Packing List</p>
-          <div class="card-logo">
-            <img src="../logos/react.svg" height="16px" alt="react" />
-            <img src="../logos/typescript.png" height="16px" alt="ts" />
-          </div>
-        </a>
       </div>
-      <!-- <div class="card-wrapper">
-            <div class="card-image">
-              <img src="../images/projects/travel-blog/project-home.png" class="card-image" alt="card-image" />
-            </div>
-            <p class="card-title">Travel Blog</p>
-            <div class="card-logo">
-              <img src="../logos/nodejs.svg" height="16px" alt="nodejs" />
-              <img src="../logos/mongoDB.png" height="16px" alt="mongodb" />
-            </div>
-          </div> -->
-      <div class="card-wrapper">
-        <div class="card-image-container">
-          <img src="../images/projects/restaurant/project-home.png" alt="card-image" class="card-image" />
-          <a href="https://github.com/yc-02/02restautant" target="_blank" class="card-badge">
-            <img src="../../logos/github.png" alt="github" />
-          </a>
+      <!-- 
+  <details class="shots-expand">
+    <summary class="shots-summary">
+      <span class="label-closed">Show screenshots</span>
+      <span class="label-open">Hide screenshots</span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+
+    <div class="shots-panel">
+      <div class="divider-line"></div>
+      <div class="shots-carousel" aria-label="App screenshots">
+        <div class="shots-track">
+          <img src="/images/roamer/r1.png" alt="" loading="lazy" decoding="async">
+          <img src="/images/roamer/r2.png" alt="" loading="lazy" decoding="async">
+          <img src="/images/roamer/r3.png" alt="" loading="lazy" decoding="async">
+          <img src="/images/roamer/r4.png" alt="" loading="lazy" decoding="async">
+          <img src="/images/roamer/r5.png" alt="" loading="lazy" decoding="async">
+          <img src="/images/roamer/r6.png" alt="" loading="lazy" decoding="async">
         </div>
-        <a href="https://github.com/yc-02/02restautant" target="_blank">
-          <p class="card-title">Restaurant Reservation and Menu Platform</p>
-          <div class="card-logo">
-            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-            <img src="../logos/supabase.png" height="16px" alt="supabase" />
-            <img src="../logos/typescript.png" height="16px" alt="ts" />
-            <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
-          </div>
-        </a>
-      </div>
-      <!-- mobile app -->
-      <div class="card-wrapper">
-        <div class="card-image-container">
-          <img src="../images/projects/coffeeshop/coffee-home.png" alt="recipe-blog" class="card-image" />
-          <a href="https://github.com/yc-02/react-native-coffee" target="_blank" class="card-badge">
-            <img src="../../logos/github.png" alt="github" />
-          </a>
-        </div>
-        <a href="https://github.com/yc-02/react-native-coffee" target="_blank">
-          <p class="card-title">Coffee Shop Mobile App</p>
-          <div class="card-logo">
-            <img src="../logos/react.svg" height="16px" alt="react" />
-            <img src="../logos/javascript.svg" height="16px" alt="js" />
-          </div>
-        </a>
-      </div>
-      <!-- footware -->
-      <div class="card-wrapper">
-        <div class="card-image-container">
-          <img src="../images/projects/footwear/project-home.png" alt="recipe-blog" class="card-image" />
-          <a href="https://github.com/yc-02/02footwear" target="_blank" class="card-badge">
-            <img src="../../logos/github.png" alt="github" />
-          </a>
-        </div>
-        <a href="https://github.com/yc-02/02footwear" target="_blank">
-          <p class="card-title"> Footwear E-commerce Platform </p>
-          <div class="card-logo">
-            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-            <img src="../logos/supabase.png" height="16px" alt="supabase" />
-            <img src="../logos/contentful.png" height="16px" alt="contentful" />
-            <img src="../logos/typescript.png" height="16px" alt="ts" />
-            <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
-          </div>
-        </a>
-      </div>
-      <!-- dashboard -->
-      <div class="card-wrapper">
-        <div class="card-image-container">
-          <img src="../images/projects/medicare/medicare2.png" alt="recipe-blog" class="card-image" />
-          <a href="https://github.com/yc-02/project_x" target="_blank" class="card-badge">
-            <img src="../../logos/github.png" alt="github" />
-          </a>
-        </div>
-        <a href="https://github.com/yc-02/project_x" target="_blank">
-          <p class="card-title">Medicare Insights Dashboard</p>
-          <div class="card-logo">
-            <img src="../logos/Postgresql_elephant.svg" height="16px" alt="postgresql" />
-            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-            <img src="../logos/supabase.png" height="16px" alt="react" />
-            <img src="../logos/typescript.png" height="16px" alt="js" />
-          </div>
-        </a>
-      </div>
-      <!-- recipe-blog -->
-      <div class="card-wrapper">
-        <div class="card-image-container">
-          <img src="../images/projects/recipes/project-home.png" alt="recipe-blog" class="card-image" />
-          <a href="https://github.com/yc-02/recipes-blog-updated" target="_blank" class="card-badge">
-            <img src="../../logos/github.png" alt="github" />
-          </a>
-        </div>
-        <a href="https://github.com/yc-02/recipes-blog-updated" target="_blank">
-          <p class="card-title"> Recipes Blog </p>
-          <div class="card-logo">
-            <img src="../logos/nextjs.png" height="16px" alt="nextjs" />
-            <img src="../logos/supabase.png" height="16px" alt="supabase" />
-            <img src="../logos/typescript.png" height="16px" alt="ts" />
-            <img src="../logos/tailwind.svg" height="16px" alt="tailwindss" />
-          </div>
-        </a>
       </div>
     </div>
+  </details> -->
+    </section>
+
+    <section class="archives">
+      <!-- Coffee Shop Mobile App -->
+      <details class="arch-card">
+        <summary>
+          <div class="arch-head">
+            <span class="arch-title">Coffee Shop Mobile App</span>
+            <div class="arch-logo">
+              <img src="../logos/react.svg" alt="React" />
+              <img src="../logos/javascript.svg" alt="JavaScript" />
+            </div>
+            <span class="arch-badge">Archived</span>
+          </div>
+        </summary>
+        <div class="arch-body">
+          <div class="arch-shots">
+            <img src="/images/projects/coffeeshop/coffee-home.png" alt="">
+            <img src="/images/projects/coffeeshop/coffee-menu.png" alt="">
+            <img src="/images/projects/coffeeshop/coffee-add-coffee.png" alt="">
+            <img src="/images/projects/coffeeshop/coffee-checkout.png" alt="">
+          </div>
+        </div>
+      </details>
+
+      <!-- Medicare Insights Dashboard -->
+      <details class="arch-card">
+        <summary>
+          <div class="arch-head">
+            <span class="arch-title">Medicare Insights Dashboard</span>
+            <div class="arch-logo">
+              <img src="../logos/Postgresql_elephant.svg" alt="PostgreSQL" />
+              <img src="../logos/nextjs.png" alt="Next.js" />
+              <img src="../logos/supabase.png" alt="Supabase" />
+              <img src="../logos/typescript.png" alt="TypeScript" />
+            </div>
+            <span class="arch-badge">Archived</span>
+          </div>
+        </summary>
+        <div class="arch-body">
+          <div class="arch-shots">
+            <img src="/images/projects/medicare/medicare1.png" alt="">
+          </div>
+        </div>
+      </details>
+
+      <!-- Restaurant Reservation -->
+      <details class="arch-card">
+        <summary>
+          <div class="arch-head">
+            <span class="arch-title">Restaurant Reservation and Menu Platform</span>
+            <div class="arch-logo">
+              <img src="../logos/nextjs.png" alt="Next.js" />
+              <img src="../logos/supabase.png" alt="Supabase" />
+              <img src="../logos/typescript.png" alt="TypeScript" />
+              <img src="../logos/tailwind.svg" alt="TailwindCSS" />
+            </div>
+            <span class="arch-badge">Archived</span>
+          </div>
+        </summary>
+        <div class="arch-body">
+          <div class="arch-shots">
+            <img src="/images/projects/restaurant/project-home.png" alt="">
+            <img src="/images/projects/restaurant/res-reservation.png" alt="">
+          </div>
+        </div>
+      </details>
+
+      <!-- Footwear E-commerce -->
+      <details class="arch-card">
+        <summary>
+          <div class="arch-head">
+            <span class="arch-title">Footwear E-commerce Platform</span>
+            <div class="arch-logo">
+              <img src="../logos/nextjs.png" alt="Next.js" />
+              <img src="../logos/supabase.png" alt="Supabase" />
+              <img src="../logos/contentful.png" alt="Contentful" />
+              <img src="../logos/typescript.png" alt="TypeScript" />
+              <img src="../logos/tailwind.svg" alt="TailwindCSS" />
+            </div>
+            <span class="arch-badge">Archived</span>
+          </div>
+        </summary>
+        <div class="arch-body">
+          <div class="arch-shots">
+            <img src="/images/projects/footwear/project-home.png" alt="">
+            <img src="/images/projects/footwear/footwear-orders.png" alt="">
+          </div>
+        </div>
+      </details>
+
+      <!-- Recipes Blog -->
+      <details class="arch-card">
+        <summary>
+          <div class="arch-head">
+            <span class="arch-title">Recipes Blog</span>
+            <div class="arch-logo">
+              <img src="../logos/nextjs.png" alt="Next.js" />
+              <img src="../logos/supabase.png" alt="Supabase" />
+              <img src="../logos/typescript.png" alt="TypeScript" />
+              <img src="../logos/tailwind.svg" alt="TailwindCSS" />
+            </div>
+            <span class="arch-badge">Archived</span>
+          </div>
+        </summary>
+        <div class="arch-body">
+          <div class="arch-shots">
+            <img src="/images/projects/recipes/project-home.png" alt="">
+            <img src="/images/projects/recipes/recipes-details.png" alt="">
+          </div>
+        </div>
+      </details>
+
+      <!-- Travel Blog -->
+      <details class="arch-card">
+        <summary>
+          <div class="arch-head">
+            <span class="arch-title">Travel Blog</span>
+            <div class="arch-logo nodejs">
+              <img src="../logos/nodejs.svg" alt="Node.js" />
+            </div>
+            <span class="arch-badge">Archived</span>
+          </div>
+        </summary>
+        <div class="arch-body">
+          <div class="arch-shots">
+            <img src="/images/projects/travel-blog/project-home.png" alt="">
+            <img src="/images/projects/travel-blog/travel-details.png" alt="">
+          </div>
+        </div>
+      </details>
+    </section>
   </main>
   <footer></footer>
   <script src="../util/script.js"></script>

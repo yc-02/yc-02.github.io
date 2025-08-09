@@ -19,6 +19,7 @@
 
 
     --bg: linear-gradient(180deg, #0b0c10 0%, #161b22 50%, #0d1117 100%);
+    --bg-solid:#0b0c10;
     --bg-alt: #161b22;
 
     --shadow-light: rgba(255, 255, 255, 0.05);
