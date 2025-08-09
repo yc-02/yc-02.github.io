@@ -145,3 +145,10 @@
     object-fit: cover;
     scroll-snap-align: center;
 }
+
+@media (max-width:767px) {
+    .app-right{
+        gap: 1em;
+        padding: 3px 0 3px 1em;
+    }
+}
