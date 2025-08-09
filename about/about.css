@@ -124,9 +124,7 @@
 
 @media (max-width: 767px) {
     .about-main {
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 1rem;
+        padding: 3em 1em;
     }
 
     .about-subtitle {
@@ -139,6 +137,8 @@
         --cell-min: 96px;
     }
 }
+
+
 
 @media (prefers-reduced-motion: reduce) {
 

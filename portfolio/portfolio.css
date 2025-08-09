@@ -147,8 +147,12 @@
 }
 
 @media (max-width:767px) {
-    .app-right{
+    .app-right {
         gap: 1em;
         padding: 3px 0 3px 1em;
+    }
+
+    .portfolio-main {
+        padding: 3em 1em;
     }
 }
