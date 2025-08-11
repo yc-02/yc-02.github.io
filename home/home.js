@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         typeEl.textContent = text.slice(0, i++);
         if (i <= text.length) setTimeout(type, 100);
     }
-    type();
 
     // 2D canvas
     (() => {
@@ -119,4 +118,5 @@ document.addEventListener('DOMContentLoaded', () => {
         resize();
         requestAnimationFrame(step);
     })();
+    type();
 });

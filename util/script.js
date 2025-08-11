@@ -103,22 +103,15 @@ const homeLink = document.querySelector('.home-link')
 const portfolioLink = document.querySelector('.portfolio-link')
 const aboutLink = document.querySelector('.about-link')
 
+if (homeLink && portfolioLink && aboutLink) {
+  const linkMap = [
+    { path: '/portfolio/', el: portfolioLink },
+    { path: '/about/', el: aboutLink },
+    { path: '/', el: homeLink },
+  ];
 
-if (portfolioLink) {
-  if (currentUrl.endsWith('/portfolio/')) {
-    portfolioLink.classList.add('current-link')
-    homeLink.classList.remove('current-link')
-  } else {
-    portfolioLink.classList.remove('current-link')
-  }
+  linkMap.forEach(({ el }) => el.classList.remove('current-link'));
+
+  const match = linkMap.find(({ path }) => currentUrl.endsWith(path));
+  if (match) match.el.classList.add('current-link');
 }
-
-if (aboutLink) {
-  if (currentUrl.endsWith('/about/')) {
-    aboutLink.classList.add('current-link')
-    homeLink.classList.remove('current-link')
-  } else {
-    aboutLink.classList.remove('current-link')
-  }
-}
-
