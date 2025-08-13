@@ -9,6 +9,8 @@ const deskNav =
       <a href="/" class="home-link current-link">Home</a>
       <a href="/portfolio" class="portfolio-link">Portfolio</a>
       <a href="/about" class="about-link">About</a>
+      <a>|</a>
+      <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="tools-link">Tools</a>
   </div>
 </div>
 </div>
@@ -60,6 +62,10 @@ const phoneNav =
       <a href="/about" class="navIcon">
         <i class="fa-solid fa-address-card" style="color:inherit"></i>
         <p>About</p>
+      </a>
+      <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="navIcon">
+       <i class="fa-solid fa-wrench" style="color:inherit"></i>
+        <p>Tools</p>
       </a>
   </div>
   </div>
