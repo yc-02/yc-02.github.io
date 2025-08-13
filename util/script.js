@@ -9,14 +9,13 @@ const deskNav =
       <a href="/" class="home-link current-link">Home</a>
       <a href="/portfolio" class="portfolio-link">Portfolio</a>
       <a href="/about" class="about-link">About</a>
-      <a>|</a>
-      <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="tools-link">Tools</a>
   </div>
 </div>
 </div>
 
 `
-
+// <a>|</a>
+// <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="tools-link">Tools</a>
 const footer =
   `
 <div class="footer-container">
@@ -63,15 +62,15 @@ const phoneNav =
         <i class="fa-solid fa-address-card" style="color:inherit"></i>
         <p>About</p>
       </a>
-      <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="navIcon">
-       <i class="fa-solid fa-wrench" style="color:inherit"></i>
-        <p>Tools</p>
-      </a>
   </div>
   </div>
 </div>
 </div>
 `
+//       <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="navIcon">
+//  <i class="fa-solid fa-wrench" style="color:inherit"></i>
+//   <p>Tools</p>
+// </a>
 
 //render navbar and footer
 
