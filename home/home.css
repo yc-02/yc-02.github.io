@@ -19,14 +19,13 @@
     position: relative;
     z-index: 1;
     max-width: 800px;
-    margin: 20vh auto 0;
+    margin: 30vh auto 0;
     padding: 24px;
     color: var(--fg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
 #type {
