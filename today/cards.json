@@ -1,0 +1,472 @@
+{
+    "cards": [
+        {
+            "name": "The Fool",
+            "image": "./cards/m00.jpg",
+            "meaning": "Beginnings, curiosity, stepping into the unknown.",
+            "advice": "You may be starting a new chapter or considering a path that feels uncertain. Instead of waiting until everything is perfectly planned, allow yourself to move forward with curiosity. Stay aware of risks, but do not let fear stop you from exploring possibilities. Learning comes through experience."
+        },
+        {
+            "name": "The Magician",
+            "image": "./cards/m01.jpg",
+            "meaning": "Skill, initiative, and turning ideas into action.",
+            "advice": "Look closely at what resources and abilities you already have. You may be more capable than you think. Take practical steps toward your goal and use your knowledge creatively. Confidence grows when you actively apply your skills rather than waiting for the perfect moment."
+        },
+        {
+            "name": "The High Priestess",
+            "image": "./cards/m02.jpg",
+            "meaning": "Intuition, hidden knowledge, quiet awareness.",
+            "advice": "This situation may require patience and observation rather than immediate action. Pay attention to subtle feelings and instincts. Give yourself time to understand what is happening beneath the surface before making a decision."
+        },
+        {
+            "name": "The Empress",
+            "image": "./cards/m03.jpg",
+            "meaning": "Growth, care, creativity, nurturing energy.",
+            "advice": "Focus on creating an environment where ideas, relationships, or personal wellbeing can grow naturally. Support the things that matter to you with patience and attention. Progress often comes through steady care rather than force."
+        },
+        {
+            "name": "The Emperor",
+            "image": "./cards/m04.jpg",
+            "meaning": "Authority, structure, stability.",
+            "advice": "This is a time to establish order and clear direction. Take responsibility for your choices and build a strong foundation. Discipline and careful planning will help you move forward confidently."
+        },
+        {
+            "name": "The Hierophant",
+            "image": "./cards/m05.jpg",
+            "meaning": "Tradition, guidance, learning.",
+            "advice": "Consider seeking advice from someone experienced or learning from established practices. Sometimes following proven wisdom can provide stability when facing uncertainty."
+        },
+        {
+            "name": "The Lovers",
+            "image": "./cards/m06.jpg",
+            "meaning": "Connection, harmony, important choices.",
+            "advice": "Think carefully about what truly aligns with your values and emotions. Whether this concerns relationships or decisions, honesty and clear communication will guide you toward the right direction."
+        },
+        {
+            "name": "The Chariot",
+            "image": "./cards/m07.jpg",
+            "meaning": "Determination, direction, progress.",
+            "advice": "Stay focused on your objective and avoid distractions. Success may require discipline and persistence. Trust your ability to steer through challenges and maintain control of your path."
+        },
+        {
+            "name": "Strength",
+            "image": "./cards/m08.jpg",
+            "meaning": "Inner courage, patience, compassion.",
+            "advice": "Real strength often appears as calmness and understanding rather than force. Approach challenges with patience and kindness, both toward yourself and others."
+        },
+        {
+            "name": "The Hermit",
+            "image": "./cards/m09.jpg",
+            "meaning": "Reflection, solitude, inner guidance.",
+            "advice": "Take time to step back from noise and distractions. Quiet reflection may help you understand what direction truly feels meaningful."
+        },
+        {
+            "name": "Wheel of Fortune",
+            "image": "./cards/m10.jpg",
+            "meaning": "Change, cycles, unexpected shifts.",
+            "advice": "Life moves in cycles, and situations may change quickly. Stay adaptable and look for opportunities within transitions rather than resisting them."
+        },
+        {
+            "name": "Justice",
+            "image": "./cards/m11.jpg",
+            "meaning": "Fairness, truth, accountability.",
+            "advice": "Examine the situation carefully and consider the consequences of your actions. Acting with honesty and balance will lead to better outcomes."
+        },
+        {
+            "name": "The Hanged Man",
+            "image": "./cards/m12.jpg",
+            "meaning": "Pause, new perspective, letting go.",
+            "advice": "Progress might require a moment of stillness. Consider viewing the situation from a different perspective and allow yourself time to reconsider assumptions."
+        },
+        {
+            "name": "Death",
+            "image": "./cards/m13.jpg",
+            "meaning": "Transformation, endings, renewal.",
+            "advice": "Certain phases must end for new growth to begin. Accepting change may feel difficult, but it allows space for something better to develop."
+        },
+        {
+            "name": "Temperance",
+            "image": "./cards/m14.jpg",
+            "meaning": "Balance, moderation, harmony.",
+            "advice": "Avoid extremes and try to find a balanced approach. Small adjustments and patience will help create stability."
+        },
+        {
+            "name": "The Devil",
+            "image": "./cards/m15.jpg",
+            "meaning": "Attachment, temptation, limiting habits.",
+            "advice": "Take an honest look at patterns that may be restricting your freedom or wellbeing. Awareness is the first step toward breaking unhealthy cycles."
+        },
+        {
+            "name": "The Tower",
+            "image": "./cards/m16.jpg",
+            "meaning": "Sudden change, revelation.",
+            "advice": "Unexpected events may disrupt existing plans, but they often reveal truths that were hidden. Focus on rebuilding stronger foundations afterward."
+        },
+        {
+            "name": "The Star",
+            "image": "./cards/m17.jpg",
+            "meaning": "Hope, healing, renewal.",
+            "advice": "Allow yourself time to recover from difficulties and look forward with optimism. Gentle progress and self-care will restore confidence."
+        },
+        {
+            "name": "The Moon",
+            "image": "./cards/m18.jpg",
+            "meaning": "Uncertainty, intuition, hidden emotions.",
+            "advice": "Things may not be completely clear right now. Avoid rushing decisions and trust your instincts while you gather more information."
+        },
+        {
+            "name": "The Sun",
+            "image": "./cards/m19.jpg",
+            "meaning": "Joy, clarity, vitality.",
+            "advice": "Celebrate progress and allow yourself to experience happiness fully. Positive energy can strengthen your confidence and relationships."
+        },
+        {
+            "name": "Judgement",
+            "image": "./cards/m20.jpg",
+            "meaning": "Reflection, awakening, realization.",
+            "advice": "Take time to review past experiences and learn from them. Honest self-reflection can guide your next steps."
+        },
+        {
+            "name": "The World",
+            "image": "./cards/m21.jpg",
+            "meaning": "Completion, fulfillment, achievement.",
+            "advice": "Recognize how far you have come. Completing one stage of life prepares you for the next opportunity."
+        },
+        {
+            "name": "Ace of Cups",
+            "image": "./cards/c01.jpg",
+            "meaning": "Emotional beginnings.",
+            "advice": "Be open to new feelings, relationships, or creative inspiration. Allow yourself to experience emotions honestly."
+        },
+        {
+            "name": "Two of Cups",
+            "image": "./cards/c02.jpg",
+            "meaning": "Partnership and harmony.",
+            "advice": "Focus on mutual respect and communication in relationships. Shared understanding strengthens bonds."
+        },
+        {
+            "name": "Three of Cups",
+            "image": "./cards/c03.jpg",
+            "meaning": "Celebration and friendship.",
+            "advice": "Spend time appreciating the people who support you and celebrate small successes together."
+        },
+        {
+            "name": "Four of Cups",
+            "image": "./cards/c04.jpg",
+            "meaning": "Reflection and emotional pause.",
+            "advice": "You may be overlooking opportunities because of distraction or dissatisfaction. Take a fresh look at what is available."
+        },
+        {
+            "name": "Five of Cups",
+            "image": "./cards/c05.jpg",
+            "meaning": "Loss and disappointment.",
+            "advice": "Allow yourself to acknowledge sadness, but remember that not everything is lost. Focus on what still remains."
+        },
+        {
+            "name": "Six of Cups",
+            "image": "./cards/c06.jpg",
+            "meaning": "Memories and nostalgia.",
+            "advice": "Reconnect with positive influences from your past while remaining open to the present."
+        },
+        {
+            "name": "Seven of Cups",
+            "image": "./cards/c07.jpg",
+            "meaning": "Choices and illusions.",
+            "advice": "Many possibilities may appear attractive, but clarity comes from careful evaluation."
+        },
+        {
+            "name": "Eight of Cups",
+            "image": "./cards/c08.jpg",
+            "meaning": "Walking away from emotional situations.",
+            "advice": "If something no longer supports your growth, consider whether it is time to move on."
+        },
+        {
+            "name": "Nine of Cups",
+            "image": "./cards/c09.jpg",
+            "meaning": "Contentment and satisfaction.",
+            "advice": "Take time to appreciate achievements and moments of happiness."
+        },
+        {
+            "name": "Ten of Cups",
+            "image": "./cards/c10.jpg",
+            "meaning": "Emotional fulfillment.",
+            "advice": "Focus on creating harmony and supportive relationships."
+        },
+        {
+            "name": "Page of Cups",
+            "image": "./cards/c11.jpg",
+            "meaning": "Creative curiosity.",
+            "advice": "Allow imagination and emotional openness to guide you toward new experiences."
+        },
+        {
+            "name": "Knight of Cups",
+            "image": "./cards/c12.jpg",
+            "meaning": "Romantic pursuit.",
+            "advice": "Follow your passions but remain grounded in reality."
+        },
+        {
+            "name": "Queen of Cups",
+            "image": "./cards/c13.jpg",
+            "meaning": "Compassion and empathy.",
+            "advice": "Offer kindness to others while maintaining emotional balance."
+        },
+        {
+            "name": "King of Cups",
+            "image": "./cards/c14.jpg",
+            "meaning": "Emotional maturity.",
+            "advice": "Lead with calm understanding when handling emotional situations."
+        },
+        {
+            "name": "Ace of Pentacles",
+            "image": "./cards/p01.jpg",
+            "meaning": "New material opportunities.",
+            "advice": "Take practical steps toward building something stable and meaningful."
+        },
+        {
+            "name": "Two of Pentacles",
+            "image": "./cards/p02.jpg",
+            "meaning": "Balancing responsibilities.",
+            "advice": "Organize priorities and remain flexible as circumstances shift."
+        },
+        {
+            "name": "Three of Pentacles",
+            "image": "./cards/p03.jpg",
+            "meaning": "Teamwork and skill development.",
+            "advice": "Working with others can improve results and strengthen abilities."
+        },
+        {
+            "name": "Four of Pentacles",
+            "image": "./cards/p04.jpg",
+            "meaning": "Security and stability.",
+            "advice": "Protect your resources but remain open to sharing when appropriate."
+        },
+        {
+            "name": "Five of Pentacles",
+            "image": "./cards/p05.jpg",
+            "meaning": "Material difficulty.",
+            "advice": "Seek support and remember that challenges are temporary."
+        },
+        {
+            "name": "Six of Pentacles",
+            "image": "./cards/p06.jpg",
+            "meaning": "Generosity and fairness.",
+            "advice": "Balance giving and receiving support."
+        },
+        {
+            "name": "Seven of Pentacles",
+            "image": "./cards/p07.jpg",
+            "meaning": "Patience in growth.",
+            "advice": "Continue nurturing long-term efforts."
+        },
+        {
+            "name": "Eight of Pentacles",
+            "image": "./cards/p08.jpg",
+            "meaning": "Dedication and craftsmanship.",
+            "advice": "Practice consistently to improve your abilities."
+        },
+        {
+            "name": "Nine of Pentacles",
+            "image": "./cards/p09.jpg",
+            "meaning": "Independence and comfort.",
+            "advice": "Enjoy the results of your effort and appreciate your progress."
+        },
+        {
+            "name": "Ten of Pentacles",
+            "image": "./cards/p10.jpg",
+            "meaning": "Long-term stability.",
+            "advice": "Think about long-term security and shared prosperity."
+        },
+        {
+            "name": "Page of Pentacles",
+            "image": "./cards/p11.jpg",
+            "meaning": "Learning and opportunity.",
+            "advice": "Stay curious and explore practical knowledge."
+        },
+        {
+            "name": "Knight of Pentacles",
+            "image": "./cards/p12.jpg",
+            "meaning": "Persistence and reliability.",
+            "advice": "Steady effort will bring results."
+        },
+        {
+            "name": "Queen of Pentacles",
+            "image": "./cards/p13.jpg",
+            "meaning": "Practical care.",
+            "advice": "Balance material responsibilities with personal wellbeing."
+        },
+        {
+            "name": "King of Pentacles",
+            "image": "./cards/p14.jpg",
+            "meaning": "Financial wisdom.",
+            "advice": "Focus on decisions that create lasting stability."
+        },
+        {
+            "name": "Ace of Swords",
+            "image": "./cards/s01.jpg",
+            "meaning": "Clarity and truth.",
+            "advice": "Approach the situation with honesty and clear thinking."
+        },
+        {
+            "name": "Two of Swords",
+            "image": "./cards/s02.jpg",
+            "meaning": "Difficult choices.",
+            "advice": "Avoid ignoring decisions that require attention."
+        },
+        {
+            "name": "Three of Swords",
+            "image": "./cards/s03.jpg",
+            "meaning": "Heartbreak or emotional pain.",
+            "advice": "Healing begins with acknowledging the truth."
+        },
+        {
+            "name": "Four of Swords",
+            "image": "./cards/s04.jpg",
+            "meaning": "Rest and recovery.",
+            "advice": "Take time to restore your mental energy."
+        },
+        {
+            "name": "Five of Swords",
+            "image": "./cards/s05.jpg",
+            "meaning": "Conflict and tension.",
+            "advice": "Consider whether continuing a dispute is worthwhile."
+        },
+        {
+            "name": "Six of Swords",
+            "image": "./cards/s06.jpg",
+            "meaning": "Transition to calmer situations.",
+            "advice": "Move toward environments that bring peace."
+        },
+        {
+            "name": "Seven of Swords",
+            "image": "./cards/s07.jpg",
+            "meaning": "Strategy and caution.",
+            "advice": "Be mindful of honesty and trust in your actions."
+        },
+        {
+            "name": "Eight of Swords",
+            "image": "./cards/s08.jpg",
+            "meaning": "Feeling restricted.",
+            "advice": "Recognize where fear may be limiting your choices."
+        },
+        {
+            "name": "Nine of Swords",
+            "image": "./cards/s09.jpg",
+            "meaning": "Worry and anxiety.",
+            "advice": "Share concerns with someone you trust instead of carrying them alone."
+        },
+        {
+            "name": "Ten of Swords",
+            "image": "./cards/s10.jpg",
+            "meaning": "End of hardship.",
+            "advice": "Allow yourself to move forward after difficult experiences."
+        },
+        {
+            "name": "Page of Swords",
+            "image": "./cards/s11.jpg",
+            "meaning": "Curiosity and awareness.",
+            "advice": "Observe carefully before acting."
+        },
+        {
+            "name": "Knight of Swords",
+            "image": "./cards/s12.jpg",
+            "meaning": "Fast action.",
+            "advice": "Move forward with determination but avoid impulsive decisions."
+        },
+        {
+            "name": "Queen of Swords",
+            "image": "./cards/s13.jpg",
+            "meaning": "Clear judgment.",
+            "advice": "Speak honestly and rely on logic when evaluating situations."
+        },
+        {
+            "name": "King of Swords",
+            "image": "./cards/s14.jpg",
+            "meaning": "Authority of reason.",
+            "advice": "Use knowledge and fairness when making decisions."
+        },
+        {
+            "name": "Ace of Wands",
+            "image": "./cards/w01.jpg",
+            "meaning": "New inspiration.",
+            "advice": "Follow ideas that excite your curiosity and creativity."
+        },
+        {
+            "name": "Two of Wands",
+            "image": "./cards/w02.jpg",
+            "meaning": "Planning and direction.",
+            "advice": "Think carefully about future possibilities before acting."
+        },
+        {
+            "name": "Three of Wands",
+            "image": "./cards/w03.jpg",
+            "meaning": "Expansion and exploration.",
+            "advice": "Look beyond your current environment for opportunities."
+        },
+        {
+            "name": "Four of Wands",
+            "image": "./cards/w04.jpg",
+            "meaning": "Celebration and stability.",
+            "advice": "Appreciate moments of harmony and shared success."
+        },
+        {
+            "name": "Five of Wands",
+            "image": "./cards/w05.jpg",
+            "meaning": "Competition and tension.",
+            "advice": "Use challenges as motivation for improvement."
+        },
+        {
+            "name": "Six of Wands",
+            "image": "./cards/w06.jpg",
+            "meaning": "Recognition and success.",
+            "advice": "Accept praise while remaining humble."
+        },
+        {
+            "name": "Seven of Wands",
+            "image": "./cards/w07.jpg",
+            "meaning": "Standing your ground.",
+            "advice": "Defend your beliefs with confidence."
+        },
+        {
+            "name": "Eight of Wands",
+            "image": "./cards/w08.jpg",
+            "meaning": "Rapid movement and progress.",
+            "advice": "Be prepared to act quickly when opportunities appear."
+        },
+        {
+            "name": "Nine of Wands",
+            "image": "./cards/w09.jpg",
+            "meaning": "Resilience.",
+            "advice": "Stay determined even after facing difficulties."
+        },
+        {
+            "name": "Ten of Wands",
+            "image": "./cards/w10.jpg",
+            "meaning": "Heavy responsibilities.",
+            "advice": "Consider sharing or reducing burdens."
+        },
+        {
+            "name": "Page of Wands",
+            "image": "./cards/w11.jpg",
+            "meaning": "Exploration and enthusiasm.",
+            "advice": "Allow curiosity to guide new adventures."
+        },
+        {
+            "name": "Knight of Wands",
+            "image": "./cards/w12.jpg",
+            "meaning": "Bold action.",
+            "advice": "Pursue your goals with energy but avoid recklessness."
+        },
+        {
+            "name": "Queen of Wands",
+            "image": "./cards/w13.jpg",
+            "meaning": "Confidence and charisma.",
+            "advice": "Express your ideas openly and inspire others."
+        },
+        {
+            "name": "King of Wands",
+            "image": "./cards/w14.jpg",
+            "meaning": "Vision and leadership.",
+            "advice": "Lead with passion and guide others toward shared goals."
+        }
+    ]
+}

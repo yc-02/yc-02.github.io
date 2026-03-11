@@ -9,6 +9,7 @@ const deskNav =
       <a href="/" class="home-link current-link">Home</a>
       <a href="/portfolio" class="portfolio-link">Portfolio</a>
       <a href="/about" class="about-link">About</a>
+      <a href="/today" class="today-link">Today</a>
   </div>
 </div>
 </div>
@@ -21,7 +22,7 @@ const footer =
 <div class="footer-container">
   <div class="footer-left">
     <i class="fa-regular fa-copyright" color="inherit"></i>
-    <p>2025 Ying Cui</p>
+    <p>2026 Ying Cui</p>
   </div>
   <div class="footer-right">
     <p class="footer-title">Contact</p>
@@ -62,6 +63,10 @@ const phoneNav =
         <i class="fa-solid fa-address-card" style="color:inherit"></i>
         <p>About</p>
       </a>
+      <a href="/today" class="navIcon">
+        <i class="fa-solid fa-star-half-stroke" style="color:inherit"></i>
+        <p>Today</p>
+      </a>
   </div>
   </div>
 </div>
@@ -84,7 +89,6 @@ Promise.all([promise1, promise2, promise3]).then(() => {
   .catch(error => console.error('Error fetching HTML file:', error));
 
 
-
 // small navbar open and close
 function openNav() {
   document.getElementById("contents").style.display = 'block'
@@ -93,11 +97,10 @@ function openNav() {
   document.getElementById("contentsRight").style.animation = 'slideIn 0.2s forwards';
   document.getElementById("contentsLeft").style.animation = 'opacity 0.2s 0.2s forwards';
 }
+
 function closeNav() {
   document.getElementById("contents").style.display = 'none'
   document.getElementById("openButton").style.display = 'block'
-  document.getElementById('projects').style.display = 'none'
-  document.getElementById('apps').style.display = 'none'
   document.body.style.overflow = "scroll";
 }
 
@@ -107,11 +110,13 @@ const currentUrl = window.location.href
 const homeLink = document.querySelector('.home-link')
 const portfolioLink = document.querySelector('.portfolio-link')
 const aboutLink = document.querySelector('.about-link')
+const todayLink = document.querySelector('.today-link')
 
 if (homeLink && portfolioLink && aboutLink) {
   const linkMap = [
     { path: '/portfolio/', el: portfolioLink },
     { path: '/about/', el: aboutLink },
+    { path: '/today/', el: todayLink },
     { path: '/', el: homeLink },
   ];
 

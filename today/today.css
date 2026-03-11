@@ -1,0 +1,189 @@
+.hide {
+    display: none !important;
+}
+
+#deckWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 12vh;
+}
+
+#tarotDeck {
+    position: relative;
+    cursor: pointer;
+    width: 250px;
+    height: 390px;
+    z-index: 1;
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 220px;
+    height: 366px;
+    border-radius: 16px;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    will-change: transform, opacity;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    background:
+        radial-gradient(circle at 50% 35%, rgba(137, 211, 177, 0.12), transparent 40%),
+        linear-gradient(160deg, #0b0c10, #161b22);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.02),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(137, 211, 177, 0.18);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(circle, rgba(137, 211, 177, 0.7) 1px, transparent 2px);
+
+    background-size: 40px 40px;
+    opacity: 0.16;
+    pointer-events: none;
+}
+
+#cardModal {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 250px;
+    height: 390px;
+    transform: translateX(-50%);
+    z-index: 800;
+}
+
+
+.modalOverlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(14px) saturate(120%);
+}
+
+.modalPanel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 90vw;
+    max-width: 800px;
+    padding: 3em;
+    border-radius: 16px;
+    background: linear-gradient(180deg,
+            #161b22,
+            #0d1117);
+
+    border: 1px solid rgba(137, 211, 177, 0.2);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+
+#closeModal {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.selectedCard {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    justify-content: center;
+}
+
+.selectedImgWrapper {
+    width: 220px;
+    height: 366px;
+    flex-shrink: 0;
+}
+
+.selectedImgWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.selectedDetails {
+    max-width: 360px;
+}
+
+.selectedDetails p {
+    margin: 0;
+    text-align: left;
+}
+
+#cardName {
+    margin-bottom: 12px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f5f7ff;
+}
+
+#cardMeaning {
+    margin-bottom: 10px;
+    font-size: 1.02rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+#cardAdvice {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 700px) {
+    .selectedCard {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .selectedImgWrapper {
+        width: 180px;
+        height: 300px;
+    }
+
+    .selectedDetails {
+        max-width: 100%;
+    }
+
+    .selectedDetails p {
+        text-align: center;
+    }
+
+    #cardName {
+        font-size: 1.5rem;
+    }
+}

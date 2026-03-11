@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Tarot Draw</title>
+    <meta name="description" content="Draw a tarot card for today and reflect on its meaning.">
+
+    <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../util/styles.css">
+    <link rel="stylesheet" href="./today.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico?v=2">
+    <meta property="og:title" content="Today's Tarot Draw" />
+    <meta property="og:description" content="Draw a tarot card for today and reflect on its meaning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yc-02.com/today" />
+    <meta property="og:image" content="./today/cards/m19.jpg" />
+</head>
+
+<body>
+    <nav></nav>
+    <main>
+        <div id="deckWrap">
+            <div id="tarotDeck"></div>
+            <div id="cardModal" class="hide">
+                <div class="modalPanel">
+                    <button id="closeModal" type="button">×</button>
+                    <div id="selectedCard" class="selectedCard">
+                        <div class="selectedImgWrapper">
+                            <img src="" alt="" id="cardImg">
+                        </div>
+                        <div class="selectedDetails">
+                            <p id="cardName"> </p>
+                            <p id="cardMeaning"></p>
+                            <p id="cardAdvice"> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../util/script.js"></script>
+    <script src="./today.js"></script>
+</body>
+
+</html>
