@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Typing
-    const text = "Welcome !";
+    const text = "Welcome!";
     let i = 0;
     const typeEl = document.getElementById('type');
     function type() {
