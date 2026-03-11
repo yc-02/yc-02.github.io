@@ -17,7 +17,7 @@
 
 .home-overlay {
     position: relative;
-    z-index: 1;
+    z-index: var(--z-base);
     max-width: 800px;
     margin: 30vh auto 0;
     padding: 24px;
