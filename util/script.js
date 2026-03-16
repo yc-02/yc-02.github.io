@@ -9,14 +9,12 @@ const deskNav =
       <a href="/" class="home-link current-link">Home</a>
       <a href="/portfolio" class="portfolio-link">Portfolio</a>
       <a href="/about" class="about-link">About</a>
-      <a href="/today" class="today-link">Today</a>
   </div>
 </div>
 </div>
 
 `
-// <a>|</a>
-// <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="tools-link">Tools</a>
+// <a href="/today" class="today-link">Today</a>
 const footer =
   `
 <div class="footer-container">
@@ -63,15 +61,16 @@ const phoneNav =
         <i class="fa-solid fa-address-card" style="color:inherit"></i>
         <p>About</p>
       </a>
-      <a href="/today" class="navIcon">
-        <i class="fa-solid fa-star-half-stroke" style="color:inherit"></i>
-        <p>Today</p>
-      </a>
+
   </div>
   </div>
 </div>
 </div>
 `
+// <a href="/today" class="navIcon">
+//   <i class="fa-solid fa-star-half-stroke" style="color:inherit"></i>
+//   <p>Today</p>
+// </a>
 //       <a href="https://yc-02-tools.streamlit.app/" target="_blank" class="navIcon">
 //  <i class="fa-solid fa-wrench" style="color:inherit"></i>
 //   <p>Tools</p>
@@ -110,13 +109,13 @@ const currentUrl = window.location.href
 const homeLink = document.querySelector('.home-link')
 const portfolioLink = document.querySelector('.portfolio-link')
 const aboutLink = document.querySelector('.about-link')
-const todayLink = document.querySelector('.today-link')
+// const todayLink = document.querySelector('.today-link')
 
 if (homeLink && portfolioLink && aboutLink) {
   const linkMap = [
     { path: '/portfolio/', el: portfolioLink },
     { path: '/about/', el: aboutLink },
-    { path: '/today/', el: todayLink },
+    // { path: '/today/', el: todayLink },
     { path: '/', el: homeLink },
   ];
 
