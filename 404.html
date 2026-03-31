@@ -5,28 +5,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./util/styles.css">
-  <link rel="stylesheet" href="./home/home.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2">
   <title>404</title>
+  <style>
+    .page-404-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 48px 32px;
+      max-width: 600px;
+      margin: 120px auto 0;
+      /* push below header */
+    }
+
+    /* message */
+    .page-404-message {
+      margin: 24px 0 32px;
+      font-size: 1.2rem;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .page-404-message i {
+      color: #cba6ff;
+      /* same as .cat-card */
+      font-size: 1.3rem;
+      animation: catWiggle 2.8s ease-in-out infinite;
+    }
+
+    /* button */
+    .page-404-home {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(153, 212, 255, 0.12);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+    }
+
+    .page-404-home:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(135deg,
+          rgba(77, 163, 255, 0.25),
+          rgba(135, 215, 255, 0.14));
+      border-color: rgba(135, 215, 255, 0.28);
+      box-shadow: 0 14px 34px rgba(77, 163, 255, 0.14);
+    }
+
+    @media (max-width: 640px) {
+      .page-404-card {
+        padding: 36px 20px;
+        margin-top: 100px;
+      }
+
+      .page-404-message {
+        font-size: 1.05rem;
+      }
+
+      .page-404-home {
+        width: 100%;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
-  <nav></nav>
-  <main>
-    <div class="home-wrap">
-      <canvas id="bg" class="home-canvas" aria-hidden="true"></canvas>
-      <div class="home-overlay">
-        <h1>Oops, this page doesn't exist!</h1>
+  <canvas id="bg"></canvas>
+  <div class="bg-overlay"></div>
+  <div class="mouse-glow"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-mark">Ying Cui</div>
+
+      <div class="header-actions">
+        <a href="https://github.com/yc-02" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/yingcui02" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:yingcui02@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
     </div>
-  </main>
-  <footer></footer>
-  <script src="./home/home.js" defer>
-  </script>
-  <script src="./util/script.js" defer>
-  </script>
+  </header>
+  <div class="hero-section">
+    <div class="hero-layout">
+      <div class="page-404-card reveal">
+        <h1 class="hero-title"><span>404</span></h1>
 
+        <div class="page-404-message">
+          <span>Cat took the page</span>
+          <i class="fa-solid fa-cat"></i>
+        </div>
+
+        <a href="/" class="page-404-home" aria-label="Back Home">
+          <i class="fa-solid fa-house"></i>
+          <span>Back Home</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="/script.js"></script>
 </body>
 
 </html>

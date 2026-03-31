@@ -1,39 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="3EVYwlH80JNZN9wU8GR0-RtK64eTufMoY4xJuy3Wd_M" />
-  <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./util/styles.css">
-  <link rel="stylesheet" href="./home/home.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2">
-  <title>yc-02</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/e3aea98539.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2">
+    <title>Ying Cui</title>
+
 </head>
 
 <body>
-  <nav></nav>
-  <main>
-    <div class="home-wrap">
-      <canvas id="bg" class="home-canvas" aria-hidden="true"></canvas>
-      <div class="home-overlay">
-        <p class="home-title" id="type"></p>
-        <p class="home-subtitle">
+    <canvas id="bg"></canvas>
+    <div class="bg-overlay"></div>
+    <div class="mouse-glow"></div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="site-mark">Ying Cui</div>
+
+            <div class="header-actions">
+                <a href="https://github.com/yc-02" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yingcui02" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:yingcui02@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-layout">
+            <div class="hero-main-card">
+                <h1 class="hero-title"><span>Welcome</span></h1>
+            </div>
+
+            <div class="fun-grid">
+                <div class="fun-card cat-card reveal">
+                    <i class="fa-solid fa-cat stat-icon"></i>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Cat Supervisor</div>
+                </div>
+
+                <div class="fun-card build-card reveal">
+                    <i class="fa-solid fa-code stat-icon"></i>
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Things I like to build</div>
+                </div>
+
+                <div class="fun-card seedling-card reveal">
+                    <i class="fa-solid fa-sun stat-icon"></i>
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Living life</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+
+
+    <section class="project-section reveal">
+        <h2 class="section-heading">Projects</h2>
+        <p class="section-copy">
+            One featured app and a few archived builds.
         </p>
-        <!-- <div class="home-more">
-          <a href="/about">More About Me ➔</a>
-        </div> -->
-      </div>
-    </div>
-  </main>
-  <footer></footer>
+
+        <div class="projects-layout">
+            <div class="project-feature reveal">
+                <div class="project-feature-top">
+                    <div class="project-feature-icon">
+                        <img src="/images/roamer/roamer.png" alt="Roamer icon" />
+                    </div>
+
+                    <div>
+                        <div class="project-feature-title">Roamer - Plan &amp; Pack</div>
+                        <div class="project-feature-subtitle">
+                            A travel companion app focused on itinerary planning and packing lists.
+                        </div>
+
+                        <div class="project-feature-meta">
+                            <span class="project-chip">iOS App</span>
+                            <span class="project-chip">Travel</span>
+                        </div>
+                    </div>
+
+                    <a href="https://apps.apple.com/us/app/roamer-plan-pack/id6498718155" target="_blank"
+                        class="store-link">
+                        <img src="/logos/apple-store.svg" alt="App Store" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="archive-list">
+                <div class="archive-card reveal">
+                    <div class="archive-top">
+                        <div class="archive-title">Medicare Insights Dashboard</div>
+                        <span class="archive-badge">Archived</span>
+                    </div>
+                    <div class="archive-tech">
+                        <img src="../logos/Postgresql_elephant.svg" alt="PostgreSQL" />
+                        <img src="../logos/nextjs.png" alt="Next.js" />
+                        <img src="../logos/supabase.png" alt="Supabase" />
+                        <img src="../logos/typescript.png" alt="TypeScript" />
+                    </div>
+                </div>
+
+                <div class="archive-card reveal">
+                    <div class="archive-top">
+                        <div class="archive-title">Coffee Shop Mobile App</div>
+                        <span class="archive-badge">Archived</span>
+                    </div>
+                    <div class="archive-tech">
+                        <img src="../logos/react.svg" alt="React" />
+                        <img src="../logos/javascript.svg" alt="JavaScript" />
+                    </div>
+                </div>
+
+                <div class="archive-card reveal">
+                    <div class="archive-top">
+                        <div class="archive-title">Restaurant Reservation and Menu Platform</div>
+                        <span class="archive-badge">Archived</span>
+                    </div>
+                    <div class="archive-tech">
+                        <img src="../logos/nextjs.png" alt="Next.js" />
+                        <img src="../logos/supabase.png" alt="Supabase" />
+                        <img src="../logos/typescript.png" alt="TypeScript" />
+                        <img src="../logos/tailwind.svg" alt="TailwindCSS" />
+                    </div>
+                </div>
+
+                <div class="archive-card reveal">
+                    <div class="archive-top">
+                        <div class="archive-title">Footwear E-commerce Platform</div>
+                        <span class="archive-badge">Archived</span>
+                    </div>
+                    <div class="archive-tech">
+                        <img src="../logos/nextjs.png" alt="Next.js" />
+                        <img src="../logos/supabase.png" alt="Supabase" />
+                        <img src="../logos/contentful.png" alt="Contentful" />
+                        <img src="../logos/typescript.png" alt="TypeScript" />
+                        <img src="../logos/tailwind.svg" alt="TailwindCSS" />
+                    </div>
+                </div>
+
+                <div class="archive-card reveal">
+                    <div class="archive-top">
+                        <div class="archive-title">Recipes Blog</div>
+                        <span class="archive-badge">Archived</span>
+                    </div>
+                    <div class="archive-tech">
+                        <img src="../logos/nextjs.png" alt="Next.js" />
+                        <img src="../logos/supabase.png" alt="Supabase" />
+                        <img src="../logos/typescript.png" alt="TypeScript" />
+                        <img src="../logos/tailwind.svg" alt="TailwindCSS" />
+                    </div>
+                </div>
+
+                <div class="archive-card reveal">
+                    <div class="archive-top">
+                        <div class="archive-title">Travel Blog</div>
+                        <span class="archive-badge">Archived</span>
+                    </div>
+                    <div class="archive-tech">
+                        <img src="../logos/nodejs.svg" alt="Node.js" />
+                        <img src="../logos/javascript.svg" alt="JavaScript" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill-section reveal">
+        <h2 class="section-heading">Skills</h2>
+        <p class="section-copy">
+            Technologies I enjoy working with.
+        </p>
+
+        <div class="skills-marquee">
+            <div class="skills-track">
+                <div class="skill-chip"><img src="/logos/C++_Logo.png" alt="C++"></div>
+                <div class="skill-chip"><img src="/logos/java.189x256.png" alt="Java"></div>
+                <div class="skill-chip"><img src="/logos/python_logo.png" alt="Python"></div>
+                <div class="skill-chip"><img src="/logos/javascript.svg" alt="JavaScript"></div>
+                <div class="skill-chip"><img src="/logos/typescript.png" alt="TypeScript"></div>
+                <div class="skill-chip"><img src="/logos/react.svg" alt="React"></div>
+                <div class="skill-chip"><img src="/logos/nextjs.png" alt="Next.js"></div>
+                <div class="skill-chip"><img src="/logos/nodejs.svg" alt="Node.js"></div>
+                <div class="skill-chip"><img src="/logos/aws-logo.png" alt="AWS"></div>
+                <div class="skill-chip"><img src="/logos/HTML5_Logo.png" alt="HTML5"></div>
+                <div class="skill-chip"><img src="/logos/CSS3_logo.png" alt="CSS3"></div>
+                <div class="skill-chip"><img src="/logos/Postgresql_elephant.svg" alt="PostgreSQL"></div>
+                <div class="skill-chip"><img src="/logos/mysql_logo.png" alt="MySQL"></div>
+
+                <!-- duplicate for seamless loop -->
+                <div class="skill-chip"><img src="/logos/C++_Logo.png" alt="C++"></div>
+                <div class="skill-chip"><img src="/logos/java.189x256.png" alt="Java"></div>
+                <div class="skill-chip"><img src="/logos/python_logo.png" alt="Python"></div>
+                <div class="skill-chip"><img src="/logos/javascript.svg" alt="JavaScript"></div>
+                <div class="skill-chip"><img src="/logos/typescript.png" alt="TypeScript"></div>
+                <div class="skill-chip"><img src="/logos/react.svg" alt="React"></div>
+                <div class="skill-chip"><img src="/logos/nextjs.png" alt="Next.js"></div>
+                <div class="skill-chip"><img src="/logos/nodejs.svg" alt="Node.js"></div>
+                <div class="skill-chip"><img src="/logos/aws-logo.png" alt="AWS"></div>
+                <div class="skill-chip"><img src="/logos/HTML5_Logo.png" alt="HTML5"></div>
+                <div class="skill-chip"><img src="/logos/CSS3_logo.png" alt="CSS3"></div>
+                <div class="skill-chip"><img src="/logos/Postgresql_elephant.svg" alt="PostgreSQL"></div>
+                <div class="skill-chip"><img src="/logos/mysql_logo.png" alt="MySQL"></div>
+            </div>
+        </div>
+    </section>
 
 
-  <script src="./home/home.js" defer>
-  </script>
-  <script src="./util/script.js" defer>
-  </script>
+
+    <footer class="site-footer">
+        <p>© 2026 Ying Cui</p>
+    </footer>
+
+    <script src="./script.js"></script>
 
 </body>
 
