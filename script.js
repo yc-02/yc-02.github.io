@@ -5,18 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-
-                if (isMobile) {
-                    observer.unobserve(entry.target);
-                }
             } else {
-                if (!isMobile) {
                     entry.target.classList.remove('visible');
-                }
             }
         });
     }, {
