@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const reveals = document.querySelectorAll('.reveal');
-    const logoItems = document.querySelectorAll('.logo-item');
     const mouseGlow = document.querySelector('.mouse-glow');
-    const isMobile = window.matchMedia('(max-width: 640px)').matches;
 
 
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
