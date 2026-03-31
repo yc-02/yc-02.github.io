@@ -650,15 +650,19 @@ section {
 
 @media (max-width: 640px) {
     .hero-section {
-        padding: 96px 0 110px;
+        padding: 110px 0 96px;
+    }
+
+    .hero-layout {
+        gap: 30px;
     }
 
     .project-section {
-        padding: 110px 0 90px;
+        padding: 110px 0 96px;
     }
 
     .skill-section {
-        padding: 120px 0 80px;
+        padding: 110px 0 96px;
     }
 
     .hero-title {
