@@ -2,26 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const reveals = document.querySelectorAll('.reveal');
     const logoItems = document.querySelectorAll('.logo-item');
     const mouseGlow = document.querySelector('.mouse-glow');
+    const isMobile = window.matchMedia('(max-width: 640px)').matches;
 
-    const revealObserver = new IntersectionObserver((entries) => {
+
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
 
-                if (entry.target.classList.contains('skill-section')) {
-                    logoItems.forEach((item, index) => {
-                        setTimeout(() => {
-                            item.classList.add('show');
-                        }, index * 70);
-                    });
+                if (isMobile) {
+                    observer.unobserve(entry.target);
                 }
             } else {
-                entry.target.classList.remove('visible');
-
-                if (entry.target.classList.contains('skill-section')) {
-                    logoItems.forEach((item) => {
-                        item.classList.remove('show');
-                    });
+                if (!isMobile) {
+                    entry.target.classList.remove('visible');
                 }
             }
         });
@@ -29,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.16
     });
 
-    reveals.forEach(section => revealObserver.observe(section));
+    reveals.forEach((section) => revealObserver.observe(section));
 
     document.addEventListener('mousemove', (e) => {
         if (!mouseGlow) return;
