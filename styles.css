@@ -103,10 +103,26 @@ section {
 }
 
 .site-mark {
+    display: inline-block;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.04em;
     color: var(--text);
+
+}
+
+.site-mark a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+
+}
+
+.site-mark a:hover {
+    transform: translateY(-2px);
+    color: var(--muted);
+
 }
 
 .header-actions {
