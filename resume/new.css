@@ -34,10 +34,10 @@ ul {
 }
 
 h1 {
-    font-size: 23pt;
+    font-size: 26pt;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .contact-row {
@@ -47,7 +47,7 @@ h1 {
     flex-wrap: wrap;
     gap: 6px;
     font-size: 10pt;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
 }
 
 .with-icon {
@@ -87,7 +87,7 @@ h1 {
 }
 
 .section {
-    margin-bottom: 13px;
+    margin-bottom: 16px;
 }
 
 h2 {
@@ -100,8 +100,16 @@ h2 {
     letter-spacing: 0.4px;
 }
 
-.item {
-    margin-bottom: 5px;
+.items-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.subitems-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 .item-header {
@@ -115,9 +123,19 @@ h2 {
     font-weight: 700;
 }
 
+.subitem-title {
+    font-size: 10.5pt;
+    font-weight: 600;
+}
+
 .item-subtitle {
-    font-size: 10pt;
+    /* font-size: 10pt; */
+    font-weight: normal !important;
     font-style: italic;
+}
+
+.item-divider {
+    font-weight: normal !important;
 }
 
 .item-date {
